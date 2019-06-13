@@ -8,11 +8,7 @@ function App() {
   return (
     <div className="demo-big-content">
       <Layout fixedHeader>
-        <Header
-          className="Header-color"
-          title="Dion Olympia - Portfolio"
-          scroll
-        >
+        <Header className="Header-color" title="Dion Olympia" scroll>
           <Navigation>
             <Link to="/">Home</Link>
             <Link to="/aboutMe">About Me</Link>
