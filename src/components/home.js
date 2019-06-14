@@ -8,18 +8,51 @@ class Home extends Component {
   state = {};
   render() {
     return (
-      <div style={{ margin: "auto", width: "100%" }}>
+      <div
+        style={{
+          marginTop: "0",
+          margin: "auto",
+          width: "100%"
+        }}
+      >
         <Grid className="Home-page">
+          <ul className="circles">
+            <li />
+            <li />
+            <li />
+            <li />
+            <li />
+            <li />
+            <li />
+            <li />
+            <li />
+            <li />
+          </ul>
+
           <Cell col={12}>
-            <img style={{ display: "block", margin: "auto" }} src={Avatar} />
-            <br />
-            <div className="Avatar-caption">
-              <h1 className="Caption-content">Software Developer</h1>
-              <p className="Caption-content">
-                HTML | CSS | JavaScript | C++ | C# | Python | Java | React |
-                MySQL | Swift
-              </p>
-              <h1 className="Caption-content">Icons</h1>
+            <div>
+              <img
+                className="Avatar"
+                style={{
+                  display: "block",
+                  margin: "auto"
+                }}
+                src={Avatar}
+              />
+            </div>
+          </Cell>
+          <Cell col={12}>
+            <div className="Caption-wrapper">
+              <div className="Avatar-caption">
+                <h1 className="Caption-content">Software Developer</h1>
+                <p className="Caption-content">
+                  HTML | CSS | JavaScript | C++ | C# | Python | Java | React |
+                  MySQL | Swift
+                </p>
+                <h1 className="Caption-content" style={{ fontWeight: "bold" }}>
+                  Icons
+                </h1>
+              </div>
             </div>
           </Cell>
         </Grid>
