@@ -18,7 +18,7 @@ import Main from "./components/main.js";
 
 function App() {
   return (
-    <div className="demo-big-content">
+    <div className="demo-big-content" style={{ marginBottom: "0" }}>
       <Layout fixedHeader>
         <Header className="Header-color" title="Dion Olympia" scroll>
           <Navigation className="Top-navigation">
@@ -41,13 +41,9 @@ function App() {
         <Content>
           <div className="page-content">
             <Main />
-            <Footer className="Home-page" size="mini">
-              <FooterSection type="left">
-                <FooterLinkList />
-              </FooterSection>
-            </Footer>
           </div>
         </Content>
+        <Footer className="Footer" size="mini" />
       </Layout>
     </div>
   );

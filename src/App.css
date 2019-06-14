@@ -1,6 +1,9 @@
 .App {
   text-align: center;
 }
+body {
+  background-color: #4e54c8;
+}
 
 .App-logo {
   animation: App-logo-spin infinite 20s linear;
@@ -49,19 +52,6 @@
   padding-right: 20px;
 }
 
-.Footer {
-  background: #000000; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to right,
-    #000000,
-    #000000
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
-    to right,
-    #000000,
-    #000000
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-}
 .Caption-wrapper {
   align-items: center;
   justify-content: center;
@@ -76,7 +66,6 @@
 
 .Home-page {
   background: #4e54c8 !important;
-  background: -webkit-linear-gradient(to left, #8f94fb, #4e54c8) !important;
   z-index: -1;
 }
 
@@ -207,4 +196,8 @@
   to {
     box-shadow: 0px 0px 30px 20px #535fed;
   }
+}
+.Footer {
+  transform: scale(1);
+  background: #343879 !important;
 }
