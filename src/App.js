@@ -29,7 +29,7 @@ function App() {
             <Link to="/contactMe">Contact Me</Link>
           </Navigation>
         </Header>
-        <Drawer title="Dion Olympia - Portfolio">
+        <Drawer title="Portfolio">
           <Navigation>
             <Link to="/">Home</Link>
             <Link to="/aboutMe">About Me</Link>
