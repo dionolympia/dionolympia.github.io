@@ -8,11 +8,24 @@ class Home extends Component {
   render() {
     return (
       <div className="Home-background">
+        <ul className="circles">
+          <li />
+          <li />
+          <li />
+          <li />
+          <li />
+          <li />
+          <li />
+          <li />
+          <li />
+          <li />
+        </ul>
         <Grid className="Home-page">
           <Cell col={12}>
             <div>
               <img
                 className="Avatar"
+                alt="Avatar"
                 style={{
                   display: "block",
                   margin: "auto"
