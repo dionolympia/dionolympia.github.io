@@ -15,12 +15,13 @@ import {
 } from "react-mdl";
 import { Link, NavLink } from "react-router-dom";
 import Main from "./components/main.js";
+import Particles from "react-particles-js";
 
 function App() {
   return (
     <div className="demo-big-content" style={{ marginBottom: "0" }}>
       <Layout fixedHeader>
-        <Header className="Header-color" title="Dion Olympia" scroll>
+        <Header className="Header-color" title="Dion Olympia">
           <Navigation className="Top-navigation">
             <NavLink className="Nav" to="/">
               Home
@@ -48,10 +49,33 @@ function App() {
             <Link to="/contactMe">Contact Me</Link>
           </Navigation>
         </Drawer>
-        <Content style={{ margin: "0" }}>
+        <Content>
+          <Particles
+            className="Particles"
+            params={{
+              particles: {
+                number: {
+                  value: 50
+                },
+                size: {
+                  value: 3
+                }
+              },
+              interactivity: {
+                events: {
+                  onhover: {
+                    enable: true,
+                    mode: "grab"
+                  }
+                }
+              }
+            }}
+          />
           <Main />
         </Content>
-        <Footer className="Footer" size="mini" />
+        <Footer size="mini" className="Footer">
+          <FooterSection type="left" />
+        </Footer>
       </Layout>
     </div>
   );
