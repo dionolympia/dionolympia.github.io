@@ -1,34 +1,14 @@
 import React, { Component } from "react";
 import { Grid, Cell } from "react-mdl";
 
-import Background from "./home-background.jpg";
 import Avatar from "./avatar.png";
 
 class Home extends Component {
   state = {};
   render() {
     return (
-      <div
-        style={{
-          marginTop: "0",
-          margin: "auto",
-          width: "100%"
-        }}
-      >
+      <div className="Home-background">
         <Grid className="Home-page">
-          <ul className="circles">
-            <li />
-            <li />
-            <li />
-            <li />
-            <li />
-            <li />
-            <li />
-            <li />
-            <li />
-            <li />
-          </ul>
-
           <Cell col={12}>
             <div>
               <img
