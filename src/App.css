@@ -4,15 +4,14 @@
 }
 
 .Home {
-  background-color: #5b6467;
-  background-image: linear-gradient(315deg, #5b6467 0%, #8b939a 74%);
-  background-size: cover;
-  height: 100%;
-  width: 100%;
+  background: transparent;
   margin: auto;
   text-align: center;
   display: flex;
   flex-flow: column;
+  height: 100%;
+  width: 100%;
+  justify-content: space-evenly;
 }
 
 .App {
@@ -46,13 +45,35 @@
   }
 }
 
-@media (min-width: 1000px) {
+.Avatar {
+  /* Circle & Size */
+  transform: scale(0.85);
+  border-radius: 50%;
+
+  /* Center */
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+
+  /* Slow zoom-out transition */
+  transition: all 300ms;
+  position: static;
 }
 
 .Avatar:hover {
   transform: scale(1);
   transition: all 300ms;
   animation: glow 1s linear infinite alternate;
+}
+
+@media (min-width: 1600px) {
+  .Avatar:hover {
+    transform: scale(1.5);
+  }
+  .Avatar {
+    transform: scale(1.25);
+  }
 }
 
 @keyframes glow {
@@ -71,7 +92,7 @@
 }
 
 .Particles {
-  position: absolute;
+  position: fixed;
   width: 100%;
   height: 100%;
 }
@@ -93,28 +114,8 @@
   background-color: transparent;
 }
 .Page {
-  /* Metallic gradient bg */
-  background-color: #5b6467;
-  background-image: linear-gradient(315deg, #5b6467 0%, #8b939a 74%);
-
-  /* Full screen */
-  min-height: 100%;
 }
 
-.Avatar {
-  /* Circle & Size */
-  transform: scale(0.85);
-  border-radius: 50%;
-
-  /* Center */
-  margin-left: auto;
-  margin-right: auto;
-  left: 0;
-  right: 0;
-
-  /* Slow zoom-out transition */
-  transition: all 300ms;
-}
 .Avatar-caption {
   /* Size, shape, & color */
   transform: scale(0.8);
@@ -123,6 +124,7 @@
   opacity: 0.6;
   margin-left: auto;
   margin-right: auto;
+  position: static;
 }
 
 .Caption-text {
@@ -130,4 +132,9 @@
   margin: auto;
   padding-left: 30px;
   padding-right: 30px;
+}
+
+.Layout {
+  background-color: #5b6467;
+  background-image: linear-gradient(315deg, #5b6467 0%, #8b939a 74%);
 }

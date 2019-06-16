@@ -20,7 +20,29 @@ import Particles from "react-particles-js";
 function App() {
   return (
     <div className="demo-big-content" style={{ marginBottom: "0" }}>
-      <Layout fixedHeader>
+      <Layout className="Layout" fixedHeader>
+        <Particles
+          className="Particles"
+          params={{
+            particles: {
+              number: {
+                value: 75
+              },
+              size: {
+                value: 3
+              }
+            },
+            interactivity: {
+              events: {
+                onhover: {
+                  enable: true,
+                  mode: "grab"
+                }
+              }
+            }
+          }}
+        />
+
         <Header className="Header-color" title="Dion Olympia">
           <Navigation className="Top-navigation">
             <NavLink className="Nav" to="/">
@@ -49,30 +71,9 @@ function App() {
             <Link to="/contactMe">Contact Me</Link>
           </Navigation>
         </Drawer>
-        <Content>
-          <Particles
-            className="Particles"
-            params={{
-              particles: {
-                number: {
-                  value: 50
-                },
-                size: {
-                  value: 3
-                }
-              },
-              interactivity: {
-                events: {
-                  onhover: {
-                    enable: true,
-                    mode: "grab"
-                  }
-                }
-              }
-            }}
-          />
-          <Main />
-        </Content>
+
+        <Main />
+
         <Footer size="mini" className="Footer">
           <FooterSection type="left" />
         </Footer>
