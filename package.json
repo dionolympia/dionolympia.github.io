@@ -5,6 +5,8 @@
   "homepage": "https://dionolympia.github.io/portfolio/",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.19",
+    "@fortawesome/free-solid-svg-icons": "^5.9.0",
+    "@fortawesome/react-fontawesome": "^0.1.4",
     "@react-pdf/renderer": "^1.6.2",
     "gh-pages": "^2.0.1",
     "react": "^16.8.6",

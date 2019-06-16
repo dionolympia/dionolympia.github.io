@@ -3,6 +3,7 @@ import { Grid, Cell } from "react-mdl";
 
 import Avatar from "./avatar.png";
 import Particles from "react-particles-js";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 class Home extends Component {
   state = {};
@@ -18,7 +19,26 @@ class Home extends Component {
               | Swift
             </p>
             <h1 className="Caption-text" style={{ fontWeight: "bold" }}>
-              ICONS
+              <div className="Social-links">
+                <a href="https://www.github.com/dionolympia" target="_blank">
+                  <i class="fab fa-github" />
+                </a>
+                <a
+                  href="https://www.hackerrank.com/dionolympia"
+                  target="_blank"
+                >
+                  <i class="fab fa-hackerrank" />
+                </a>
+                <a href="https://www.facebook.com/DionOlympia" target="_blank">
+                  <i class="fab fa-facebook-square" />
+                </a>
+                <a
+                  href="https://www.linkedin.com/in/dion-olympia-6b83b1148/"
+                  target="_blank"
+                >
+                  <i class="fab fa-linkedin" />
+                </a>
+              </div>
             </h1>
           </div>
         </div>
