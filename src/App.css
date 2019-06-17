@@ -115,7 +115,7 @@
 
 /* Fullscreen particles */
 .Particles {
-  position: fixed;
+  position: absolute;
   width: 100%;
   height: 100%;
 }
@@ -167,9 +167,6 @@
   background-image: linear-gradient(315deg, #5b6467 0%, #8b939a 74%);
 }
 
-.Page {
-}
-
 .Social-links a {
   padding: 10px;
   color: grey;
@@ -179,4 +176,30 @@
 .Social-links a:hover {
   color: white;
   transition: 1s all;
+}
+
+.Page {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.Section {
+  width: 100%;
+  text-align: center;
+  background-color: white;
+  opacity: 0.6;
+  border-bottom: 1px dashed rgb(0, 0, 0);
+}
+
+.Section ul {
+  text-align: center;
+  display: inline-block;
+  list-style-position: inside;
+}
+
+.Section li {
+  text-align: left;
+}
+.Section h2 {
+  font-weight: bold;
 }

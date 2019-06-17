@@ -1,10 +1,10 @@
 import React, { Component } from "react";
 import { Switch, Route } from "react-router-dom";
-import AboutMe from "./aboutMe";
-import Home from "./home";
-import ContactMe from "./contactMe";
-import Projects from "./projects";
-import Resume from "./resume";
+import AboutMe from "./aboutMe.jsx";
+import Home from "./home.jsx";
+import ContactMe from "./contactMe.jsx";
+import Projects from "./projects.jsx";
+import Resume from "./resume.jsx";
 
 const Main = () => {
   return (

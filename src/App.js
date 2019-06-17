@@ -14,7 +14,7 @@ import {
   Tab
 } from "react-mdl";
 import { Link, NavLink } from "react-router-dom";
-import Main from "./components/main.js";
+import Main from "./components/main.jsx";
 import Particles from "react-particles-js";
 
 function App() {
@@ -71,8 +71,9 @@ function App() {
             <Link to="/contactMe">Contact Me</Link>
           </Navigation>
         </Drawer>
-
-        <Main />
+        <Content>
+          <Main />
+        </Content>
 
         <Footer size="mini" className="Footer">
           <FooterSection type="left" />
