@@ -203,3 +203,6 @@
 .Section h2 {
   font-weight: bold;
 }
+.Project-name {
+  font-style: italic;
+}

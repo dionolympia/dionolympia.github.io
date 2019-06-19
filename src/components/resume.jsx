@@ -71,9 +71,39 @@ class Resume extends Component {
         </div>
         <div className="Section Work-experience">
           <h2>Work-experience</h2>
+
+          <h3>
+            Roy Rogers - Rockville, MD - Crew Member (July 2016 - August 2017)
+          </h3>
+          <ul>
+            <li>
+              Developed strong interpersonal skills by communicating with
+              customers and coworkers
+            </li>
+            <li>
+              Displayed attention to detail by following specific food
+              preparation procedures
+            </li>
+            <li>
+              Demonstrated efficient problem solving in a fast-paced environment
+            </li>
+          </ul>
         </div>
         <div className="Section Volunteer-experience">
           <h2>Volunteer-experience</h2>
+
+          <h3>Paul’s Place, Inc. - Baltimore, MD (March 2016 - April 2016)</h3>
+          <ul>
+            <li>Completed data entry tasks with Microsoft Excel</li>
+            <li>
+              Assisted head-directors with organizing daily programs to provide
+              to guests
+            </li>
+            <li>
+              Contributed to a safe, friendly environment by exhibiting kindness
+              and respect to fellow volunteers and Paul Place guests
+            </li>
+          </ul>
         </div>
       </div>
     );
