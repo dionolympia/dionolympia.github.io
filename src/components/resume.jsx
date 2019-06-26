@@ -3,7 +3,7 @@ class Resume extends Component {
   state = {};
   render() {
     return (
-      <div className="Page">
+      <div className="Resume">
         <div className="Section Header">
           <h1>Dion Olympia</h1>
           <p>
@@ -56,6 +56,11 @@ class Resume extends Component {
               handling
             </li>
           </ul>
+          <h3>Zero Gravity Tetris</h3>
+          <ul>
+            <li>Tile-matching puzzle game based on the original “Tetris” - (https://dionolympia.github.io/ZGTetris)</li>
+            <li>Game logic written in JavaScript and webpage design written in HTML & CSS, utilizing Canvas API</li>
+          </ul>
         </div>
         <div className="Section Skills">
           <h2>Skills</h2>
@@ -72,9 +77,8 @@ class Resume extends Component {
         <div className="Section Work-experience">
           <h2>Work-experience</h2>
 
-          <h3>
-            Roy Rogers - Rockville, MD - Crew Member (July 2016 - August 2017)
-          </h3>
+          <h3>Roy Rogers - Rockville, MD - Crew Member</h3>
+          <h4>(July 2016 - August 2017)</h4>
           <ul>
             <li>
               Developed strong interpersonal skills by communicating with
@@ -92,7 +96,8 @@ class Resume extends Component {
         <div className="Section Volunteer-experience">
           <h2>Volunteer-experience</h2>
 
-          <h3>Paul’s Place, Inc. - Baltimore, MD (March 2016 - April 2016)</h3>
+          <h3>Paul’s Place, Inc. - Baltimore, MD</h3>
+          <h4>(March 2016 - April 2016)</h4>
           <ul>
             <li>Completed data entry tasks with Microsoft Excel</li>
             <li>
