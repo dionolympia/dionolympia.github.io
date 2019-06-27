@@ -61,6 +61,12 @@ class Resume extends Component {
             <li>Tile-matching puzzle game based on the original “Tetris” - (https://dionolympia.github.io/ZGTetris)</li>
             <li>Game logic written in JavaScript and webpage design written in HTML & CSS, utilizing Canvas API</li>
           </ul>
+          <h3>Game of Life Web App</h3>
+          <ul>
+            <li>Collaborative course project implementing Conway's Game of Life as a web application - (https://game-of-life-dion-olympia.herokuapp.com/)</li>
+            <li>Webpages developed in PHP, HTML, & CSS, while game logic written in JavaScript</li>
+          </ul>
+
         </div>
         <div className="Section Skills">
           <h2>Skills</h2>

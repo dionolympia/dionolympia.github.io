@@ -63,7 +63,7 @@
 
 .Avatar {
   /* Circle & Size */
-  transform: scale(0.85);
+  transform: scale(1.25);
   border-radius: 50%;
 
   /* Slow zoom-out transition */
@@ -73,20 +73,20 @@
 
 .Avatar:hover {
   /* Zoom in effect on hover */
-  transform: scale(1);
+  transform: scale(1.5);
   transition: all 300ms;
 
   /* Halo effect */
-  animation: glow 1s linear infinite alternate;
+  /*animation: glow 1s linear infinite alternate;*/
 }
 
 @media (min-width: 1600px) {
   /* Bigger avatar for bigger screens */
   .Avatar:hover {
-    transform: scale(1.5);
+    transform: scale(2.5);
   }
   .Avatar {
-    transform: scale(1.25);
+    transform: scale(2.25);
   }
 }
 
@@ -203,3 +203,107 @@
 .Project-name {
   font-style: italic;
 }
+
+.About-me-container{
+  height:400px;
+  width: 650px;
+  background-color: rgb(255, 255, 255, .6) !important;
+  position: absolute;
+  display:flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items:center;
+  text-align:center;
+  border-radius: 25px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding-left:20px;
+  padding-right: 20px;
+  overflow: hidden;
+}
+
+
+.Greeting{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.Contact-me-container{
+  height:400px;
+  width: 650px;
+  position: absolute;
+  background-color: rgb(255, 255, 255, .6) !important;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items:center;
+  text-align:center;
+  border-radius: 25px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding-left:20px;
+  padding-right: 20px;
+}
+
+.Communication{
+  display:flex;
+  flex-direction:row;
+  justify-content:space-evenly;
+}
+
+.Phone{
+  margin-left: 50px;
+  margin-right: 50px;
+}
+.Email{
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+@media (max-width: 610px){
+
+  .About-me-container{
+    position: static;
+    transform: translate(0, 0);
+    top:auto;
+    left: auto;
+    flex-direction: column;
+    width: 90%;
+    height: 100%;
+    margin: auto;
+    background-color: rgba(255, 255, 255, .6) !important;
+    
+  } 
+  .About-me-container h3{
+    font-size: 20px;
+  }
+
+  .About-me-container p{
+    font-size: 10px;
+  }
+
+  .Contact-me-container{
+    position: static;
+    transform: translate(0, 0);
+    top:auto;
+    left: auto;
+    flex-direction: column;
+    width: 90%;
+    height: 100%;
+    margin: auto;
+    background-color: rgba(255, 255, 255, .6) !important;
+    
+  } 
+  .Contact-me-container h1{
+    font-size: 30px;
+  }
+  .Communication{
+    flex-direction:column;
+  }
+  
+}
+

@@ -43,7 +43,7 @@ function App() {
           }}
         />
 
-        <Header className="Header-color" title="Dion Olympia">
+        <Header className="Header-color" invisibleTitle="Dion Olympia">
           <Navigation className="Top-navigation">
             <NavLink className="Nav" to="/">
               Home
@@ -62,7 +62,7 @@ function App() {
             </NavLink>
           </Navigation>
         </Header>
-        <Drawer title="Portfolio">
+        <Drawer title="Dion Olympia">
           <Navigation>
             <Link to="/">Home</Link>
             <Link to="/aboutMe">About Me</Link>
