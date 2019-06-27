@@ -59,6 +59,21 @@
   .Top-navigation {
     display: none !important;
   }
+  .Home{
+    height:100;
+    position:absolute;
+    justify-content:center;
+  }
+  .Home #Dion-Olympia{
+    font-size: 40px;
+  }
+  .Home #Software-Developer{
+    font-size: 20px;
+  }
+
+  .Home .Avatar{
+    transform: scale(1);
+  }
 }
 
 .Avatar {
@@ -89,6 +104,35 @@
     transform: scale(2.25);
   }
 }
+
+
+@media (max-width: 610px) {
+  /* Hide Links (Top Navigation) when screen is too small */
+  .Top-navigation {
+    display: none !important;
+  }
+  .Home{
+    height:100;
+    position:absolute;
+  }
+  .Home #Dion-Olympia{
+    font-size: 40px;
+  }
+  .Home #Software-Developer{
+    font-size: 20px;
+  }
+
+  .Home .Avatar{
+    transform: scale(1.15);
+  }
+
+  .Home .Avatar:hover{
+    transform: scale(1.25);
+  }
+
+
+}
+
 
 /* Glow effect */
 @keyframes glow {
@@ -176,8 +220,8 @@
 .Resume {
   display: flex;
   flex-wrap: wrap;
-  margin-left: 20%;
-  margin-right: 20%;
+  margin-left: 10%;
+  margin-right: 10%;
 }
 
 .Section {

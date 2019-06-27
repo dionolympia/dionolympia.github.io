@@ -12,7 +12,7 @@ class Resume extends Component {
           </p>
         </div>
         <div className="Section Education">
-          <h2>Education</h2>
+          <h5><strong>Education</strong></h5>
           <p>
             University of Maryland, Baltimore County - Baltimore, MD (Expected:
             December 2019)
@@ -20,8 +20,8 @@ class Resume extends Component {
           <p>B.S. Computer Science - GPA 3.026/4.0</p>
         </div>
         <div className="Section Projects">
-          <h2>Projects</h2>
-          <h3>Portfolio Website</h3>
+          <h5><strong>Projects</strong></h5>
+          <h6>Portfolio Website</h6>
           <ul>
             <li>
               Personal portfolio created with React -
@@ -32,7 +32,7 @@ class Resume extends Component {
               Worked with React Bootstrap, React Router V4, & Material Lite UI
             </li>
           </ul>
-          <h3>Mountainside Wanderer</h3>
+          <h6>Mountainside Wanderer</h6>
           <ul>
             <li>2D side-scroller, adventure iOS game developed in Unity</li>
             <li>
@@ -44,7 +44,7 @@ class Resume extends Component {
               Photoshop & Piskel
             </li>
           </ul>
-          <h3>“Ben 10” Battle</h3>
+          <h6>“Ben 10” Battle</h6>
           <ul>
             <li>
               Text-based fighting simulation game that used characters from “Ben
@@ -56,20 +56,20 @@ class Resume extends Component {
               handling
             </li>
           </ul>
-          <h3>Zero Gravity Tetris</h3>
+          <h6>Zero Gravity Tetris</h6>
           <ul>
             <li>Tile-matching puzzle game based on the original “Tetris” - (https://dionolympia.github.io/ZGTetris)</li>
             <li>Game logic written in JavaScript and webpage design written in HTML & CSS, utilizing Canvas API</li>
           </ul>
-          <h3>Game of Life Web App</h3>
+          <h6>Game of Life Web App</h6>
           <ul>
-            <li>Collaborative course project implementing Conway's Game of Life as a web application - (https://game-of-life-dion-olympia.herokuapp.com/)</li>
+            <li>Collaborative course project implementing Conway's Game of Life as a web application <br></br>  - (https://game-of-life-dion-olympia.herokuapp.com/)</li>
             <li>Webpages developed in PHP, HTML, & CSS, while game logic written in JavaScript</li>
           </ul>
 
         </div>
         <div className="Section Skills">
-          <h2>Skills</h2>
+          <h5><strong>Skills</strong></h5>
           <ul>
             <li>Proficient in C++, C#, JavaScript, HTML, CSS, Python</li>
             <li>
@@ -81,10 +81,10 @@ class Resume extends Component {
           </ul>
         </div>
         <div className="Section Work-experience">
-          <h2>Work-experience</h2>
+          <h5><strong>Work-experience</strong></h5>
 
-          <h3>Roy Rogers - Rockville, MD - Crew Member</h3>
-          <h4>(July 2016 - August 2017)</h4>
+          <h6>Roy Rogers - Rockville, MD - Crew Member</h6>
+          <h6>(July 2016 - August 2017)</h6>
           <ul>
             <li>
               Developed strong interpersonal skills by communicating with
@@ -100,10 +100,10 @@ class Resume extends Component {
           </ul>
         </div>
         <div className="Section Volunteer-experience">
-          <h2>Volunteer-experience</h2>
+          <h5><strong>Volunteer-experience</strong></h5>
 
-          <h3>Paul’s Place, Inc. - Baltimore, MD</h3>
-          <h4>(March 2016 - April 2016)</h4>
+          <h6>Paul’s Place, Inc. - Baltimore, MD</h6>
+          <h6>(March 2016 - April 2016)</h6>
           <ul>
             <li>Completed data entry tasks with Microsoft Excel</li>
             <li>

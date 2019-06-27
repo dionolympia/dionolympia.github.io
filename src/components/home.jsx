@@ -14,9 +14,9 @@ class Home extends Component {
           
           <div className="Bottom">
             <div className="Avatar-caption">
-              <h1 className="Caption-text"><strong>Dion Olympia</strong></h1>
+              <h1 id="Dion-Olympia" className="Caption-text"><strong>Dion Olympia</strong></h1>
               <p className = "Caption-text">__________________________________</p>
-              <h3 style={{fontFamily: "'Poppins' ,sans-serif"}}className="Caption-text">Software Developer</h3>
+              <h3 id="Software-Developer"style={{fontFamily: "'Poppins' ,sans-serif"}}className="Caption-text">Software Developer</h3>
               <p className="Caption-text">
                 HTML | CSS | JavaScript | C++ | C# | Python | Java | React | MySQL
                 | Swift
