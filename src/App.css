@@ -54,28 +54,6 @@
   align-items: center;
 }
 
-@media (max-width: 610px) {
-  /* Hide Links (Top Navigation) when screen is too small */
-  .Top-navigation {
-    display: none !important;
-  }
-  .Home{
-    height:100;
-    position:absolute;
-    justify-content:center;
-  }
-  .Home #Dion-Olympia{
-    font-size: 40px;
-  }
-  .Home #Software-Developer{
-    font-size: 20px;
-  }
-
-  .Home .Avatar{
-    transform: scale(1);
-  }
-}
-
 .Avatar {
   /* Circle & Size */
   transform: scale(1.25);
@@ -127,7 +105,7 @@
   }
 
   .Home .Avatar:hover{
-    transform: scale(1.25);
+    transform: scale(1.15);
   }
 
 
