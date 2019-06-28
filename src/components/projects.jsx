@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { Tabs, Tab, Grid, Cell, Card, CardTitle, CardText, CardActions, Button} from "react-mdl";
+import Avatar from "./pixel.png";
 
 class Projects extends React.Component {
   constructor(props) {
@@ -13,7 +14,7 @@ class Projects extends React.Component {
         <Grid>
           <Cell col={6}>
               <Card shadow={0} style={{width: '320px', height: '320px', margin: 'auto'}}>
-                <CardTitle expand style={{color: '#fff', background: 'url(http://www.getmdl.io/assets/demos/dog.png) bottom right 15% no-repeat #46B6AC'}}>Personal Portfolio</CardTitle>
+                <CardTitle expand style={{color: '#fff', background: 'url(https://dionolympia.github.io/portfolio/icon.png) no-repeat '}}>Personal Portfolio</CardTitle>
                 <CardText>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                     Aenan convallis.
