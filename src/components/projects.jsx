@@ -87,7 +87,7 @@ class Projects extends React.Component {
           </Cell>
           <Cell col={4}>
               <Card shadow={0} style={{width: '320px', height: '320px', margin: 'auto'}}>
-                <CardTitle expand style={{color: '#fff', background: 'url(https://dionolympia.github.io/portfolio/project-images/port.png) center / cover '}}>Game of Life</CardTitle>
+                <CardTitle expand style={{color: '#fff', background: 'url(https://dionolympia.github.io/portfolio/project-images/life.png) center / cover '}}>Game of Life</CardTitle>
                 <CardText>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                     Aenan convallis.
