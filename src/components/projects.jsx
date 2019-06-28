@@ -14,25 +14,25 @@ class Projects extends React.Component {
         <Grid>
           <Cell col={6}>
               <Card shadow={0} style={{width: '320px', height: '320px', margin: 'auto'}}>
-                <CardTitle expand style={{color: '#fff', background: 'url(https://dionolympia.github.io/portfolio/project-images/port.png) center / cover '}}>Personal Portfolio</CardTitle>
+                <CardTitle expand style={{color: '#fff', background: 'url(https://dionolympia.github.io/portfolio/project-images/port.png) center'}}>Personal Portfolio</CardTitle>
                 <CardText>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Aenan convallis.
+                  Personal Portfolio website made with React.  Implemented with React Bootstrap, React Router V4, & Material Lite UI.
                 </CardText>
                 <CardActions border>
-                    <Button colored>View Updates</Button>
+                    <Button colored>Website</Button>
+                    <Button colored>Github</Button>
                 </CardActions>
               </Card>
           </Cell>
           <Cell col={6}>
               <Card shadow={0} style={{width: '320px', height: '320px', margin: 'auto'}}>
-                <CardTitle expand style={{color: '#000', background: 'url(https://dionolympia.github.io/portfolio/project-images/count.png) center / cover '}}>Counter</CardTitle>
+                <CardTitle expand style={{color: '#000', background: 'url(https://dionolympia.github.io/portfolio/project-images/count.png) center 65% '}}>Counters</CardTitle>
                 <CardText>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Aenan convallis.
+                    Basic counter web app created to practice basic concepts in React including: JSX, Rendering to the DOM, & Handling Events
                 </CardText>
                 <CardActions border>
-                    <Button colored>View Updates</Button>
+                    <Button colored>Website</Button>
+                    <Button colored>Github</Button>
                 </CardActions>
               </Card>
           </Cell>
@@ -47,11 +47,11 @@ class Projects extends React.Component {
               <Card shadow={0} style={{width: '320px', height: '320px', margin: 'auto'}}>
                 <CardTitle expand style={{color: '#fff', background: 'url(https://dionolympia.github.io/portfolio/project-images/wander.png) center / cover '}}>Mountainside Wanderer</CardTitle>
                 <CardText>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Aenan convallis.
+                  2D side-scroller, adventure iOS game developed in Unity.
                 </CardText>
                 <CardActions border>
-                    <Button colored>View Updates</Button>
+                    <Button colored>Website</Button>
+                    <Button colored>Github</Button>
                 </CardActions>
               </Card>
           </Cell>
@@ -59,11 +59,11 @@ class Projects extends React.Component {
               <Card shadow={0} style={{width: '320px', height: '320px', margin: 'auto'}}>
                 <CardTitle expand style={{color: '#000', background: 'url(https://dionolympia.github.io/portfolio/project-images/flap.png) center / cover '}}>FlapGoesTheBirdie</CardTitle>
                 <CardText>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Aenan convallis.
+                    Side-scroller arcade iOS game based on "Flappy Bird" with an added twist.
                 </CardText>
                 <CardActions border>
-                    <Button colored>View Updates</Button>
+                    <Button colored>Website</Button>
+                    <Button colored>Github</Button>
                 </CardActions>
               </Card>
           </Cell>
@@ -77,23 +77,24 @@ class Projects extends React.Component {
               <Card shadow={0} style={{width: '320px', height: '320px', margin: 'auto'}}>
                 <CardTitle expand style={{color: '#fff', background: 'url(https://dionolympia.github.io/portfolio/project-images/tetris.png) center / cover '}}>Zero Gravity Tetris</CardTitle>
                 <CardText>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Aenan convallis.
+                    
                 </CardText>
                 <CardActions border>
-                    <Button colored>View Updates</Button>
+                    <Button colored>Website</Button>
+                    <Button colored>Github</Button>
                 </CardActions>
               </Card>
           </Cell>
           <Cell col={4}>
               <Card shadow={0} style={{width: '320px', height: '320px', margin: 'auto'}}>
-                <CardTitle expand style={{color: '#fff', background: 'url(https://dionolympia.github.io/portfolio/project-images/life.png) center / cover '}}>Game of Life</CardTitle>
+                <CardTitle expand style={{color: '#000', background: 'url(https://dionolympia.github.io/portfolio/project-images/life.png) center / cover'}}>Game of Life</CardTitle>
                 <CardText>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                     Aenan convallis.
                 </CardText>
                 <CardActions border>
-                    <Button colored>View Updates</Button>
+                    <Button colored>Website</Button>
+                    <Button colored>Github</Button>
                 </CardActions>
               </Card>
           </Cell>
@@ -105,7 +106,7 @@ class Projects extends React.Component {
                     Aenan convallis.
                 </CardText>
                 <CardActions border>
-                    <Button colored>View Updates</Button>
+                    <Button colored>Github</Button>
                 </CardActions>
               </Card>
           </Cell>
