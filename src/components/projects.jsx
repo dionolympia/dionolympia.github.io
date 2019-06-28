@@ -14,7 +14,7 @@ class Projects extends React.Component {
         <Grid>
           <Cell col={6}>
               <Card shadow={0} style={{width: '320px', height: '320px', margin: 'auto'}}>
-                <CardTitle expand style={{color: '#fff', background: 'url(https://dionolympia.github.io/portfolio/icon.png) no-repeat '}}>Personal Portfolio</CardTitle>
+                <CardTitle expand style={{color: '#fff', background: 'url(https://dionolympia.github.io/portfolio/project-images/port.png) center / cover '}}>Personal Portfolio</CardTitle>
                 <CardText>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                     Aenan convallis.
@@ -26,7 +26,7 @@ class Projects extends React.Component {
           </Cell>
           <Cell col={6}>
               <Card shadow={0} style={{width: '320px', height: '320px', margin: 'auto'}}>
-                <CardTitle expand style={{color: '#fff', background: 'url(http://www.getmdl.io/assets/demos/dog.png) bottom right 15% no-repeat #46B6AC'}}>Counter</CardTitle>
+                <CardTitle expand style={{color: '#000', background: 'url(https://dionolympia.github.io/portfolio/project-images/count.png) center / cover '}}>Counter</CardTitle>
                 <CardText>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                     Aenan convallis.
@@ -45,7 +45,7 @@ class Projects extends React.Component {
         <Grid>
           <Cell col={6}>
               <Card shadow={0} style={{width: '320px', height: '320px', margin: 'auto'}}>
-                <CardTitle expand style={{color: '#fff', background: 'url(http://www.getmdl.io/assets/demos/dog.png) bottom right 15% no-repeat #46B6AC'}}>Mountainside Wanderer</CardTitle>
+                <CardTitle expand style={{color: '#fff', background: 'url(https://dionolympia.github.io/portfolio/project-images/wander.png) center / cover '}}>Mountainside Wanderer</CardTitle>
                 <CardText>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                     Aenan convallis.
@@ -57,7 +57,7 @@ class Projects extends React.Component {
           </Cell>
           <Cell col={6}>
               <Card shadow={0} style={{width: '320px', height: '320px', margin: 'auto'}}>
-                <CardTitle expand style={{color: '#fff', background: 'url(http://www.getmdl.io/assets/demos/dog.png) bottom right 15% no-repeat #46B6AC'}}>FlapGoesTheBirdie</CardTitle>
+                <CardTitle expand style={{color: '#000', background: 'url(https://dionolympia.github.io/portfolio/project-images/flap.png) center / cover '}}>FlapGoesTheBirdie</CardTitle>
                 <CardText>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                     Aenan convallis.
@@ -75,7 +75,7 @@ class Projects extends React.Component {
         <Grid>
           <Cell col={4}>
               <Card shadow={0} style={{width: '320px', height: '320px', margin: 'auto'}}>
-                <CardTitle expand style={{color: '#fff', background: 'url(http://www.getmdl.io/assets/demos/dog.png) bottom right 15% no-repeat #46B6AC'}}>Zero Gravity Tetris</CardTitle>
+                <CardTitle expand style={{color: '#fff', background: 'url(https://dionolympia.github.io/portfolio/project-images/tetris.png) center / cover '}}>Zero Gravity Tetris</CardTitle>
                 <CardText>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                     Aenan convallis.
@@ -87,7 +87,7 @@ class Projects extends React.Component {
           </Cell>
           <Cell col={4}>
               <Card shadow={0} style={{width: '320px', height: '320px', margin: 'auto'}}>
-                <CardTitle expand style={{color: '#fff', background: 'url(http://www.getmdl.io/assets/demos/dog.png) bottom right 15% no-repeat #46B6AC'}}>Game of Life</CardTitle>
+                <CardTitle expand style={{color: '#fff', background: 'url(https://dionolympia.github.io/portfolio/project-images/port.png) center / cover '}}>Game of Life</CardTitle>
                 <CardText>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                     Aenan convallis.
@@ -99,7 +99,7 @@ class Projects extends React.Component {
           </Cell>
           <Cell col={4}>
               <Card shadow={0} style={{width: '320px', height: '320px', margin: 'auto'}}>
-                <CardTitle expand style={{color: '#fff', background: 'url(http://www.getmdl.io/assets/demos/dog.png) bottom right 15% no-repeat #46B6AC'}}>Ben 10 Battle</CardTitle>
+                <CardTitle expand style={{color: '#fff', background: 'url(https://dionolympia.github.io/portfolio/project-images/ben.png) center / cover '}}>Ben 10 Battle</CardTitle>
                 <CardText>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                     Aenan convallis.
