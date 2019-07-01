@@ -12,7 +12,7 @@ class Projects extends React.Component {
     if (this.state.activeTab == 0) {
       return(
         <Grid>
-          <Cell col={6}>
+          <Cell col={12}>
               <Card shadow={0} style={{width: '320px', height: '320px', margin: 'auto'}}>
                 <CardTitle expand style={{color: '#fff', background: 'url(https://dionolympia.github.io/portfolio/project-images/port.png) center'}}>Personal Portfolio</CardTitle>
                 <CardText>
@@ -24,7 +24,7 @@ class Projects extends React.Component {
                 </CardActions>
               </Card>
           </Cell>
-          <Cell col={6}>
+          <Cell col={12}>
               <Card shadow={0} style={{width: '320px', height: '320px', margin: 'auto'}}>
                 <CardTitle expand style={{color: '#000', background: 'url(https://dionolympia.github.io/portfolio/project-images/count.png) center 65% '}}>Counters</CardTitle>
                 <CardText>
@@ -43,7 +43,7 @@ class Projects extends React.Component {
     if (this.state.activeTab == 1) {
       return (
         <Grid>
-          <Cell col={6}>
+          <Cell col={12}>
               <Card shadow={0} style={{width: '320px', height: '320px', margin: 'auto'}}>
                 <CardTitle expand style={{color: '#fff', background: 'url(https://dionolympia.github.io/portfolio/project-images/wander.png) center / cover '}}>Mountainside Wanderer</CardTitle>
                 <CardText>
@@ -55,7 +55,7 @@ class Projects extends React.Component {
                 </CardActions>
               </Card>
           </Cell>
-          <Cell col={6}>
+          <Cell col={12}>
               <Card shadow={0} style={{width: '320px', height: '320px', margin: 'auto'}}>
                 <CardTitle expand style={{color: '#000', background: 'url(https://dionolympia.github.io/portfolio/project-images/flap.png) center / cover '}}>FlapGoesTheBirdie</CardTitle>
                 <CardText>
@@ -72,7 +72,7 @@ class Projects extends React.Component {
     if (this.state.activeTab == 2) {
       return (
         <Grid>
-          <Cell col={4}>
+          <Cell col={12}>
               <Card shadow={0} style={{width: '320px', height: '320px', margin: 'auto'}}>
                 <CardTitle expand style={{color: '#fff', background: 'url(https://dionolympia.github.io/portfolio/project-images/tetris.png) center / cover '}}>Zero Gravity Tetris</CardTitle>
                 <CardText>
@@ -86,7 +86,7 @@ class Projects extends React.Component {
                 </CardActions>
               </Card>
           </Cell>
-          <Cell col={4}>
+          <Cell col={12}>
               <Card shadow={0} style={{width: '320px', height: '320px', margin: 'auto'}}>
                 <CardTitle expand style={{color: '#000', background: 'url(https://dionolympia.github.io/portfolio/project-images/life.png) center / cover'}}>Game of Life</CardTitle>
                 <CardText>
@@ -99,7 +99,7 @@ class Projects extends React.Component {
                 </CardActions>
               </Card>
           </Cell>
-          <Cell col={4}>
+          <Cell col={12}>
               <Card shadow={0} style={{width: '320px', height: '320px', margin: 'auto'}}>
                 <CardTitle expand style={{color: '#fff', background: 'url(https://dionolympia.github.io/portfolio/project-images/ben.png) center / cover '}}>Ben 10 Battle</CardTitle>
                 <CardText>
