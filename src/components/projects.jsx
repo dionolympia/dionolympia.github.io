@@ -50,8 +50,8 @@ class Projects extends React.Component {
                   2D side-scroller, adventure iOS game developed in Unity.
                 </CardText>
                 <CardActions border>
-                    <Button style={{color: "#000"}} target="_blank" href="https://github.com/dionolympia/counter" colored>Website</Button>
-                    <Button style={{color: "#000"}} target="_blank" href="https://github.com/dionolympia/counter" colored>Github</Button>
+                    <Button style={{color: "#000"}} target="_blank" href="https://dionolympia.github.io/mountainside-wanderer/index.html" colored>Website</Button>
+                    <Button style={{color: "#000"}} target="_blank" href="https://github.com/dionolympia/mountainside-wanderer" colored>Github</Button>
                 </CardActions>
               </Card>
           </Cell>
