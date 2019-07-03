@@ -50,7 +50,7 @@ class Projects extends React.Component {
                   2D side-scroller, adventure iOS game developed in Unity.
                 </CardText>
                 <CardActions border>
-                    <Button style={{color: "#000"}} target="_blank" href="https://dionolympia.github.io/mountainside-wanderer/index.html" colored>Website</Button>
+                    <Button style={{color: "#000"}} target="_blank" href="https://dionolympia.github.io/mountainside-wanderer" colored>Website</Button>
                     <Button style={{color: "#000"}} target="_blank" href="https://github.com/dionolympia/mountainside-wanderer" colored>Github</Button>
                 </CardActions>
               </Card>
@@ -62,6 +62,7 @@ class Projects extends React.Component {
                     Side-scroller arcade iOS game based on "Flappy Bird" with an added twist.
                 </CardText>
                 <CardActions border>
+                    <Button style={{color: "#000"}} target="_blank" href="https://dionolympia.github.io/flapgoesthebirdie" colored>Website</Button>
                     <Button style={{color: "#000"}} target="_blank" href="https://github.com/dionolympia/flapgoesthebirdie" colored>Github</Button>
                 </CardActions>
               </Card>
