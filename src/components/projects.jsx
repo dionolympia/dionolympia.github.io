@@ -59,7 +59,7 @@ class Projects extends React.Component {
               <Card shadow={0} style={{width: '320px', height: '320px', margin: 'auto'}}>
                 <CardTitle expand style={{color: '#000', background: 'url(https://dionolympia.github.io/portfolio/project-images/flap.png) center / cover '}}>FlapGoesTheBirdie</CardTitle>
                 <CardText>
-                    Side-scroller arcade iOS game based on "Flappy Bird" with an added twist.
+                    Side-scroller arcade iOS game based on "Flappy Bird".
                 </CardText>
                 <CardActions border>
                     <Button style={{color: "#000"}} target="_blank" href="https://dionolympia.github.io/flapgoesthebirdie" colored>Website</Button>
