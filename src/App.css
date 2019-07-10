@@ -51,7 +51,8 @@
 
   /* Center Items Vertically */
   justify-content: space-evenly;
-  align-items: center;
+
+  position: absolute;
 }
 
 .Avatar {
@@ -73,26 +74,20 @@
   /*animation: glow 1s linear infinite alternate;*/
 }
 
-@media (min-width: 1600px) {
-  /* Bigger avatar for bigger screens */
-  .Avatar:hover {
-    transform: scale(2.5);
-  }
-  .Avatar {
-    transform: scale(2.25);
-  }
-}
 
+
+.Avatar-caption {
+  /* Size, shape, & color */
+  background-color: white;
+  opacity: 0.6;
+}
 
 @media (max-width: 610px) {
   /* Hide Links (Top Navigation) when screen is too small */
   .Top-navigation {
     display: none !important;
   }
-  .Home{
-    height:100;
-    position:absolute;
-  }
+
   .Home #Dion-Olympia{
     font-size: 40px;
   }
@@ -108,9 +103,48 @@
     transform: scale(1.15);
   }
 
+  .Avatar-caption {
+    /* Size, shape, & color */
+    background-color: white;
+    opacity: 0.6;
+  }
 
 }
 
+
+
+@media (min-width: 1000px) {
+  /* Bigger avatar for bigger screens */
+  .Avatar:hover {
+    transform: scale(2);
+  }
+  .Avatar {
+    transform: scale(1.75);
+  }
+
+  .Avatar-caption {
+    /* Size, shape, & color */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #line{
+    display:none;
+  }
+
+}
+
+@media (min-width: 1600px){
+  .Avatar:hover {
+    transform: scale(2.5);
+  }
+  .Avatar {
+    transform: scale(2.25);
+  }
+
+}
 
 /* Glow effect */
 @keyframes glow {
@@ -150,22 +184,15 @@
   background-color: #bdcad9;
   background-image: linear-gradient(315deg, #bdcad9 0%, #e1dada 74%);
 }
+
 .mdl-layout__drawer-button {
   /* Invisible */
   background-color: transparent;
 }
 
-.Avatar-caption {
-  /* Size, shape, & color */
-  transform: scale(0.8);
-  background-color: black;
-  border-radius: 40px;
-  opacity: 0.6;
-}
-
 /* White colored avatar caption */
 .Caption-text {
-  color: white;
+  color: black;
   margin: auto;
 
   /* Extend caption horizontally */
@@ -179,6 +206,11 @@
   background-image: linear-gradient(315deg, #5b6467 0%, #8b939a 74%);
 }
 
+.Social-links{
+  background-color: white;
+  opacity: 0.6;
+}
+
 .Social-links a {
   padding: 10px;
   color: grey;
@@ -186,8 +218,14 @@
 }
 
 .Social-links a:hover {
-  color: white;
+  color: black;
   transition: 1s all;
+}
+
+i{
+  padding-top: 10px;
+  font-size: 60px;
+  padding-bottom: 10px;
 }
 
 .Page {
@@ -244,7 +282,6 @@
   padding-right: 20px;
   overflow: hidden;
 }
-
 
 .Greeting{
   display:flex;
@@ -326,7 +363,6 @@
   .Communication{
     flex-direction:column;
   }
-  
 }
 
 .React-projects{
@@ -335,4 +371,8 @@
   width: 100%;
   height: 100%;
   justify-content: center;
+}
+
+#Dion-Olympia{
+  font-family: 'Parisienne', cursive;
 }

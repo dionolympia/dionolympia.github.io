@@ -14,8 +14,8 @@ class AboutMe extends Component {
             
             <div className="Right">
               <div className="Greeting">
-                <h3 style={{ textAlign: "center", marginLeft: "10px"}}>
-                  Hi there! My name is <strong>Dion Olympia</strong>
+                <h3 style={{ color: "grey", textAlign: "center", marginLeft: "10px"}}>
+                  Hi there! My name is <strong style={{ color: "black"}}>Dion Olympia</strong>
                 </h3>
               </div>
               
