@@ -1,3 +1,7 @@
+html, body{
+  height: 100%;
+}
+
 /* Default App Styling */
 
 .App {
@@ -57,17 +61,14 @@
 
 .Avatar {
   /* Circle & Size */
-  transform: scale(1.25);
   border-radius: 50%;
 
   /* Slow zoom-out transition */
   transition: all 300ms;
-  position: static;
 }
 
 .Avatar:hover {
   /* Zoom in effect on hover */
-  transform: scale(1.5);
   transition: all 300ms;
 
   /* Halo effect */
@@ -82,10 +83,41 @@
   opacity: 0.6;
 }
 
-@media (max-width: 610px) {
+
+.Resume {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.About-me-container{
+  height:400px;
+  width: 620px;
+  background-color: rgb(255, 255, 255, .6) !important;
+  position: absolute;
+  display:flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items:center;
+  text-align:center;
+  border-radius: 25px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding-left:20px;
+  padding-right: 20px;
+  overflow: hidden;
+}
+
+@media (max-width: 640px) {
   /* Hide Links (Top Navigation) when screen is too small */
   .Top-navigation {
     display: none !important;
+  }
+
+  .Home{
+    justify-content: flex-start;
   }
 
   .Home #Dion-Olympia{
@@ -96,11 +128,11 @@
   }
 
   .Home .Avatar{
-    transform: scale(1.15);
+    transform: scale(.8);
   }
 
   .Home .Avatar:hover{
-    transform: scale(1.15);
+    transform: scale(.8);
   }
 
   .Avatar-caption {
@@ -109,17 +141,22 @@
     opacity: 0.6;
   }
 
+  .Resume {
+    margin-left: 0%;
+    margin-right: 0%;
+  }
+
 }
 
 
 
-@media (min-width: 1000px) {
+@media (min-width: 641px) {
   /* Bigger avatar for bigger screens */
   .Avatar:hover {
-    transform: scale(1.75);
+    transform: scale(.9);
   }
   .Avatar {
-    transform: scale(1.5);
+    transform: scale(.8);
   }
 
   .Avatar-caption {
@@ -136,14 +173,28 @@
 
 }
 
-@media (min-width: 1600px){
+@media (min-width: 1001px){
   .Avatar:hover {
-    transform: scale(2.5);
+    transform: scale(1.1);
   }
   .Avatar {
-    transform: scale(2.25);
+    transform: scale(1);
   }
 
+  .About-me-container{
+    width: 1000px;
+  }
+
+}
+
+@media (min-width: 1500px){
+  .Avatar:hover {
+    transform: scale(1.4);
+  }
+  .Avatar {
+    transform: scale(1.25);
+  }
+  
 }
 
 /* Glow effect */
@@ -233,12 +284,6 @@ i{
   flex-wrap: wrap;
 }
 
-.Resume {
-  display: flex;
-  flex-wrap: wrap;
-  margin-left: 10%;
-  margin-right: 10%;
-}
 
 .Section {
   width: 100%;
@@ -264,24 +309,7 @@ i{
   font-style: italic;
 }
 
-.About-me-container{
-  height:400px;
-  width: 650px;
-  background-color: rgb(255, 255, 255, .6) !important;
-  position: absolute;
-  display:flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items:center;
-  text-align:center;
-  border-radius: 25px;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  padding-left:20px;
-  padding-right: 20px;
-  overflow: hidden;
-}
+
 
 .Greeting{
   display:flex;
