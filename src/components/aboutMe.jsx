@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import Avatar from "./avatar.png";
+import Avatar from "./pixel.png";
 
 class AboutMe extends Component {
   state = {};

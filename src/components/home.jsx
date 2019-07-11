@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 
-import Avatar from "./pixel.png";
+import Avatar from "./avatar.png";
 
 class Home extends Component {
   state = {};
