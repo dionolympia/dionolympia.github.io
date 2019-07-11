@@ -101,7 +101,7 @@ html, body{
   justify-content: center;
   align-items:center;
   text-align:center;
-  border-radius: 25px;
+  border-radius: 100px;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -344,7 +344,7 @@ i{
 
 .Contact-me-container{
   height:400px;
-  width: 650px;
+  width: 100%;
   position: absolute;
   background-color: rgb(255, 255, 255, .6) !important;
   display:flex;
@@ -362,18 +362,17 @@ i{
 }
 
 .Communication{
+  width: 100%;
   display:flex;
   flex-direction:row;
   justify-content:space-evenly;
 }
 
 .Phone{
-  margin-left: 50px;
-  margin-right: 50px;
+
 }
 .Email{
-  margin-left: 50px;
-  margin-right: 50px;
+
 }
 
 @media (max-width: 610px){

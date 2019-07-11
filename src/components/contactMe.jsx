@@ -4,7 +4,7 @@ class ContactMe extends Component {
   render() {
     return <div className="Contact-me-container">
       <h1 style={{fontFamily: "'Poppins' ,sans-serif"}}>Have any questions or want to contact me?</h1>
-      <p>Feel free to reach out to me! </p>
+      <p style={{fontSize: "20px"}}>Feel free to reach out to me! </p>
 
       <div className="Communication">
         <div className="Phone">
