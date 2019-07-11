@@ -116,10 +116,10 @@
 @media (min-width: 1000px) {
   /* Bigger avatar for bigger screens */
   .Avatar:hover {
-    transform: scale(2);
+    transform: scale(1.75);
   }
   .Avatar {
-    transform: scale(1.75);
+    transform: scale(1.5);
   }
 
   .Avatar-caption {
@@ -166,9 +166,9 @@
 
 /* Fullscreen particles */
 .Particles {
-  position: absolute;
   width: 100%;
   height: 100%;
+  position:absolute;
 }
 
 /* Invisible drawer button */
