@@ -11,31 +11,37 @@ class Home extends Component {
           <div className="Top">
             <img className="Avatar" alt="Avatar" src={Avatar} />
           </div>
-          
+
           <div className="Bottom">
             <div className="Avatar-caption">
               <div>
-                <h1 id="Dion-Olympia" className="Caption-text"><strong>Dion Olympia</strong></h1>
+                <h1 id="Dion-Olympia" className="Caption-text">
+                  <strong>Dion Olympia</strong>
+                </h1>
               </div>
               <div>
-                  <p id="line" className = "Caption-text">__________________________________</p>
-                  <h3 id="Software-Developer"style={{fontFamily: "'Poppins' ,sans-serif"}}className="Caption-text">Software Developer</h3>
-                  <p className="Caption-text">
-                    HTML | CSS | JavaScript | C++ | C# | Python | Java | React | MySQL
-                    | Swift
-                  </p>
-                  <h1 className="Caption-text" style={{ fontWeight: "bold" }}>
-                  </h1>
+                <p id="line" className="Caption-text">
+                  __________________________________
+                </p>
+                <h3
+                  id="Software-Developer"
+                  style={{ fontFamily: "'Poppins' ,sans-serif" }}
+                  className="Caption-text"
+                >
+                  Software Developer
+                </h3>
+                <p className="Caption-text">
+                  HTML | CSS | JavaScript | C++ | C# | Python | Java | React |
+                  MySQL | Swift
+                </p>
+                <h1 className="Caption-text" style={{ fontWeight: "bold" }} />
               </div>
             </div>
             <div className="Social-links">
               <a href="https://www.github.com/dionolympia" target="_blank">
                 <i class="fab fa-github" />
               </a>
-              <a
-                href="https://www.hackerrank.com/dionolympia"
-                target="_blank"
-              >
+              <a href="https://www.hackerrank.com/dionolympia" target="_blank">
                 <i class="fab fa-hackerrank" />
               </a>
               <a href="https://www.facebook.com/DionOlympia" target="_blank">

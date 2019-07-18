@@ -7,11 +7,7 @@ import {
   Drawer,
   Content,
   Footer,
-  FooterSection,
-  FooterLinkList,
-  HeaderRow,
-  HeaderTabs,
-  Tab
+  FooterSection
 } from "react-mdl";
 import { Link, NavLink } from "react-router-dom";
 import Main from "./components/main.jsx";
@@ -21,8 +17,6 @@ function App() {
   return (
     <div className="demo-big-content" style={{ marginBottom: "0" }}>
       <Layout className="Layout" fixedHeader>
-        
-
         <Header className="Header-color" invisibleTitle="Dion Olympia">
           <Navigation className="Top-navigation">
             <NavLink className="Nav" to="/">
@@ -52,28 +46,28 @@ function App() {
           </Navigation>
         </Drawer>
         <Content>
-        <Particles
-          className="Particles"
-          params={{
-            particles: {
-              number: {
-                value: 40,
-                density: {
-                  enable: true,
-                  value_area: 1000
+          <Particles
+            className="Particles"
+            params={{
+              particles: {
+                number: {
+                  value: 40,
+                  density: {
+                    enable: true,
+                    value_area: 1000
+                  }
+                },
+                size: {
+                  value: 6,
+                  random: false
                 }
               },
-              size: {
-                value: 6,
-                random: false
+              move: {
+                speed: 5,
+                out_mode: "bounce"
               }
-            },
-            move: {
-              speed: 5,
-              out_mode: "bounce"
-            }
-          }}
-        />
+            }}
+          />
           <Main />
         </Content>
 
