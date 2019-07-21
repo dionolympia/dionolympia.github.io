@@ -202,6 +202,10 @@ body {
   .About-me-container {
     width: 1000px;
   }
+  #about-me-text {
+    padding-left: 150px;
+    padding-right: 150px;
+  }
 }
 
 @media (min-width: 1500px) {
@@ -372,6 +376,7 @@ i {
     height: 100%;
     margin: auto;
     background-color: rgba(255, 255, 255, 0.6) !important;
+    border-radius: 0px;
   }
   .About-me-container h3 {
     font-size: 20px;

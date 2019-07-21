@@ -8,13 +8,13 @@ class AboutMe extends Component {
       <React.Fragment>
         <div className="About-me-background">
           <div className="About-me-container">
-            <div className="Left">
+            {/* <div className="Left">
               <img
                 alt="Avatar"
                 src={Avatar}
                 style={{ width: "250px", opacity: "1", marginTop: "20px" }}
               />
-            </div>
+            </div> */}
 
             <div className="Right">
               <div className="Greeting">
@@ -33,6 +33,7 @@ class AboutMe extends Component {
               </div>
 
               <p
+                id="about-me-text"
                 style={{
                   fontFamily: "'Poppins' ,sans-serif",
                   textAlign: "center",
