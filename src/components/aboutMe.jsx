@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import Avatar from "./pixel.png";
+import Avatar from "./beach.png";
 
 class AboutMe extends Component {
   state = {};
@@ -8,21 +8,26 @@ class AboutMe extends Component {
       <React.Fragment>
         <div className="About-me-background">
           <div className="About-me-container">
-            {/* <div className="Left">
-              <img
-                alt="Avatar"
-                src={Avatar}
-                style={{ width: "250px", opacity: "1", marginTop: "20px" }}
-              />
-            </div> */}
+            {
+              <div className="Left">
+                <img
+                  class="Avatar-left"
+                  alt="Avatar"
+                  src={Avatar}
+                  style={{
+                    width: "300px",
+                    opacity: "1"
+                  }}
+                />
+              </div>
+            }
 
             <div className="Right">
               <div className="Greeting">
                 <h3
                   style={{
                     color: "grey",
-                    textAlign: "center",
-                    marginLeft: "10px"
+                    textAlign: "center"
                   }}
                 >
                   Hi there! My name is

@@ -96,7 +96,7 @@ body {
   position: absolute;
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   text-align: center;
   border-radius: 100px;
@@ -132,7 +132,7 @@ body {
   }
 }
 
-@media (max-width: 640px) {
+@media (max-width: 620px) {
   /* Hide Links (Top Navigation) when screen is too small */
   .Top-navigation {
     display: none !important;
@@ -169,7 +169,7 @@ body {
   }
 }
 
-@media (min-width: 641px) {
+@media (min-width: 621px) {
   /* Bigger avatar for bigger screens */
   .Avatar:hover {
     transform: scale(0.9);
@@ -191,12 +191,15 @@ body {
   }
 }
 
-@media (min-width: 1001px) {
+@media (min-width: 900px) {
   .Avatar:hover {
     transform: scale(1.1);
   }
   .Avatar {
     transform: scale(1);
+  }
+  .Avatar-left {
+    padding-left: 75px;
   }
 
   .About-me-container {
