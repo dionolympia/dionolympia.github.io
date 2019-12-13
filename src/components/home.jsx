@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-
 import Avatar from "./avatar.png";
 
 class Home extends Component {
@@ -7,14 +6,14 @@ class Home extends Component {
   render() {
     return (
       <div className="Home">
-        <div className="Top">
-          <img className="Avatar" alt="Avatar" src={Avatar} />
-        </div>
-
         <div className="Bottom">
           <div className="Avatar-caption">
             <div>
-              <h1 id="Dion-Olympia" className="Caption-text">
+              <h1
+                id="Dion-Olympia"
+                className="Caption-text"
+                style={{ fontSize: "100px" }}
+              >
                 <strong>Dion Olympia</strong>
               </h1>
             </div>
@@ -30,8 +29,7 @@ class Home extends Component {
                 Software Developer
               </h3>
               <p className="Caption-text">
-                HTML | CSS | JavaScript | C++ | C# | Python | Java | React |
-                MySQL | Swift
+                HTML | CSS | JavaScript | C++ | C# | Python | React | MySQL
               </p>
               <h1 className="Caption-text" style={{ fontWeight: "bold" }} />
             </div>

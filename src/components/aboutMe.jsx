@@ -1,42 +1,46 @@
 import React, { Component } from "react";
-import Avatar from "./beach.png";
+import Avatar from "./avatar.png";
+import LazyLoad from "react-lazy-load";
 
 class AboutMe extends Component {
   state = {};
   render() {
     return (
-      <React.Fragment>
-        <div className="About-me-background">
-          <div className="About-me-container">
-            {
-              <div className="Left">
-                <img
-                  class="Avatar-left"
-                  alt="Avatar"
-                  src={Avatar}
-                  style={{
-                    width: "300px",
-                    opacity: "1"
-                  }}
-                />
-              </div>
-            }
+      <div className="About-me-background">
+        <div className="About-me-container">
+          <div className="Left">
+            <LazyLoad debounce={false}>
+              <img
+                class="Avatar-left"
+                alt="Avatar"
+                src={Avatar}
+                style={{
+                  width: "300px",
+                  opacity: "1"
+                }}
+              />
+            </LazyLoad>
+          </div>
+          <div className="Left" />
 
-            <div className="Right">
-              <div className="Greeting">
-                <h3
-                  style={{
-                    color: "grey",
-                    textAlign: "center"
-                  }}
-                >
-                  Hi there! My name is
-                  <div>
-                    <strong style={{ color: "black" }}>Dion Olympia</strong>
-                  </div>
-                </h3>
-              </div>
-
+          <div className="Right">
+            <div className="Greeting">
+              <h3
+                style={{
+                  color: "grey",
+                  textAlign: "center"
+                }}
+              >
+                Hi, my name is
+                <div>
+                  <strong
+                    id="Dion-Olympia-About-Me"
+                    style={{ color: "black", fontSize: "40px" }}
+                  >
+                    Dion Olympia
+                  </strong>
+                </div>
+              </h3>
               <p
                 id="about-me-text"
                 style={{
@@ -57,7 +61,7 @@ class AboutMe extends Component {
             </div>
           </div>
         </div>
-      </React.Fragment>
+      </div>
     );
   }
 }
