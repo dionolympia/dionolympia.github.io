@@ -73,15 +73,15 @@ class Projects extends React.Component {
                     style={{
                       color: "#000",
                       background:
-                        "url(https://dionolympia.github.io/portfolio/project-images/songsearch.png) center 65% "
+                        "url(https://dionolympia.github.io/portfolio/project-images/songsearch.png) center 50%"
                     }}
                   >
                     SongSearch.js
                   </CardTitle>
                   <CardText>
                     Node JS application using routing with Express and the MySQL
-                    connector module to execute OLTP and OLAP queries on a song
-                    data web scraped from Metrolyrics.com
+                    connector module to execute OLTP and OLAP queries on a music
+                    database web scraped from Metrolyrics.com
                   </CardText>
                   <CardActions border>
                     <Button
@@ -514,15 +514,15 @@ class Projects extends React.Component {
                 style={{
                   color: "#000",
                   background:
-                    "url(https://dionolympia.github.io/portfolio/project-images/songsearch.png) center 65% "
+                    "url(https://dionolympia.github.io/portfolio/project-images/songsearch.png) center 50% "
                 }}
               >
                 SongSearch.js
               </CardTitle>
               <CardText>
                 Node JS application using routing with Express and the MySQL
-                connector module to execute OLTP and OLAP queries on a song data
-                web scraped from Metrolyrics.com
+                connector module to execute OLTP and OLAP queries on a music
+                database web scraped from Metrolyrics.com
               </CardText>
               <CardActions border>
                 <Button
