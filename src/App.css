@@ -99,7 +99,6 @@ body {
   justify-content: space-around;
   align-items: center;
   text-align: center;
-  border-radius: 100px;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -421,7 +420,7 @@ i {
   font-family: "Parisienne", cursive;
 }
 #Dion-Olympia-About-Me {
-  font-family: "Parisienne", cursive;
+  font-family: "Gotu", sans-serif;
 }
 
 .fade-enter {
