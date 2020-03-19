@@ -29,7 +29,7 @@ class Home extends Component {
                 Software Developer
               </h3>
               <p className="Caption-text">
-                HTML | CSS | JavaScript | C++ | C# | Python | React | MySQL
+                HTML | CSS | JS | C# | PHP | Angular | React | NodeJS | MySQL
               </p>
               <h1 className="Caption-text" style={{ fontWeight: "bold" }} />
             </div>

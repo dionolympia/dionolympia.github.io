@@ -53,10 +53,10 @@ class AboutMe extends Component {
               >
                 I am a passionate software developer from Rockville, Maryland. I
                 enjoy the logic and structure of coding and love web & mobile
-                development. I have experience coding in HTML, CSS, JavaScript,
-                Python, C++, and C#. I recently graduated with a Bachelor of
-                Science in Computer Science from the University of Maryland,
-                Baltimore County.
+                development. My other hobbies include basketball, baseball,
+                playing guitar, singing, and songwriting. I recently graduated
+                with a Bachelor of Science in Computer Science from the
+                University of Maryland, Baltimore County.
               </p>
             </div>
           </div>

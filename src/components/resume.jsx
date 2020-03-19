@@ -20,10 +20,26 @@ class Resume extends Component {
                 <strong>Education</strong>
               </h5>
               <p>
-                University of Maryland, Baltimore County - Baltimore, MD
-                (Graduated December 19, 2019)
+                University of Maryland, Baltimore County - Baltimore, MD - (GPA
+                3.094/4.0)
               </p>
-              <p>B.S. Computer Science - GPA 3.026/4.0</p>
+              <p>B.S. Computer Science - (Dec 2019)</p>
+            </div>
+            <div className="Section Work-experience">
+              <h5>
+                <strong>Work Experience</strong>
+              </h5>
+
+              <h6>Customer Value Partners - Software Developer</h6>
+              <h6>(Feb 2020 - Present)</h6>
+              <ul>
+                <li>Implemented a REST API server using Node.js</li>
+                <li>
+                  Worked on the front-end (user interface) of an Angular.js
+                  application
+                </li>
+                <li>Developed and managed databases with SQLite3 RDBMS</li>
+              </ul>
             </div>
             <div className="Section Projects">
               <h5>
@@ -51,20 +67,6 @@ class Resume extends Component {
                 <li>
                   Graphics comprised mostly of custom-made digital art with
                   Photoshop & Piskel
-                </li>
-              </ul>
-              <h6>“Ben 10” Battle</h6>
-              <ul>
-                <li>
-                  Text-based fighting simulation game that used characters from
-                  “Ben 10”, coded in C++{" "}
-                </li>
-                <li>
-                  Used encapsulation, multiple inheritance, and polymorphism
-                </li>
-                <li>
-                  Involved dynamic memory allocation, pointer dereferencing, and
-                  I/O handling
                 </li>
               </ul>
               <h6>Zero Gravity Tetris</h6>
@@ -107,28 +109,7 @@ class Resume extends Component {
                 </li>
               </ul>
             </div>
-            <div className="Section Work-experience">
-              <h5>
-                <strong>Work-experience</strong>
-              </h5>
 
-              <h6>Roy Rogers - Rockville, MD - Crew Member</h6>
-              <h6>(July 2016 - August 2017)</h6>
-              <ul>
-                <li>
-                  Developed strong interpersonal skills by communicating with
-                  customers and coworkers
-                </li>
-                <li>
-                  Displayed attention to detail by following specific food
-                  preparation procedures
-                </li>
-                <li>
-                  Demonstrated efficient problem solving in a fast-paced
-                  environment
-                </li>
-              </ul>
-            </div>
             <div className="Section Volunteer-experience">
               <h5>
                 <strong>Volunteer-experience</strong>
