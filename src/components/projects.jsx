@@ -32,7 +32,7 @@ class Projects extends React.Component {
                 style={{
                   color: "#fff",
                   background:
-                    "url(https://dionolympia.github.io/portfolio/project-images/portfolio.png) center"
+                    "url(https://dionolympia.github.io/project-images/portfolio.png) center"
                 }}
               >
                 Personal Portfolio
@@ -45,7 +45,7 @@ class Projects extends React.Component {
                 <Button
                   style={{ color: "#000" }}
                   target="_blank"
-                  href="https://dionolympia.github.io/portfolio"
+                  href="https://dionolympia.github.io"
                   colored
                 >
                   Website
@@ -53,7 +53,7 @@ class Projects extends React.Component {
                 <Button
                   style={{ color: "#000" }}
                   target="_blank"
-                  href="https://github.com/dionolympia/portfolio"
+                  href="https://github.com/dionolympia/dionolympia.github.io"
                   colored
                 >
                   Github
@@ -72,7 +72,7 @@ class Projects extends React.Component {
                 style={{
                   color: "#000",
                   background:
-                    "url(https://dionolympia.github.io/portfolio/project-images/songsearch.png) center 50%"
+                    "url(https://dionolympia.github.io/project-images/songsearch.png) center 50%"
                 }}
               >
                 SongSearch.js
@@ -104,7 +104,7 @@ class Projects extends React.Component {
                 style={{
                   color: "#fff",
                   background:
-                    "url(https://dionolympia.github.io/portfolio/project-images/wander.png) center / cover "
+                    "url(https://dionolympia.github.io/project-images/wander.png) center / cover "
                 }}
               >
                 Mountainside Wanderer
@@ -142,7 +142,7 @@ class Projects extends React.Component {
                 style={{
                   color: "#000",
                   background:
-                    "url(https://dionolympia.github.io/portfolio/project-images/count.png) center 65% "
+                    "url(https://dionolympia.github.io/project-images/count.png) center 65% "
                 }}
               >
                 Counters
@@ -181,7 +181,7 @@ class Projects extends React.Component {
                 style={{
                   color: "#000",
                   background:
-                    "url(https://dionolympia.github.io/portfolio/project-images/flap.png) center / cover "
+                    "url(https://dionolympia.github.io/project-images/flap.png) center / cover "
                 }}
               >
                 FlapGoesTheBirdie
@@ -219,7 +219,7 @@ class Projects extends React.Component {
                 style={{
                   color: "#fff",
                   background:
-                    "url(https://dionolympia.github.io/portfolio/project-images/tetris.png) center / cover "
+                    "url(https://dionolympia.github.io/project-images/tetris.png) center / cover "
                 }}
               >
                 Zero Gravity Tetris
@@ -259,7 +259,7 @@ class Projects extends React.Component {
                 style={{
                   color: "#000",
                   background:
-                    "url(https://dionolympia.github.io/portfolio/project-images/life.png) center / cover"
+                    "url(https://dionolympia.github.io/project-images/life.png) center / cover"
                 }}
               >
                 Game of Life
@@ -299,7 +299,7 @@ class Projects extends React.Component {
                 style={{
                   color: "#fff",
                   background:
-                    "url(https://dionolympia.github.io/portfolio/project-images/ben.png) center / cover "
+                    "url(https://dionolympia.github.io/project-images/ben.png) center / cover "
                 }}
               >
                 Ben 10 Battle
@@ -336,7 +336,7 @@ class Projects extends React.Component {
                 style={{
                   color: "#fff",
                   background:
-                    "url(https://dionolympia.github.io/portfolio/project-images/portfolio.png) center"
+                    "url(https://dionolympia.github.io/project-images/portfolio.png) center"
                 }}
               >
                 Personal Portfolio
@@ -349,7 +349,7 @@ class Projects extends React.Component {
                 <Button
                   style={{ color: "#000" }}
                   target="_blank"
-                  href="https://dionolympia.github.io/portfolio"
+                  href="https://dionolympia.github.io"
                   colored
                 >
                   Website
@@ -375,7 +375,7 @@ class Projects extends React.Component {
                 style={{
                   color: "#000",
                   background:
-                    "url(https://dionolympia.github.io/portfolio/project-images/count.png) center 65% "
+                    "url(https://dionolympia.github.io/project-images/count.png) center 65% "
                 }}
               >
                 Counters
@@ -421,7 +421,7 @@ class Projects extends React.Component {
                 style={{
                   color: "#fff",
                   background:
-                    "url(https://dionolympia.github.io/portfolio/project-images/wander.png) center / cover "
+                    "url(https://dionolympia.github.io/project-images/wander.png) center / cover "
                 }}
               >
                 Mountainside Wanderer
@@ -460,7 +460,7 @@ class Projects extends React.Component {
                 style={{
                   color: "#000",
                   background:
-                    "url(https://dionolympia.github.io/portfolio/project-images/flap.png) center / cover "
+                    "url(https://dionolympia.github.io/project-images/flap.png) center / cover "
                 }}
               >
                 FlapGoesTheBirdie
@@ -504,7 +504,7 @@ class Projects extends React.Component {
                 style={{
                   color: "#000",
                   background:
-                    "url(https://dionolympia.github.io/portfolio/project-images/songsearch.png) center 50% "
+                    "url(https://dionolympia.github.io/project-images/songsearch.png) center 50% "
                 }}
               >
                 SongSearch.js
@@ -542,7 +542,7 @@ class Projects extends React.Component {
                 style={{
                   color: "#fff",
                   background:
-                    "url(https://dionolympia.github.io/portfolio/project-images/tetris.png) center / cover "
+                    "url(https://dionolympia.github.io/project-images/tetris.png) center / cover "
                 }}
               >
                 Zero Gravity Tetris
@@ -583,7 +583,7 @@ class Projects extends React.Component {
                 style={{
                   color: "#000",
                   background:
-                    "url(https://dionolympia.github.io/portfolio/project-images/life.png) center / cover"
+                    "url(https://dionolympia.github.io/project-images/life.png) center / cover"
                 }}
               >
                 Game of Life
@@ -624,7 +624,7 @@ class Projects extends React.Component {
                 style={{
                   color: "#fff",
                   background:
-                    "url(https://dionolympia.github.io/portfolio/project-images/ben.png) center / cover "
+                    "url(https://dionolympia.github.io/project-images/ben.png) center / cover "
                 }}
               >
                 Ben 10 Battle

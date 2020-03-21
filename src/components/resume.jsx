@@ -49,7 +49,7 @@ class Resume extends Component {
               <ul>
                 <li>
                   Personal portfolio created with React -
-                  (http://dionolympia.github.io/portfolio)
+                  (http://dionolympia.github.io)
                 </li>
 
                 <li>
