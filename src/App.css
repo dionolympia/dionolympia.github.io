@@ -242,7 +242,13 @@ body {
 .Particles {
   width: 100%;
   height: 100%;
-  position: absolute;
+  position: fixed;
+  z-index: -1;
+  /* background-color: #ddd; */
+  background-image: url("");
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
 }
 
 /* Invisible drawer button */
