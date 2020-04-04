@@ -87,21 +87,16 @@ li span:hover {
   transition: all 0.25s ease 0s;
 }
 
-.home {
-  margin-top: 66.4px;
-}
-
 .intro-section,
 .about-me,
 .projects,
 .resume,
 .contact-me {
-  scroll-margin: 66px 0 0 0;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: calc(100vh - 66px);
+  min-height: 100vh;
 }
 
 .intro-section {
@@ -240,6 +235,19 @@ li span:hover {
   .about-me-header {
     font-size: 5vw;
   }
+
+  .intro-section,
+  .about-me,
+  .projects,
+  .resume,
+  .contact-me {
+    min-height: 30vh;
+    scroll-margin: 66px 0 0 0;
+  }
+
+  .home {
+    margin-top: 66.4px;
+  }
 }
 
 @media screen and (max-width: 750px) {
@@ -249,9 +257,5 @@ li span:hover {
 
   .about-me-body {
     font-size: 3vw;
-  }
-
-  .intro-section {
-    height: calc(50vh - 66px);
   }
 }
