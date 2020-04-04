@@ -36,9 +36,6 @@ html {
 
 /* End of Default App Styling */
 
-.nav {
-}
-
 div ul {
   padding: 0;
   display: flex;
@@ -50,6 +47,8 @@ div ul {
   color: #ccc;
   width: 100%;
   min-height: 66px;
+  box-sizing: auto !important;
+  z-index: 1;
 }
 
 ul {
@@ -76,21 +75,9 @@ li a {
 
 li a:hover {
   background-color: #111;
-  transition: all 0.25s ease 0s;
-}
-li span {
-  display: block;
   color: white;
-  text-align: center;
-  padding: 20px 5vw;
-  text-decoration: none;
-  width: 10vw;
-  font-size: 20px;
-}
-
-li span:hover {
-  background-color: #111;
   transition: all 0.25s ease 0s;
+  text-decoration: none;
 }
 
 .intro-section,
@@ -180,7 +167,8 @@ li span:hover {
 
 .about-me-avatar {
   margin: 2em;
-  width: 42vw;
+  width: 35vw;
+  border-radius: 2.5%;
 }
 
 .about-me-right {
@@ -202,6 +190,17 @@ li span:hover {
 .projects {
   background-color: rgba(0, 0, 0, 0.75);
   color: #ccc;
+  padding: 0 0 1em 0;
+}
+
+.project-contents {
+  margin-top: 1em;
+}
+
+.project-card {
+  margin: 1em;
+  background-color: #ccc;
+  color: black;
 }
 
 .resume {
@@ -211,6 +210,32 @@ li span:hover {
 .contact-me {
   background-color: rgba(0, 0, 0, 0.75);
   color: #ccc;
+}
+
+.contact-me-contents {
+  text-align: center;
+  padding-bottom: 3em;
+}
+
+.contact-me-contents span {
+  font-size: 2.5vw;
+}
+
+.contact-me-contents p {
+  font-size: 2vw;
+}
+
+.line {
+  border: 1;
+  clear: both;
+  display: block;
+  width: 50%;
+  background-color: white;
+}
+
+.footer-section {
+  background-color: #191919;
+  min-height: 25vh;
 }
 
 @media screen and (min-width: 900px) and (max-height: 400px) {
@@ -242,13 +267,9 @@ li span:hover {
     margin: -1em 0 0 0;
   }
 
-  .about-me-body,
-  .about-me-greeting {
-    text-align: center;
-  }
-
   .about-me-body {
-    font-size: 2vw;
+    text-align: center;
+    font-size: 2vh;
   }
 
   .about-me-header {
@@ -260,7 +281,7 @@ li span:hover {
   .projects,
   .resume,
   .contact-me {
-    min-height: 30vh;
+    min-height: calc(50vh - 33px);
     scroll-margin: 66px 0 0 0;
   }
 

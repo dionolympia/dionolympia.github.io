@@ -1,6 +1,11 @@
-import React, { Component } from "react";
-import Avatar from "./sunset.png";
+import React, { Component, useState } from "react";
+import Avatar from "./tux-landscape.jpeg";
 import Particles from "react-particles-js";
+import { Card, Button } from "react-bootstrap";
+import PixelArt from "./pixel.png";
+import Container from "react-bootstrap/Container";
+import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
 
 class Home extends Component {
   state = {};
@@ -41,7 +46,7 @@ class Home extends Component {
               },
             },
             move: {
-              speed: 5,
+              speed: 1,
               out_mode: "bounce",
             },
           }}
@@ -136,25 +141,7 @@ class Home extends Component {
             <div className="header">
               <span>Projects</span>
             </div>
-            <div className="project-contents">
-              <div
-                id="carouselExampleSlidesOnly"
-                class="carousel slide"
-                data-ride="carousel"
-              >
-                <div class="carousel-inner">
-                  <div class="carousel-item active">
-                    <img src="./sunset.png" alt="First slide" />
-                  </div>
-                  <div class="carousel-item">
-                    <img src="./avatar.png" alt="Second slide" />
-                  </div>
-                  <div class="carousel-item">
-                    <img src="./avatar.png" alt="Third slide" />
-                  </div>
-                </div>
-              </div>
-            </div>
+            <div className="project-contents"></div>
           </div>
         </div>
         <div className="resume" id="resume">
@@ -165,8 +152,28 @@ class Home extends Component {
         <div className="contact-me" id="contact-me">
           <div className="header">
             <span>Contact Me</span>
+            <br />
+            <br />
+          </div>
+          <div className="contact-me-contents">
+            <span>Have any questions or want to get in touch?</span>
+
+            <p>Feel free to reach out! </p>
+
+            <div className="phone-number">
+              <i class="fa-3x fas fa-phone" />
+              <p>Phone</p>
+              <p>(202)-213-9965</p>
+            </div>
+            <hr className="line"></hr>
+            <div className="email-address">
+              <i class="fa-3x fas fa-envelope" />
+              <p>Email</p>
+              <p>dionolympia@gmail.com</p>
+            </div>
           </div>
         </div>
+        <div className="footer-section"></div>
       </div>
     );
   }
