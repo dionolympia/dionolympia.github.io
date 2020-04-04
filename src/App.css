@@ -36,7 +36,10 @@ html {
 
 /* End of Default App Styling */
 
-nav ul {
+.nav {
+}
+
+div ul {
   padding: 0;
   display: flex;
   justify-content: center;
@@ -45,6 +48,8 @@ nav ul {
   top: 0;
   background-color: #191919;
   color: #ccc;
+  width: 100%;
+  min-height: 66px;
 }
 
 ul {
@@ -65,7 +70,8 @@ li a {
   padding: 20px 5vw;
   text-decoration: none;
   width: 10vw;
-  font-size: 20px;
+  font-size: 1em;
+  min-height: 100%;
 }
 
 li a:hover {
@@ -144,7 +150,7 @@ li span:hover {
 }
 
 .header {
-  height: fit-content;
+  min-height: 10vh;
   font-size: 4vw;
   font-weight: bold;
   display: flex;
@@ -205,6 +211,19 @@ li span:hover {
 .contact-me {
   background-color: rgba(0, 0, 0, 0.75);
   color: #ccc;
+}
+
+@media screen and (min-width: 900px) and (max-height: 400px) {
+  .intro-section {
+    padding-top: 50vh;
+  }
+
+  .about-me,
+  .projects,
+  .resume,
+  .contact-me {
+    padding-top: 15vh;
+  }
 }
 
 @media screen and (max-width: 900px) {

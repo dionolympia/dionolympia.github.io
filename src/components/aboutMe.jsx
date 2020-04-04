@@ -16,7 +16,7 @@ class AboutMe extends Component {
                 src={Avatar}
                 style={{
                   width: "300px",
-                  opacity: "1"
+                  opacity: "1",
                 }}
               />
             </LazyLoad>
@@ -28,7 +28,7 @@ class AboutMe extends Component {
               <h3
                 style={{
                   color: "grey",
-                  textAlign: "center"
+                  textAlign: "center",
                 }}
               >
                 Hi, my name is
@@ -48,15 +48,15 @@ class AboutMe extends Component {
                   textAlign: "center",
                   marginTop: "20px",
                   marginLeft: "20px",
-                  marginRight: "20px"
+                  marginRight: "20px",
                 }}
               >
-                I am a passionate software developer from Rockville, Maryland. I
-                enjoy the logic and structure of coding and love web & mobile
-                development. My other hobbies include basketball, baseball,
-                playing guitar, singing, & songwriting. I recently graduated
-                with a Bachelor of Science in Computer Science from the
-                University of Maryland, Baltimore County.
+                I am a passionate software developer from Rockville, Maryland
+                who loves creating & designing web & mobile applications. My
+                other hobbies include basketball, baseball, playing guitar,
+                singing, & songwriting. I recently graduated with a Bachelor of
+                Science in Computer Science from the University of Maryland,
+                Baltimore County.
               </p>
             </div>
           </div>

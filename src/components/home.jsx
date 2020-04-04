@@ -56,7 +56,7 @@ class Home extends Component {
             backgroundColor: "#333",
           }}
         />
-        <nav className="navbar">
+        <div className="nav">
           <ul>
             <li>
               <a href="#intro-section">Home</a>
@@ -74,7 +74,7 @@ class Home extends Component {
               <a href="#contact-me">Contact</a>
             </li>
           </ul>
-        </nav>
+        </div>
         <div className="home">
           <div className="intro-section" id="intro-section">
             <div className="name">
@@ -120,9 +120,9 @@ class Home extends Component {
               <div className="about-me-right">
                 <div className="about-me-body">
                   I am a passionate programmer from Rockville, Maryland who
-                  enjoys the logic & structure of coding and loves web & mobile
-                  development. My other hobbies include basketball, baseball,
-                  singing, songwriting, & playing guitar.
+                  loves creating & designing web & mobile applications. My other
+                  hobbies include basketball, baseball, singing, songwriting, &
+                  playing guitar.
                   <br /> <hr />I recently graduated with a Bachelor of Science
                   in Computer Science from the University of Maryland, Baltimore
                   County. I am currently working as an Associate Software
@@ -137,7 +137,23 @@ class Home extends Component {
               <span>Projects</span>
             </div>
             <div className="project-contents">
-              <div></div>
+              <div
+                id="carouselExampleSlidesOnly"
+                class="carousel slide"
+                data-ride="carousel"
+              >
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="./sunset.png" alt="First slide" />
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./avatar.png" alt="Second slide" />
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./avatar.png" alt="Third slide" />
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
