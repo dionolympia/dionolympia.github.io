@@ -8,27 +8,7 @@ import Resume from "./resume.jsx";
 import { CSSTransition, TransitionGroup } from "react-transition-group";
 
 const Main = () => {
-  return (
-    <Route
-      render={({ location }) => (
-        <TransitionGroup>
-          <CSSTransition
-            key={location.pathname}
-            timeout={300}
-            classNames="fade"
-          >
-            <Switch location={location}>
-              <Route exact path="/" component={Home} />
-              <Route path="/aboutMe" component={AboutMe} />
-              <Route path="/projects" component={Projects} />
-              <Route path="/resume" component={Resume} />
-              <Route path="/contactMe" component={ContactMe} />
-            </Switch>
-          </CSSTransition>
-        </TransitionGroup>
-      )}
-    />
-  );
+  return <Home />;
 };
 
 export default Main;
