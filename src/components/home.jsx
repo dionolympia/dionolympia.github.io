@@ -6,6 +6,7 @@ import PixelArt from "./pixel.png";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
+import Resume from "./resume.pdf";
 
 class Home extends Component {
   state = {};
@@ -141,13 +142,36 @@ class Home extends Component {
             <div className="header">
               <span>Projects</span>
             </div>
-            <div className="project-contents"></div>
+            <div className="project-contents">
+              <div className="project-row">
+                <div className="project-card">Project Card</div>
+                <div className="project-card">Project Card</div>
+                <div className="project-card">Project Card</div>
+              </div>
+            </div>
+            <div className="project-contents">
+              <div className="project-row">
+                <div className="project-card">Project Card</div>
+                <div className="project-card">Project Card</div>
+                <div className="project-card">Project Card</div>
+              </div>
+            </div>
           </div>
         </div>
         <div className="resume" id="resume">
           <div className="header">
             <span>Resume</span>
           </div>
+          <div className="resume-contents">
+            <div className="resume-pdf">
+              <p align="center">
+                <iframe src={Resume} width="100%" height="350px"></iframe>
+              </p>
+            </div>
+          </div>
+          <a className="resume-button" href={Resume} target="_blank">
+            Click to Open PDF
+          </a>
         </div>
         <div className="contact-me" id="contact-me">
           <div className="header">
@@ -173,7 +197,9 @@ class Home extends Component {
             </div>
           </div>
         </div>
-        <div className="footer-section"></div>
+        <div className="footer-section">
+          <p>© 2020 Dion Olympia</p>
+        </div>
       </div>
     );
   }
