@@ -148,8 +148,11 @@ class Home extends Component {
                 <div className="project-card">Project Card</div>
                 <div className="project-card">Project Card</div>
               </div>
-            </div>
-            <div className="project-contents">
+              <div className="project-row">
+                <div className="project-card">Project Card</div>
+                <div className="project-card">Project Card</div>
+                <div className="project-card">Project Card</div>
+              </div>
               <div className="project-row">
                 <div className="project-card">Project Card</div>
                 <div className="project-card">Project Card</div>
@@ -165,7 +168,7 @@ class Home extends Component {
           <div className="resume-contents">
             <div className="resume-pdf">
               <p align="center">
-                <iframe src={Resume} width="100%" height="350px"></iframe>
+                <iframe src={Resume} width="100%" height="400px"></iframe>
               </p>
             </div>
           </div>

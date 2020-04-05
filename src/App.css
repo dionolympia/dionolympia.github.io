@@ -167,7 +167,7 @@ li a:hover {
 
 .about-me-avatar {
   margin: 2em;
-  width: 35vw;
+  width: 38.5vw;
   border-radius: 2.5%;
 }
 
@@ -195,8 +195,6 @@ li a:hover {
 
 .project-contents {
   margin-top: 1em;
-  display: flex;
-  justify-content: center;
 }
 
 .project-row {
