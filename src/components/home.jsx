@@ -7,6 +7,10 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Resume from "./resume.pdf";
+import Tetris from "./project-images/tetris.png";
+import SongSearch from "./project-images/song-search.png";
+import Wanderer from "./project-images/wanderer.png";
+import GameOfLife from "./project-images/game-of-life.png";
 
 class Home extends Component {
   state = {};
@@ -144,19 +148,59 @@ class Home extends Component {
             </div>
             <div className="project-contents">
               <div className="project-row">
-                <div className="project-card">Project Card</div>
-                <div className="project-card">Project Card</div>
-                <div className="project-card">Project Card</div>
+                <div className="project-card">
+                  <div class="image">
+                    <img src={PixelArt} />
+                    <div class="image-overlay">
+                      <a href="#">
+                        <i class="fas fa-search-plus" id="search-plus" />
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="project-card">
+                  <div class="image">
+                    <img src={Wanderer} />
+                    <div class="image-overlay">
+                      <a href="#">
+                        <i class="fas fa-search-plus" id="search-plus" />
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div className="project-card">
+                  <div class="image">
+                    <img src={Tetris} />
+                    <div class="image-overlay">
+                      <a href="#">
+                        <i class="fas fa-search-plus" id="search-plus" />
+                      </a>
+                    </div>
+                  </div>
+                </div>
               </div>
               <div className="project-row">
-                <div className="project-card">Project Card</div>
-                <div className="project-card">Project Card</div>
-                <div className="project-card">Project Card</div>
-              </div>
-              <div className="project-row">
-                <div className="project-card">Project Card</div>
-                <div className="project-card">Project Card</div>
-                <div className="project-card">Project Card</div>
+                <div className="project-card">
+                  <div class="image">
+                    <img src={SongSearch} />
+                    <div class="image-overlay">
+                      <a href="#">
+                        <i class="fas fa-search-plus" id="search-plus" />
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div className="project-card">
+                  <div class="image">
+                    <img src={GameOfLife} />
+                    <div class="image-overlay">
+                      <a href="#">
+                        <i class="fas fa-search-plus" id="search-plus" />
+                      </a>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
