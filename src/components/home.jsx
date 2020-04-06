@@ -12,19 +12,6 @@ class Home extends Component {
   state = {};
   constructor(props) {
     super(props);
-
-    this.aboutMeRef = React.createRef();
-    this.projectsRef = React.createRef();
-
-    this.scrollToAbout = this.scrollToAbout.bind(this);
-    this.scrollToProjects = this.scrollToProjects.bind(this);
-  }
-
-  scrollToAbout() {
-    window.scroll(0, this.aboutMeRef.current.offsetTop);
-  }
-  scrollToProjects() {
-    window.scroll(0, this.projectsRef.current.offsetTop);
   }
 
   render() {
@@ -148,7 +135,7 @@ class Home extends Component {
                   <div class="image">
                     <img src={PixelArt} />
                     <div class="image-overlay">
-                      <a href="#">
+                      <a>
                         <i class="fas fa-search-plus" id="search-plus" />
                       </a>
                     </div>
