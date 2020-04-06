@@ -90,6 +90,7 @@ html {
   align-items: center;
   justify-content: center;
   min-height: 100vh;
+  scroll-margin: 66px 0 0 0;
 }
 
 .intro-section {
@@ -264,28 +265,53 @@ html {
   color: #ccc;
 }
 
+.resume-html {
+  padding: 5%;
+  background-color: #ccc;
+  color: black;
+}
+
+.resume-header {
+  text-align: center;
+}
+
+.section-body {
+  margin-left: 10%;
+}
+
+.classes {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
 .resume-contents {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-.resume-pdf {
-  min-width: 80vw;
-  max-height: 100vh;
+.resume-html {
+  min-height: 100%;
+  max-width: 100%;
+  padding: 10%;
 }
 
-.iframe-container {
-  position: relative;
-  width: 100%;
-  padding-bottom: 50%;
-  background: lightgrey;
+.header {
+  text-align: center;
 }
 
-.iframe-container iframe {
-  position: absolute;
-  width: 100%;
-  height: 100%;
+.section-body {
+  margin-left: 10%;
+}
+
+.classes {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
 }
 
 .resume-button {
@@ -385,7 +411,6 @@ html {
   .resume,
   .contact-me {
     min-height: 50vh;
-    scroll-margin: 66px 0 0 0;
   }
 
   .home {
