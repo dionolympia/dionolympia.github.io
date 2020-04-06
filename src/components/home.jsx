@@ -1,11 +1,7 @@
 import React, { Component, useState } from "react";
-import Avatar from "./tux-landscape.jpeg";
+import Avatar from "./avatar.jpeg";
 import Particles from "react-particles-js";
-import { Card, Button } from "react-bootstrap";
-import PixelArt from "./pixel.png";
-import Container from "react-bootstrap/Container";
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
+import PixelArt from "./project-images/pixel.png";
 import Resume from "./resume.pdf";
 import Tetris from "./project-images/tetris.png";
 import SongSearch from "./project-images/song-search.png";
@@ -211,8 +207,8 @@ class Home extends Component {
           </div>
           <div className="resume-contents">
             <div className="resume-pdf">
-              <p align="center">
-                <iframe src={Resume} width="100%" height="400px"></iframe>
+              <p className="iframe-container">
+                <iframe src={Resume}></iframe>
               </p>
             </div>
           </div>
