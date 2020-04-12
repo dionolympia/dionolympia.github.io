@@ -141,7 +141,7 @@ class Home extends Component {
                                     <div class="image">
                                         <img src={Wanderer} />
                                         <div class="image-overlay">
-                                            <a href="#">
+                                            <a>
                                                 <i
                                                     class="fas fa-search-plus"
                                                     id="search-plus"
@@ -154,7 +154,7 @@ class Home extends Component {
                                     <div class="image">
                                         <img src={Tetris} />
                                         <div class="image-overlay">
-                                            <a href="#">
+                                            <a>
                                                 <i
                                                     class="fas fa-search-plus"
                                                     id="search-plus"
@@ -169,7 +169,7 @@ class Home extends Component {
                                     <div class="image">
                                         <img src={SongSearch} />
                                         <div class="image-overlay">
-                                            <a href="#">
+                                            <a>
                                                 <i
                                                     class="fas fa-search-plus"
                                                     id="search-plus"
@@ -182,7 +182,7 @@ class Home extends Component {
                                     <div class="image">
                                         <img src={GameOfLife} />
                                         <div class="image-overlay">
-                                            <a href="#">
+                                            <a>
                                                 <i
                                                     class="fas fa-search-plus"
                                                     id="search-plus"
@@ -193,6 +193,8 @@ class Home extends Component {
                                 </div>
                             </div>
                         </div>
+                        <br />
+                        <h4>* Note: Section Status = WIP</h4>
                     </div>
 
                     <div className="resume" id="resume">
