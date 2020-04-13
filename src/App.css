@@ -99,6 +99,7 @@ html {
 }
 
 .intro-section {
+    padding-top: 66px;
     color: #888;
     width: 100%;
 }
@@ -400,7 +401,7 @@ html {
     }
 
     .home {
-        margin-top: 66.4px;
+        /* margin-top: 66.4px; */
     }
 }
 
