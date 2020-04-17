@@ -12,13 +12,27 @@ class Home extends Component {
     state = {};
     constructor(props) {
         super(props);
+        this.myFunction = this.myFunction.bind(this);
+    }
+
+    myFunction() {
+        console.log("myFunction");
+        var x = document.getElementsByClassName("top-nav");
+        console.log({ x });
+        if (x.className == "top-nav") {
+            x.className += " responsive";
+            console.log({ x });
+        } else {
+            x.className = "top-nav";
+            console.log({ x });
+        }
     }
 
     render() {
         return (
             <div className="return">
                 <div className="nav" id="nav">
-                    <ul>
+                    <ul className="top-nav">
                         <li>
                             <a href="#intro-section">Home</a>
                         </li>
@@ -34,6 +48,13 @@ class Home extends Component {
                         <li>
                             <a href="#contact-me">Contact</a>
                         </li>
+                        <a
+                            href="javascript:void(0);"
+                            className="icon"
+                            onClick={this.myFunction}
+                        >
+                            <i id="hamburger" className="fa fa-bars"></i>
+                        </a>
                     </ul>
                 </div>
                 <div className="home">
@@ -55,25 +76,25 @@ class Home extends Component {
                                 href="https://www.github.com/dionolympia"
                                 target="_blank"
                             >
-                                <i class="fab fa-github" />
+                                <i className="fab fa-github" />
                             </a>
                             <a
                                 href="https://www.hackerrank.com/dionolympia"
                                 target="_blank"
                             >
-                                <i class="fab fa-hackerrank" />
+                                <i className="fab fa-hackerrank" />
                             </a>
                             <a
                                 href="https://www.facebook.com/DionOlympia"
                                 target="_blank"
                             >
-                                <i class="fab fa-facebook-square" />
+                                <i className="fab fa-facebook-square" />
                             </a>
                             <a
                                 href="https://www.linkedin.com/in/dion-olympia-6b83b1148/"
                                 target="_blank"
                             >
-                                <i class="fab fa-linkedin" />
+                                <i className="fab fa-linkedin" />
                             </a>
                         </div>
                     </div>
@@ -89,7 +110,7 @@ class Home extends Component {
                             <div className="about-me-left">
                                 <div className="avatar-wrap">
                                     <img
-                                        class="about-me-avatar"
+                                        className="about-me-avatar"
                                         alt="Avatar"
                                         src={Avatar}
                                     />
@@ -100,14 +121,12 @@ class Home extends Component {
                                     I am a passionate programmer from Rockville,
                                     Maryland who loves creating & designing web
                                     & mobile applications. My other hobbies
-                                    include basketball, baseball, singing,
-                                    songwriting, & playing guitar.
-                                    <br /> <hr />I recently graduated with a
-                                    Bachelor of Science in Computer Science from
-                                    the University of Maryland, Baltimore
-                                    County. I am currently working as an
-                                    Associate Software Developer at Customer
-                                    Value Partners Inc.
+                                    include basketball, baseball, songwriting, &
+                                    playing guitar.
+                                    <br /> <hr />I recently graduated from UMBC
+                                    and I currently work as an Associate
+                                    Software Developer at Customer Value
+                                    Partners Inc.
                                 </div>
                             </div>
                         </div>
@@ -124,12 +143,12 @@ class Home extends Component {
                         <div className="project-contents">
                             <div className="project-row">
                                 <div className="project-card">
-                                    <div class="image">
+                                    <div className="image">
                                         <img src={PixelArt} />
-                                        <div class="image-overlay">
+                                        <div className="image-overlay">
                                             <a>
                                                 <i
-                                                    class="fas fa-search-plus"
+                                                    className="fas fa-search-plus"
                                                     id="search-plus"
                                                 />
                                             </a>
@@ -138,12 +157,12 @@ class Home extends Component {
                                 </div>
 
                                 <div className="project-card">
-                                    <div class="image">
+                                    <div className="image">
                                         <img src={Wanderer} />
-                                        <div class="image-overlay">
+                                        <div className="image-overlay">
                                             <a>
                                                 <i
-                                                    class="fas fa-search-plus"
+                                                    className="fas fa-search-plus"
                                                     id="search-plus"
                                                 />
                                             </a>
@@ -151,12 +170,12 @@ class Home extends Component {
                                     </div>
                                 </div>
                                 <div className="project-card">
-                                    <div class="image">
+                                    <div className="image">
                                         <img src={Tetris} />
-                                        <div class="image-overlay">
+                                        <div className="image-overlay">
                                             <a>
                                                 <i
-                                                    class="fas fa-search-plus"
+                                                    className="fas fa-search-plus"
                                                     id="search-plus"
                                                 />
                                             </a>
@@ -166,12 +185,12 @@ class Home extends Component {
                             </div>
                             <div className="project-row">
                                 <div className="project-card">
-                                    <div class="image">
+                                    <div className="image">
                                         <img src={SongSearch} />
-                                        <div class="image-overlay">
+                                        <div className="image-overlay">
                                             <a>
                                                 <i
-                                                    class="fas fa-search-plus"
+                                                    className="fas fa-search-plus"
                                                     id="search-plus"
                                                 />
                                             </a>
@@ -179,12 +198,12 @@ class Home extends Component {
                                     </div>
                                 </div>
                                 <div className="project-card">
-                                    <div class="image">
+                                    <div className="image">
                                         <img src={GameOfLife} />
-                                        <div class="image-overlay">
+                                        <div className="image-overlay">
                                             <a>
                                                 <i
-                                                    class="fas fa-search-plus"
+                                                    className="fas fa-search-plus"
                                                     id="search-plus"
                                                 />
                                             </a>
@@ -203,13 +222,13 @@ class Home extends Component {
                         </div>
                         <div className="resume-contents">
                             <div
-                                class="resume-html"
+                                className="resume-html"
                                 style={{
                                     fontFamily:
                                         "'Times New Roman', Times, serif",
                                 }}
                             >
-                                <div class="resume-header">
+                                <div className="resume-header">
                                     <h1>Dion Olympia</h1>
                                     <p>
                                         Rockville, MD 20853 - (202)-213-9965 -
@@ -218,9 +237,9 @@ class Home extends Component {
                                     </p>
                                 </div>
                                 <hr />
-                                <div class="section">
+                                <div className="section">
                                     <h3>Education</h3>
-                                    <div class="section-body">
+                                    <div className="section-body">
                                         <p>
                                             University of Maryland, Baltimore
                                             County - Baltimore, MD
@@ -232,9 +251,9 @@ class Home extends Component {
                                     </div>
                                     <hr />
                                 </div>
-                                <div class="section">
+                                <div className="section">
                                     <h3>Work Experience</h3>
-                                    <div class="section-body">
+                                    <div className="section-body">
                                         <p>
                                             Customer Value Partners Inc. -
                                             Columbia, MD - Associate
@@ -262,9 +281,9 @@ class Home extends Component {
                                     </div>
                                     <hr />
                                 </div>
-                                <div class="section">
+                                <div className="section">
                                     <h3>Skills</h3>
-                                    <div class="section-body">
+                                    <div className="section-body">
                                         <ul>
                                             <li>
                                                 Experienced with JavaScript,
@@ -286,9 +305,9 @@ class Home extends Component {
                                     </div>
                                     <hr />
                                 </div>
-                                <div class="section">
+                                <div className="section">
                                     <h3>Projects</h3>
-                                    <div class="section-body">
+                                    <div className="section-body">
                                         <p>Portfolio Website</p>
                                         <ul>
                                             <li>
@@ -345,16 +364,16 @@ class Home extends Component {
                                     </div>
                                     <hr />
                                 </div>
-                                <div class="section-header">
+                                <div className="section-header">
                                     <h3>Related Coursework</h3>
                                 </div>
-                                <div class="classes">
-                                    <div class="left">
+                                <div className="classes">
+                                    <div className="left">
                                         <p>Data Structures</p>
                                         <p>Operating Systems</p>
                                         <p>Software Engineering</p>
                                     </div>
-                                    <div class="middle">
+                                    <div className="middle">
                                         <p>
                                             Principles of Programming Languages
                                         </p>
@@ -364,7 +383,7 @@ class Home extends Component {
                                             Language
                                         </p>
                                     </div>
-                                    <div class="right">
+                                    <div className="right">
                                         <p>Design & Analysis of Algorithms</p>
                                         <p>Computer Architecture</p>
                                         <p>Principles of Computer Security</p>
@@ -395,21 +414,21 @@ class Home extends Component {
                             <p>Feel free to reach out! </p>
 
                             <div className="phone-number">
-                                <i class="fa-3x fas fa-phone" />
+                                <i className="fa-3x fas fa-phone" />
                                 <p>Phone</p>
                                 <p>(202)-213-9965</p>
                             </div>
                             <hr className="line"></hr>
                             <div className="email-address">
-                                <i class="fa-3x fas fa-envelope" />
+                                <i className="fa-3x fas fa-envelope" />
                                 <p>Email</p>
                                 <p>dionolympia@gmail.com</p>
                             </div>
                         </div>
                     </div>
-                    <div className="footer-section">
-                        <p>© 2020 Dion Olympia</p>
-                    </div>
+                </div>
+                <div className="footer-section">
+                    <p>© 2020 Dion Olympia</p>
                 </div>
             </div>
         );
