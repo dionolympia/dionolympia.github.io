@@ -407,31 +407,6 @@ class Home extends Component {
                                     </div>
                                     <hr />
                                 </div>
-                                <div className="section-header">
-                                    <h3>Related Coursework</h3>
-                                </div>
-                                <div className="classes">
-                                    <div className="left">
-                                        <p>Data Structures</p>
-                                        <p>Operating Systems</p>
-                                        <p>Software Engineering</p>
-                                    </div>
-                                    <div className="middle">
-                                        <p>
-                                            Principles of Programming Languages
-                                        </p>
-                                        <p>Database Management Systems</p>
-                                        <p>
-                                            Computer Organization & Assembly
-                                            Language
-                                        </p>
-                                    </div>
-                                    <div className="right">
-                                        <p>Design & Analysis of Algorithms</p>
-                                        <p>Computer Architecture</p>
-                                        <p>Principles of Computer Security</p>
-                                    </div>
-                                </div>
                             </div>
 
                             <a
