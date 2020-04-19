@@ -9,52 +9,95 @@ import Wanderer from "./project-images/wanderer.png";
 import GameOfLife from "./project-images/game-of-life.png";
 
 class Home extends Component {
-    state = {};
     constructor(props) {
         super(props);
-        this.myFunction = this.myFunction.bind(this);
+        this.toggleResponsive = this.toggleResponsive.bind(this);
+        this.state = { responsive: false };
     }
 
-    myFunction() {
-        console.log("myFunction");
-        var x = document.getElementsByClassName("top-nav");
-        console.log({ x });
-        if (x.className == "top-nav") {
-            x.className += " responsive";
-            console.log({ x });
-        } else {
-            x.className = "top-nav";
-            console.log({ x });
-        }
+    toggleResponsive() {
+        const currentState = this.state.responsive;
+        this.setState({ responsive: !currentState });
     }
 
     render() {
         return (
             <div className="return">
                 <div className="nav" id="nav">
-                    <ul className="top-nav">
-                        <li>
-                            <a href="#intro-section">Home</a>
-                        </li>
-                        <li>
-                            <a href="#about-me">About</a>
-                        </li>
-                        <li>
-                            <a href="#projects">Projects</a>
-                        </li>
-                        <li>
-                            <a href="#resume">Resume </a>
-                        </li>
-                        <li>
-                            <a href="#contact-me">Contact</a>
-                        </li>
+                    <ul
+                        className={
+                            this.state.responsive
+                                ? "top-nav responsive"
+                                : "top-nav"
+                        }
+                    >
                         <a
-                            href="javascript:void(0);"
+                            href="javascript:void(0)"
                             className="icon"
-                            onClick={this.myFunction}
+                            onClick={this.toggleResponsive}
                         >
                             <i id="hamburger" className="fa fa-bars"></i>
                         </a>
+                        <li>
+                            <a
+                                href="#intro-section"
+                                onClick={
+                                    this.state.responsive
+                                        ? this.toggleResponsive
+                                        : null
+                                }
+                            >
+                                Home
+                            </a>
+                        </li>
+                        <li>
+                            <a
+                                href="#about-me"
+                                onClick={
+                                    this.state.responsive
+                                        ? this.toggleResponsive
+                                        : null
+                                }
+                            >
+                                About
+                            </a>
+                        </li>
+                        <li>
+                            <a
+                                href="#projects"
+                                onClick={
+                                    this.state.responsive
+                                        ? this.toggleResponsive
+                                        : null
+                                }
+                            >
+                                Projects
+                            </a>
+                        </li>
+                        <li>
+                            <a
+                                href="#resume"
+                                onClick={
+                                    this.state.responsive
+                                        ? this.toggleResponsive
+                                        : null
+                                }
+                            >
+                                Resume{" "}
+                            </a>
+                        </li>
+                        <li>
+                            <a
+                                href="#contact-me"
+                                onClick={
+                                    this.state.responsive
+                                        ? this.toggleResponsive
+                                        : null
+                                }
+                            >
+                                Contact
+                            </a>
+                        </li>
                     </ul>
                 </div>
                 <div className="home">
