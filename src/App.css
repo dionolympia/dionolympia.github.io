@@ -116,10 +116,8 @@ html {
 
 .about-me,
 .projects,
-.resume,
-.contact-me {
+.resume {
     min-height: 50vh;
-    padding-top: 3em;
     padding-bottom: 3em;
 }
 
@@ -344,6 +342,7 @@ html {
 
 .contact-me {
     color: #333;
+    max-height: calc(100% - 132px);
 }
 
 .contact-me-contents {
@@ -415,10 +414,6 @@ html {
         font-size: 2vh;
     }
 
-    .about-me-header {
-        font-size: 5vw;
-    }
-
     .intro-section,
     .about-me,
     .projects,
@@ -441,6 +436,9 @@ html {
 
     .resume-html {
         margin: 0px 10px;
+    }
+    .header {
+        font-size: 7vw;
     }
 }
 
@@ -466,7 +464,9 @@ html {
 
 @media screen and (max-width: 700px) {
     .nav li {
-        display: none;
+        opacity: 0;
+        visibility: hidden;
+        transition: none;
     }
 
     .nav ul {
@@ -495,10 +495,12 @@ html {
         min-height: 66px;
     }
     .top-nav.responsive li {
+        visibility: visible;
+        opacity: 100%;
         float: none;
-        display: block;
         text-align: left;
         clear: both;
+        transition: 0.25s ease all;
     }
 
     .top-nav.responsive li a {
