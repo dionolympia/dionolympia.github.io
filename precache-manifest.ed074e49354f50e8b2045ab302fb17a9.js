@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "6f60a4fe6ff95bf0c793da6d70e8eae2",
+    "revision": "89e5b7a9c3222fbad266607ff7427989",
     "url": "/index.html"
   },
   {
@@ -8,8 +8,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/css/2.de424728.chunk.css"
   },
   {
-    "revision": "906ce8030351590d80b6",
-    "url": "/static/css/main.ba1f289f.chunk.css"
+    "revision": "8b46099ec7f417142446",
+    "url": "/static/css/main.482e57a7.chunk.css"
   },
   {
     "revision": "1239f8f38f7249ad7462",
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/js/2.5b3175a0.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "906ce8030351590d80b6",
-    "url": "/static/js/main.1ae8d051.chunk.js"
+    "revision": "8b46099ec7f417142446",
+    "url": "/static/js/main.dc6c6d89.chunk.js"
   },
   {
     "revision": "5284eec07972ace79c95",
@@ -34,6 +34,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "f9afff17341cbf9c3ce209e03dd02f9f",
     "url": "/static/media/game-of-life.f9afff17.png"
+  },
+  {
+    "revision": "3aa8a7de54df6215e4d6f1954f213626",
+    "url": "/static/media/md-bg.3aa8a7de.jpg"
   },
   {
     "revision": "795e22b6cdfb69058b9130c126f301d3",
