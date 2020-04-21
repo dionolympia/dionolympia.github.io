@@ -167,9 +167,9 @@ class Home extends Component {
                                     include basketball, baseball, songwriting, &
                                     playing guitar.
                                     <br /> <hr />I recently graduated from UMBC
-                                    and I currently work as an Associate
-                                    Software Developer at Customer Value
-                                    Partners Inc.
+                                    with a B.S. in Computer Science and I
+                                    currently work as an Associate Software
+                                    Developer at Customer Value Partners Inc.
                                 </div>
                             </div>
                         </div>
@@ -331,12 +331,11 @@ class Home extends Component {
                                             <li>
                                                 Experienced with JavaScript,
                                                 HTML, CSS, MySQL, SQLite,
-                                                Node.js, C#, PHP
+                                                Node.js, C#, PHP, jQuery
                                             </li>
                                             <li>
-                                                Familiar with Java, React,
-                                                Angular, Python, C++, jQuery,
-                                                Swift
+                                                Familiar with React, Angular,
+                                                Java, Python, C++, Swift
                                             </li>
                                             <li>
                                                 Worked with MS Office suite,
