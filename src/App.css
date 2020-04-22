@@ -357,8 +357,6 @@ html {
 
 .contact-me {
     color: #333;
-    max-height: calc(100vh - 132px);
-    min-height: calc(100vh - 132px);
 }
 
 .contact-me-contents {
@@ -538,5 +536,12 @@ html {
     .about-me {
         padding-left: 0;
         padding-right: 0;
+    }
+}
+
+@media screen and (min-height: 700px){
+    .contact-me{
+        max-height: calc(100vh - 132px);
+        min-height: calc(100vh - 132px);
     }
 }
