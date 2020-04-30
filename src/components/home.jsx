@@ -7,6 +7,7 @@ import Tetris from "./project-images/tetris.png";
 import SongSearch from "./project-images/song-search.png";
 import Wanderer from "./project-images/wanderer.png";
 import GameOfLife from "./project-images/game-of-life.png";
+import Logo from "./personal-logo.svg";
 
 class Home extends Component {
     constructor(props) {
@@ -102,6 +103,9 @@ class Home extends Component {
                 </div>
                 <div className="home">
                     <div className="intro-section" id="intro-section">
+                        <div className="personal-logo">
+                            <img src={Logo} alt="logo" height="175px" />
+                        </div>
                         <div className="name">
                             <span>Dion Olympia</span>
                         </div>
