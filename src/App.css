@@ -133,6 +133,10 @@ html {
     width: 100%;
 }
 
+.personal-logo {
+    padding-top: 25px;
+}
+
 .name {
     font-family: "Poppins", sans-serif;
     text-align: center;
@@ -255,9 +259,13 @@ html {
     display: inline-block;
 }
 
-.project-card .image img {
-    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+.project-card .image {
+    -webkit-filter: grayscale(100%);
     filter: grayscale(100%);
+}
+.project-card .image:hover {
+    -webkit-filter: none;
+    filter: none;
 }
 
 .image-overlay {
