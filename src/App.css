@@ -304,7 +304,7 @@ html {
 }
 
 .project-card img {
-    max-width: 125px;
+    max-width: 14vw;
     max-height: auto;
     padding: 0.25em;
 }
@@ -489,7 +489,7 @@ html {
 
 @media screen and (max-width: 600px) {
     .project-card img {
-        max-width: 50px;
+        max-width: 90px;
     }
 
     #search-plus {

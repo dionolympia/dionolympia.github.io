@@ -7,6 +7,7 @@ import Tetris from "./project-images/tetris.png";
 import SongSearch from "./project-images/song-search.png";
 import Wanderer from "./project-images/wanderer.png";
 import GameOfLife from "./project-images/game-of-life.png";
+import Sudoku from "./project-images/sudoku.png";
 import Logo from "./personal-logo.svg";
 
 class Home extends Component {
@@ -247,6 +248,19 @@ class Home extends Component {
                                 <div className="project-card">
                                     <div className="image">
                                         <img src={GameOfLife} />
+                                        <div className="image-overlay">
+                                            <a>
+                                                <i
+                                                    className="fas fa-search-plus"
+                                                    id="search-plus"
+                                                />
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="project-card">
+                                    <div className="image">
+                                        <img src={Sudoku} />
                                         <div className="image-overlay">
                                             <a>
                                                 <i
