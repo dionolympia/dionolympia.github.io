@@ -48,7 +48,7 @@ html {
     list-style-type: none;
     position: fixed;
     top: 0;
-    background-color: #2e2e2e;
+    background-color: #313131;
     /* background-color: #333; */
     color: #ccc;
     width: 100%;
@@ -72,27 +72,27 @@ html {
     padding: 20px 5vw;
     text-decoration: none;
     width: 10vw;
-    font-size: 1em;
+    font-size: 0.75em;
     min-height: 100%;
 }
 
 .nav li a:hover {
     /* background-color: #ccc; */
     /* color: rgb(61, 129, 185); */
-    background-color: rgb(61, 129, 185);
-    transition: all 0.1s ease 0s;
+    background-color: rgba(106, 106, 106, 0.5);
+    transition: all 0.05s ease 0s;
     text-decoration: none;
 }
 
 .nav .icon {
     display: none;
-    color: white;
+    color: rgba(106, 106, 106, 0.5);
     width: 25px;
 }
 
 .nav .icon:hover {
     text-decoration: none;
-    color: rgb(61, 129, 185);
+    color: rgba(106, 106, 106, 1);
 }
 
 #hamburger {
@@ -143,14 +143,15 @@ html {
     font-size: 6vw;
     white-space: nowrap;
     /* color: #333; */
-    color: #ddd;
+    color: #313131;
     margin: 25px 0px;
+    /* font-weight: bold; */
 }
 
 .software-developer {
     text-align: center;
     /* color: #888; */
-    color: #ddd;
+    color: #717171;
     font-family: "Poppins", sans-serif;
     font-size: 3vw;
 }
@@ -158,7 +159,7 @@ html {
 .skills {
     text-align: center;
     font-size: 2vw;
-    color: #ddd;
+    color: #717171;
 }
 
 .social-links {
@@ -168,13 +169,13 @@ html {
 .social-links a {
     padding: 10px;
     /* color: #333; */
-    color: #fff;
-    transition: 0.1s all;
+    color: #313131;
+    transition: 0.05s all;
 }
 
 .social-links a:hover {
-    color: rgb(61, 129, 185);
-    transition: 0.1s all;
+    color: rgba(106, 106, 106, 0.5);
+    transition: 0.05s all;
 }
 
 .social-links a i {
@@ -272,7 +273,7 @@ html {
     opacity: 0;
     width: 100%;
     height: 100%;
-    background: rgba(61, 129, 185, 0.5);
+    background: rgba(41, 41, 41, 0.5);
     position: absolute;
     top: 0;
     left: 0;
@@ -283,7 +284,7 @@ html {
     text-align: center;
     justify-content: center;
     align-items: center;
-    transition: all 0.1s;
+    /* transition: all 0.1s; */
 }
 
 .image:hover .image-overlay {
@@ -365,7 +366,7 @@ html {
 
 .resume-button:hover {
     text-decoration: none;
-    background-color: rgb(61, 129, 185);
+    background-color: #717171;
     color: #eee;
 }
 
