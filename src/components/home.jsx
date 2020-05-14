@@ -274,7 +274,7 @@ class Home extends Component {
                             </div>
                         </div>
                         <br />
-                        <h4>* Note: Section Status = WIP</h4>
+                        <h4>* WIP *</h4>
                     </div>
 
                     <div className="resume" id="resume">
@@ -284,10 +284,10 @@ class Home extends Component {
                         <div className="resume-contents">
                             <div
                                 className="resume-html"
-                                style={{
-                                    fontFamily:
-                                        "'Times New Roman', Times, serif",
-                                }}
+                                // style={{
+                                //     fontFamily:
+                                //         "'Times New Roman', Times, serif",
+                                // }}
                             >
                                 <div className="resume-header">
                                     <h1>Dion Olympia</h1>

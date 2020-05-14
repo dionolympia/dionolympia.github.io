@@ -2,10 +2,12 @@ html,
 body {
     height: 100%;
     background-color: #eee;
+    font-family: "Inter", sans-serif;
 }
 
 .home {
     background-color: white;
+    font-family: "Inter", sans-serif;
 }
 
 html {
@@ -48,7 +50,8 @@ html {
     list-style-type: none;
     position: fixed;
     top: 0;
-    background-color: #313131;
+    background-color: #383838;
+    /* background-color: #555555; */
     /* background-color: #333; */
     color: #ccc;
     width: 100%;
@@ -72,8 +75,9 @@ html {
     padding: 20px 5vw;
     text-decoration: none;
     width: 10vw;
-    font-size: 0.75em;
+    font-size: 1em;
     min-height: 100%;
+    font-family: "Inter", sans-serif;
 }
 
 .nav li a:hover {
@@ -86,13 +90,13 @@ html {
 
 .nav .icon {
     display: none;
-    color: rgba(106, 106, 106, 0.5);
+    color: #6d6d6d;
     width: 25px;
 }
 
 .nav .icon:hover {
     text-decoration: none;
-    color: rgba(106, 106, 106, 1);
+    color: #858585;
 }
 
 #hamburger {
@@ -119,6 +123,7 @@ html {
     align-items: center;
     justify-content: center;
     scroll-margin: 66px 0 0 0;
+    font-family: "Inter", sans-serif;
 }
 
 .about-me,
@@ -138,7 +143,6 @@ html {
 }
 
 .name {
-    font-family: "Poppins", sans-serif;
     text-align: center;
     font-size: 6vw;
     white-space: nowrap;
@@ -146,13 +150,14 @@ html {
     color: #313131;
     margin: 25px 0px;
     /* font-weight: bold; */
+    /* text-transform: uppercase; */
+    font-family: "Poppins", sans-serif;
 }
 
 .software-developer {
     text-align: center;
     /* color: #888; */
     color: #717171;
-    font-family: "Poppins", sans-serif;
     font-size: 3vw;
 }
 
@@ -174,7 +179,7 @@ html {
 }
 
 .social-links a:hover {
-    color: rgba(106, 106, 106, 0.5);
+    color: rgba(106, 106, 106, 1);
     transition: 0.05s all;
 }
 
@@ -186,12 +191,16 @@ html {
 
 .header {
     min-height: 10vh;
-    font-size: 4vw;
+    font-size: 2vw;
     font-weight: bold;
     display: flex;
     align-items: center;
     justify-content: center;
     color: #2e2e2e;
+    text-transform: uppercase;
+    border-bottom: 1px solid black;
+    margin-bottom: 25px;
+    padding: 0px 50px;
 }
 
 .about-me {
@@ -285,6 +294,7 @@ html {
     justify-content: center;
     align-items: center;
     /* transition: all 0.1s; */
+    cursor: pointer;
 }
 
 .image:hover .image-overlay {
@@ -313,7 +323,6 @@ html {
 #search-plus {
     font-size: 4em;
     text-align: center;
-    cursor: pointer;
 }
 
 .resume {
@@ -322,7 +331,7 @@ html {
 }
 
 .resume-html {
-    background-color: #ddd;
+    background-color: rgb(255, 255, 255);
     color: black;
     min-height: 100%;
     min-width: 50%;
@@ -358,7 +367,6 @@ html {
     background-color: #ccc;
     color: black;
     padding: 1em;
-    font-family: "Poppins", sans-serif;
     border: none;
     border-radius: 2.5%;
     transition: all 0.1s ease 0s;
@@ -381,11 +389,11 @@ html {
 }
 
 .contact-me-contents span {
-    font-size: 2.5vw;
+    font-size: 1.25vw;
 }
 
 .contact-me-contents p {
-    font-size: 2vw;
+    font-size: 1.25vw;
     color: #333;
 }
 
@@ -398,8 +406,8 @@ html {
 }
 
 .footer-section {
-    background-color: #2e2e2e;
-    color: #ccc;
+    background-color: #383838;
+    color: #b1b1b1;
     min-height: 66px;
     text-align: center;
 }
@@ -470,7 +478,14 @@ html {
         margin: 0px 10px;
     }
     .header {
-        font-size: 7vw;
+        font-size: 4vw;
+    }
+    .contact-me-contents span {
+        font-size: 2vw;
+    }
+
+    .contact-me-contents p {
+        font-size: 2vw;
     }
 }
 
@@ -480,11 +495,19 @@ html {
     }
 
     .about-me-body {
-        font-size: 3vw;
+        font-size: 2.75vw;
+        text-align: center;
     }
 
     .about-me-avatar {
         width: 50vw;
+    }
+    .contact-me-contents span {
+        font-size: 2.5vw;
+    }
+
+    .contact-me-contents p {
+        font-size: 2.5vw;
     }
 }
 
