@@ -552,6 +552,10 @@ html {
         padding-left: 0;
         padding-right: 0;
     }
+
+    .intro-section {
+        background-image: url("./components/small-intro-bg.jpg");
+    }
 }
 
 @media screen and (min-height: 700px) {
