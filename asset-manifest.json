@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.6a5de927.chunk.css",
+    "main.css": "/static/css/main.b5a00e4e.chunk.css",
     "main.js": "/static/js/main.ee70bae1.chunk.js",
     "main.js.map": "/static/js/main.ee70bae1.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.ceaf4b5f.js",
@@ -9,14 +9,14 @@
     "static/js/2.6d2c027a.chunk.js": "/static/js/2.6d2c027a.chunk.js",
     "static/js/2.6d2c027a.chunk.js.map": "/static/js/2.6d2c027a.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.022bfe851a6cd158377e9ab10dbced14.js": "/precache-manifest.022bfe851a6cd158377e9ab10dbced14.js",
+    "precache-manifest.a10b5b13fc068c15688efd3333691023.js": "/precache-manifest.a10b5b13fc068c15688efd3333691023.js",
     "service-worker.js": "/service-worker.js",
     "static/css/2.de424728.chunk.css.map": "/static/css/2.de424728.chunk.css.map",
-    "static/css/main.6a5de927.chunk.css.map": "/static/css/main.6a5de927.chunk.css.map",
+    "static/css/main.b5a00e4e.chunk.css.map": "/static/css/main.b5a00e4e.chunk.css.map",
     "static/js/2.6d2c027a.chunk.js.LICENSE.txt": "/static/js/2.6d2c027a.chunk.js.LICENSE.txt",
     "static/media/avatar.jpeg": "/static/media/avatar.05d339b8.jpeg",
     "static/media/game-of-life.png": "/static/media/game-of-life.f9afff17.png",
-    "static/media/App.css": "/static/media/intro-bg.ce8f174f.jpg",
+    "static/media/App.css": "/static/media/small-intro-bg.51334b53.jpg",
     "static/media/personal-logo.svg": "/static/media/personal-logo.1fdf2a78.svg",
     "static/media/pixel.png": "/static/media/pixel.f2d08fc0.png",
     "static/media/resume.pdf": "/static/media/resume.b9e30f7d.pdf",
@@ -29,7 +29,7 @@
     "static/js/runtime-main.ceaf4b5f.js",
     "static/css/2.de424728.chunk.css",
     "static/js/2.6d2c027a.chunk.js",
-    "static/css/main.6a5de927.chunk.css",
+    "static/css/main.b5a00e4e.chunk.css",
     "static/js/main.ee70bae1.chunk.js"
   ]
 }
