@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "5fb66098fa2459a5ad45a5331580da64",
+    "revision": "d74e7fadc166c27372306a73a67c4b48",
     "url": "/index.html"
   },
   {
@@ -8,8 +8,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/css/2.de424728.chunk.css"
   },
   {
-    "revision": "f9d2a891504f968b2412",
-    "url": "/static/css/main.07bc4f80.chunk.css"
+    "revision": "3d962213d2e8965db734",
+    "url": "/static/css/main.6a5de927.chunk.css"
   },
   {
     "revision": "34bb30a4475be300080b",
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/js/2.6d2c027a.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "f9d2a891504f968b2412",
-    "url": "/static/js/main.0a040648.chunk.js"
+    "revision": "3d962213d2e8965db734",
+    "url": "/static/js/main.ee70bae1.chunk.js"
   },
   {
     "revision": "5284eec07972ace79c95",
@@ -36,12 +36,12 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/game-of-life.f9afff17.png"
   },
   {
-    "revision": "e542f7028bd97ab118ff78cc3e803e6c",
-    "url": "/static/media/intro-bg.e542f702.jpg"
+    "revision": "ce8f174fd64c7e5b338abb2e942b5986",
+    "url": "/static/media/intro-bg.ce8f174f.jpg"
   },
   {
-    "revision": "9f26cec558937257ce43fe2f75b2c0ea",
-    "url": "/static/media/personal-logo.9f26cec5.svg"
+    "revision": "1fdf2a78d5a6276e115e2085bbcaa7f6",
+    "url": "/static/media/personal-logo.1fdf2a78.svg"
   },
   {
     "revision": "f2d08fc034a863689562f76712b039df",
