@@ -578,6 +578,10 @@ html {
 
     .intro-section {
         background-image: url("./components/small-intro-bg.jpg");
+        background-attachment: unset;
+        background-position: unset;
+        background-repeat: unset;
+        background-size: cover;
     }
 }
 
