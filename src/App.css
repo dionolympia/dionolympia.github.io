@@ -259,7 +259,7 @@ html {
     justify-content: center;
 }
 .project-card {
-    margin: 1em;
+    margin: 10px;
     background-color: #ddd;
     color: black;
 }
@@ -475,7 +475,7 @@ html {
     }
 
     .resume-html {
-        margin: 0px 10px;
+        margin: 0px;
     }
     .header {
         font-size: 4vw;
@@ -577,11 +577,13 @@ html {
     }
 
     .intro-section {
+        /* background-image: unset; */
         background-image: url("./components/small-intro-bg.jpg");
         background-attachment: unset;
         background-position: unset;
         background-repeat: unset;
         background-size: cover;
+        max-width: 100vw;
     }
 }
 
