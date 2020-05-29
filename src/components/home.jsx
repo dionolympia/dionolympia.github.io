@@ -359,7 +359,7 @@ class Home extends Component {
                                                 Worked with MS Office suite,
                                                 Photoshop, Git, Github, GitLab,
                                                 Unity, Xcode, Visual Studio,
-                                                Atom
+                                                VSCode, Atom
                                             </li>
                                         </ul>
                                     </div>
