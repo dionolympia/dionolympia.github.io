@@ -10,7 +10,7 @@ import GameOfLife from "./project-images/game-of-life.png";
 import Sudoku from "./project-images/sudoku.png";
 import Logo from "../img/logo.svg";
 import CompPhotoThree from "../img/avatar.jpeg";
-import CompPhotoOne from "../img/ph.jpg";
+import CompPhotoOne from "../img/vineyard.jpg";
 import CompPhotoTwo from "../img/obx.jpg";
 import videoMp4 from "../img/video.mp4";
 import videoWebm from "../img/video.webm";
@@ -42,47 +42,40 @@ class Home extends Component {
           <label htmlFor="navi-toggle" className="navigation__button">
             <span className="navigation__icon">&nbsp;</span>
           </label>
-          <div className="navigation__background">&nbsp;</div>
-          <nav className="navigation__nav">
-            <ul className="navigation__list">
-              <li className="navigation__item">
-                <a href="#about-me" className="navigation__link">
-                  About Me
-                </a>
-              </li>
-              <li className="navigation__item">
-                <a href="#projects" className="navigation__link">
-                  Projects
-                </a>
-              </li>
-              <li className="navigation__item">
-                <a href="#interests" className="navigation__link">
-                  Interests
-                </a>
-              </li>
-              <li className="navigation__item">
-                <a href="#experience" className="navigation__link">
-                  Experience
-                </a>
-              </li>
-              <li className="navigation__item">
-                <a href="#contact-me" className="navigation__link">
-                  Contact Me
-                </a>
-              </li>
-            </ul>
-          </nav>
-        </div>
-        <header className="header">
-          <div className="header__logo-box">
-            <img src={Logo} alt="Logo" className="header__logo" />
+          <div className="navigation__background">
+
+          
+
           </div>
-          <div className="header__text-box">
-            <h1 className="heading-primary">
-              <span className="heading-primary--main">Dion Olympia</span>
-              <span className="heading-primary--sub">Software Developer</span>
-            </h1>
-            <div className="header__social-links">
+
+          <nav className="navigation__nav">
+              <ul className="navigation__list">
+                <li className="navigation__item">
+                  <a href="#about-me" className="navigation__link">
+                    About Me
+                  </a>
+                </li>
+                <li className="navigation__item">
+                  <a href="#projects" className="navigation__link">
+                    Projects
+                  </a>
+                </li>
+                <li className="navigation__item">
+                  <a href="#interests" className="navigation__link">
+                    Interests
+                  </a>
+                </li>
+                <li className="navigation__item">
+                  <a href="#experience" className="navigation__link">
+                    Experience
+                  </a>
+                </li>
+                <li className="navigation__item navigation__last-item">
+                  <a href="#contact-me" className="navigation__link">
+                    Contact Me
+                  </a>
+                </li>
+                <div className="header__social-links">
               <a href="https://www.github.com/dionolympia" target="_blank">
                 <i className="fab fa-github"></i>
               </a>
@@ -99,18 +92,32 @@ class Home extends Component {
                 <i className="fab fa-linkedin"></i>
               </a>
             </div>
+              </ul>
+
+            </nav>
+
+        </div>
+        <header className="header">
+       
+          <div className="header__text-box">
+            <h1 className="heading-primary">
+              <span className="heading-primary--main">Dion Olympia</span>
+              <span className="heading-primary--sub">Software Developer</span>
+            </h1>
+            
           </div>
         </header>
 
         <main>
           <section className="section-about">
-            <div className="u-center-text u-margin-bottom-big">
-              <h2 className="heading-secondary" id="about-me">
+          
+
+            <div className="row">
+            <div className="u-left-text u-margin-bottom-big">
+              <h2 className="heading-secondary heading-secondary--white" id="about-me">
                 About Me
               </h2>
             </div>
-
-            <div className="row">
               <div className="col-1-of-2">
                 <p className="paragraph">
                   I am a passionate programmer from Rockville, Maryland who
@@ -160,7 +167,9 @@ class Home extends Component {
             </div>
           </section>
           <section className="section-projects">
-            <div className="u-center-text u-margin-bottom-big">
+           
+            <div className="row">
+            <div className="u-left-text u-margin-bottom-big">
               <h2
                 className="heading-secondary heading-secondary--white"
                 id="projects"
@@ -168,7 +177,6 @@ class Home extends Component {
                 Projects
               </h2>
             </div>
-            <div className="row">
               <div className="col-1-of-3">
                 <div className="card">
                   <div className="card__side card__side--front card__side--front-1">
@@ -427,12 +435,13 @@ class Home extends Component {
             </div>
           </section>
           <section className="section-tours">
-            <div className="u-center-text u-margin-bottom-big">
-              <h2 className="heading-secondary" id="interests">
+            
+            <div className="row">
+            <div className="u-left-text u-margin-bottom-big">
+              <h2 className="heading-secondary heading-secondary--white" id="interests">
                 Interests
               </h2>
             </div>
-            <div className="row">
               <div className="col-1-of-4">
                 <div className="feature-box">
                   <i className="feature-box__icon icon-basic-webpage-img-txt"></i>
@@ -459,12 +468,12 @@ class Home extends Component {
               </div>
               <div className="col-1-of-4">
                 <div className="feature-box">
-                  {/* <i className="feature-box__icon icon-basic-settings"></i> */}
-                  <img
+                  <i className="feature-box__icon icon-basic-joypad"></i>
+                  {/* <img
                     className="feature-box__icon"
                     src="https://img.icons8.com/carbon-copy/100/000000/controller.png"
                     id="game-controller"
-                  />
+                  /> */}
                   <h3 className="heading-tertiary u-margin-bottom-small">
                     Game Development
                   </h3>
@@ -506,12 +515,13 @@ class Home extends Component {
                                 Your browser is not supported!
                             </video>
                         </div> */}
-            <div className="u-center-text u-margin-bottom-big">
-              <h2 className="heading-secondary" id="experience">
+       
+            <div className="row">
+            <div className="u-left-text u-margin-bottom-big">
+              <h2 className="heading-secondary heading-secondary--white" id="experience">
                 Experience
               </h2>
             </div>
-            <div className="row">
               <div className="story">
                 <div className="story__shape">
                   <img
@@ -590,29 +600,48 @@ class Home extends Component {
             </div>
           </section>
           <section className="section-contact">
-            <div className="row u-center-text u-margin-bottom-medium">
-              <h2 className="heading-secondary" id="contact-me">
-                Contact Me
-              </h2>
+            
+
+              <div className="row u-left-text u-margin-bottom-medium">
+                <h2 className="heading-secondary heading-secondary--white" id="contact-me">
+                  Contact Me
+                </h2>
+              </div>
+
+            
+            <div className="contact-me container">
+
+            <div className="row">
+             
+              <div className="col-1-of-2">
+                <a  href="tel:+12022139965">
+                  <div className="contact-me__phone-section">
+                  <i className="fa-3x fas fa-phone contact-me__icon--phone" />
+                  <p className="contact-me__label">Phone</p>
+                  <p className="contact-me__phone-number">(202)-213-9965</p>
+                </div>
+                </a>
+              
+
+          
+              </div>
+
+
+              <div className="col-1-of-2">
+                <a href="mailto:dionolympia@gmail.com">
+                    <div className="contact-me__email-section">
+                    <i className="fa-3x fas fa-envelope contact-me__icon--email" />
+                    <p className="contact-me__label">Email</p>
+                    <p className="contact-me__email">dionolympia@gmail.com</p>
+                  </div>
+                </a>
+             
+              </div>
             </div>
+                        
+             
 
-            <div className="contact-me">
-              <p className="contact-me__text">
-                Have any questions or want to get in touch?
-              </p>
-              <p className="contact-me__text">Feel free to reach out!</p>
-
-              <div className="contact-me__phone-section">
-                <i className="fa-3x fas fa-phone contact-me__icon--phone" />
-                <p className="contact-me__label">Phone</p>
-                <p className="contact-me__phone-number">(202)-213-9965</p>
-              </div>
-
-              <div className="contact-me__email-section">
-                <i className="fa-3x fas fa-envelope contact-me__icon--email" />
-                <p className="contact-me__label">Email</p>
-                <p className="contact-me__email">dionolympia@gmail.com</p>
-              </div>
+             
             </div>
           </section>
         </main>
