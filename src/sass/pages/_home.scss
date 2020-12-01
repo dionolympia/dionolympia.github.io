@@ -7,8 +7,8 @@
   // background: #151515;
   background-image: linear-gradient(
       to right bottom,
-      rgba(0, 0, 0, 0.85),
-      rgba(0, 0, 0, 0.85)
+      rgba(0, 0, 0, 0.86),
+      rgba(0, 0, 0, 0.86)
     ),
     url("../img/intro-bg-flipped.jpg");
 
@@ -36,18 +36,18 @@
   //   rgba($color-primary-dark, 0.6),
   //   rgba($color-primary-light, 1)
   // );
-  background-color: #222222;
+  background-color: #212121;
 
   background-size: cover;
   background-position: top;
   position: relative;
 
-  transform: skewY(-7deg);
-  margin-top: -15rem;
+  // transform: skewY(-7deg);
+  // margin-top: -15rem;
 
-  & > * {
-    transform: skewY(7deg);
-  }
+  // & > * {
+  //   transform: skewY(7deg);
+  // }
 
   @include respond(phone) {
     padding: 10rem 0;
@@ -55,7 +55,7 @@
 }
 
 .section-tours {
-  padding: 25rem 0 0rem 0;
+  padding-top: 25rem;
   margin-top: -15rem;
 
   @include respond(tab-port) {
@@ -64,7 +64,7 @@
 }
 
 .section-stories {
-  padding: 15rem 0 0 0;
+  padding-top: 15rem;
   position: relative;
   // background-image: linear-gradient(
   //     to right bottom,
@@ -73,15 +73,16 @@
   //   ),
   //   url("../img/small-intro-bg-1.jpg");
   // background-size: cover;
-  background-color: #222222;
+  background-color: #212121;
   @include respond(tab-port) {
     padding: 5rem 0;
   }
 }
 
 .section-contact {
-  padding: 4rem 0 10rem 0;
-  background-color: #222222;
+  padding-top: 4rem;
+  padding-bottom: 10rem;
+  background-color: #212121;
   // height: 100vh;
 }
 
@@ -107,13 +108,23 @@
     // margin: 5rem;
     transition: all 0.2s;
     border-radius: 50rem;
+    border: 0.25rem solid transparent;
 
     @include respond(tab-port) {
       margin: 1.5rem;
     }
 
+    @include respond(phone) {
+      width: 25rem;
+    }
+
+    // @include respond(phone) {
+    //   paddingL
+    // }
+
     &:hover {
       transform: scale(1.1);
+      border: 0.25rem solid #464646;
     }
   }
 
@@ -132,4 +143,40 @@
     font-size: 1.5rem;
     color: #777;
   }
+}
+
+#myBtn {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  top: 2rem; /* Place the button at the bottom of the page */
+  right: 2rem; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: white; /* Set a background color */
+  color: black; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  // padding: 15px; /* Some padding */
+  height: 3.5rem;
+  width: 3.5rem;
+  // border-radius: 10px; /* Rounded corners */
+  font-size: 18px; /* Increase font size */
+  font-weight: 800;
+  animation-name: fadeIn;
+  animation-duration: 0.4s;
+  animation-timing-function: ease;
+}
+
+section {
+  padding-left: 2rem;
+  padding-right: 2rem;
+  animation-name: fadeInSection;
+  animation-duration: 1s;
+  animation-timing-function: ease;
+}
+
+footer {
+  animation-name: fadeInSection;
+  animation-duration: 1s;
+  animation-timing-function: ease;
 }

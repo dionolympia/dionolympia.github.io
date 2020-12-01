@@ -9,6 +9,7 @@
   //   box-shadow: 0 1.5rem 4rem rgba($color-black, 0.15);
   transition: transform 0.3s;
   min-height: 30rem;
+  border: 0.25rem solid transparent;
 
   @include respond(tab-land) {
     min-height: 35rem;
@@ -39,7 +40,8 @@
   }
 
   &:hover {
-    transform: translateY(-1.5rem) scale(1.03);
+    // transform: translateY(-1.5rem) scale(1.03);
+    border: 0.25rem solid #464646;
   }
 
   &__text {

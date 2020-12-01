@@ -9,9 +9,10 @@ import Wanderer from "./project-images/wanderer.png";
 import GameOfLife from "./project-images/game-of-life.png";
 import Sudoku from "./project-images/sudoku.png";
 import Logo from "../img/logo.svg";
-import CompPhotoThree from "../img/avatar.jpeg";
-import CompPhotoOne from "../img/vineyard.jpg";
-import CompPhotoTwo from "../img/obx.jpg";
+import CompPhotoTwo from "../img/avatar.jpeg";
+import CompPhotoThree from "../img/vineyard.jpg";
+import CompPhotoOne from "../img/obx.jpg";
+import HeaderLogo from "../img/DO_logo.svg";
 import videoMp4 from "../img/video.mp4";
 import videoWebm from "../img/video.webm";
 import storyImageOne from "../img/cvp.png";
@@ -21,13 +22,17 @@ import storyImageThree from "../img/dhs.png";
 class Home extends Component {
   constructor(props) {
     super(props);
-    this.toggleResponsive = this.toggleResponsive.bind(this);
     this.state = { responsive: false };
+    this.test = this.test.bind(this);
   }
 
   toggleResponsive() {
     const currentState = this.state.responsive;
     this.setState({ responsive: !currentState });
+  }
+
+  test(){
+    window.scrollTo(0, 0);
   }
 
   render() {
@@ -98,14 +103,25 @@ class Home extends Component {
 
         </div>
         <header className="header">
-       
-          <div className="header__text-box">
-            <h1 className="heading-primary">
-              <span className="heading-primary--main">Dion Olympia</span>
-              <span className="heading-primary--sub">Software Developer</span>
-            </h1>
-            
+          <div className="test">
+            <div className="header__text-box">
+              <h1 className="heading-primary">
+                <span className="heading-primary--main">Dion Olympia</span>
+                <span className="heading-primary--sub">Software Developer</span>
+              </h1>
+              
+            </div>
           </div>
+    
+          <div className="header__logo-box">
+          <img
+                    src={HeaderLogo}
+                    alt="Dion Olympia Logo"
+                    className="header__logo"
+                  />
+          </div>
+      
+          
         </header>
 
         <main>
@@ -689,6 +705,8 @@ class Home extends Component {
             </div>
           </div>
         </footer>
+        <button onClick={this.test} id="myBtn" title="Go to top">&#8593;</button>
+
       </div>
     );
   }

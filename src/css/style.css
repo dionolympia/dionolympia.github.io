@@ -60,7 +60,31 @@ $breakpoint argument choices:
   0% {
     opacity: 0; }
   100% {
-    opacity: 0.8; } }
+    opacity: 1; } }
+
+@keyframes fadeInSection {
+  0% {
+    transform: skewY(7deg);
+    transform: translateY(10rem);
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@keyframes fadeInAndGrow {
+  0% {
+    opacity: 0;
+    transform: scale(0); }
+  100% {
+    opacity: 0.6;
+    transform: scale(1); } }
+
+@keyframes fadeInAndGrowText {
+  0% {
+    opacity: 0;
+    transform: scale(0); }
+  100% {
+    opacity: 1;
+    transform: scale(1); } }
 
 #about-me,
 #projects,
@@ -78,7 +102,7 @@ $breakpoint argument choices:
   box-sizing: inherit; }
 
 html {
-  background: #222222;
+  background: #202020;
   font-size: 62.5%; }
   @media (max-width: 75em) {
     html {
@@ -184,24 +208,53 @@ body {
 
 .header {
   height: 100vh;
-  background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), url("../img/intro-bg.jpg");
+  background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.86), rgba(0, 0, 0, 0.86)), url("../img/intro-bg.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
   filter: grayscale(50%); }
   .header__logo-box {
     position: absolute;
+    padding-right: 2rem;
+    z-index: 25;
+    position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%); }
+    @media (max-width: 56.25em) {
+      .header__logo-box {
+        padding-bottom: 0rem; } }
+    @media (max-width: 37.5em) {
+      .header__logo-box {
+        padding-right: 0;
+        padding-bottom: 20rem; } }
   .header__logo {
-    height: 20rem;
-    transition: all 0.2s ease; }
+    z-index: 25;
+    height: 50rem;
+    opacity: 0.6;
+    animation-name: fadeInAndGrow;
+    animation-duration: 1s;
+    animation-timing-function: ease; }
+    @media (max-width: 56.25em) {
+      .header__logo {
+        height: 40rem; } }
     @media (max-width: 37.5em) {
       .header__logo {
-        height: 15rem; } }
+        height: 18rem; } }
   .header__text-box {
-    padding-top: 35vh; }
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    z-index: 50;
+    margin: 0;
+    width: 100%; }
+    @media (max-width: 56.25em) {
+      .header__text-box {
+        top: 50%; } }
+    @media (max-width: 37.5em) {
+      .header__text-box {
+        top: 40%; } }
   .header__social-links {
     position: relative;
     text-align: center;
@@ -230,6 +283,23 @@ body {
         .header__social-links a {
           font-size: 4rem;
           margin: 1.5rem; } }
+
+.test {
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  animation-name: fadeInAndGrowText;
+  animation-duration: 1s;
+  animation-timing-function: ease;
+  width: 100%;
+  z-index: 50; }
+  @media (max-width: 56.25em) {
+    .test {
+      top: 50%; } }
+  @media (max-width: 37.5em) {
+    .test {
+      top: 40%; } }
 
 .row {
   max-width: 114rem;
@@ -272,8 +342,8 @@ body {
       padding: 0 2.5rem; } }
 
 .footer {
-  background-color: #222222;
-  padding: 0 0 10rem 0;
+  background-color: #212121;
+  padding: 0 2rem 10rem 2rem;
   font-size: 1.4rem; }
   @media (max-width: 56.25em) {
     .footer {
@@ -320,12 +390,12 @@ body {
     color: #f7f7f7;
     background-color: transparent;
     text-decoration: none;
-    text-transform: uppercase;
+    text-transform: lowercase;
     display: inline-block;
     transition: all 0.2s; }
   .footer__link:hover, .footer__link:active {
     box-shadow: 0 0.5rem 1.4rem rgba(0, 0, 0, 0.4);
-    transform: scale(1.3);
+    transform: scale(1.15);
     border-radius: 5px; }
   .footer__copyright {
     border-top: 1px solid rgba(238, 238, 238, 0.5);
@@ -522,7 +592,7 @@ body {
   animation-fill-mode: backwards; }
 
 .btn-text:link, .btn-text:visited {
-  color: #464646;
+  color: white;
   display: inline-block;
   text-decoration: none;
   border-bottom: 1px solid #464646;
@@ -577,7 +647,7 @@ body {
       transform: scale(1.05) translateY(-1rem);
       box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.6);
       z-index: 20;
-      outline: 1rem solid #464646; }
+      outline: 0.25rem solid #464646; }
   .composition:hover .composition__photo:not(:hover) {
     transform: scale(0.95); }
 
@@ -589,7 +659,8 @@ body {
   text-align: center;
   border-radius: 3px;
   transition: transform 0.3s;
-  min-height: 30rem; }
+  min-height: 30rem;
+  border: 0.25rem solid transparent; }
   @media (max-width: 75em) {
     .feature-box {
       min-height: 35rem; } }
@@ -608,7 +679,7 @@ body {
     -webkit-background-clip: text;
     color: transparent; }
   .feature-box:hover {
-    transform: translateY(-1.5rem) scale(1.03); }
+    border: 0.25rem solid #464646; }
   .feature-box__text {
     color: #777; }
 
@@ -777,7 +848,8 @@ body {
   border-radius: 0.5rem;
   padding: 6rem;
   padding-left: 9rem;
-  font-size: 1.6rem; }
+  font-size: 1.6rem;
+  border: 0.25rem solid transparent; }
   @media (max-width: 37.5em) {
     .story {
       padding: 3rem;
@@ -811,6 +883,8 @@ body {
     opacity: 0;
     transition: all 0.5s;
     backface-visibility: hidden; }
+  .story:hover {
+    border: 0.25rem solid #464646; }
   .story:hover .story__caption {
     opacity: 1;
     transform: translate(-50%, -50%); }
@@ -852,42 +926,39 @@ body {
 
 .section-about {
   height: 100vh;
-  background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), url("../img/intro-bg-flipped.jpg");
+  background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.86), rgba(0, 0, 0, 0.86)), url("../img/intro-bg-flipped.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   position: relative; }
 
 .section-projects {
-  background-color: #222222;
+  background-color: #212121;
   background-size: cover;
   background-position: top;
-  position: relative;
-  transform: skewY(-7deg);
-  margin-top: -15rem; }
-  .section-projects > * {
-    transform: skewY(7deg); }
+  position: relative; }
   @media (max-width: 37.5em) {
     .section-projects {
       padding: 10rem 0; } }
 
 .section-tours {
-  padding: 25rem 0 0rem 0;
+  padding-top: 25rem;
   margin-top: -15rem; }
   @media (max-width: 56.25em) {
     .section-tours {
       padding: 20rem 0 10rem 0; } }
 
 .section-stories {
-  padding: 15rem 0 0 0;
+  padding-top: 15rem;
   position: relative;
-  background-color: #222222; }
+  background-color: #212121; }
   @media (max-width: 56.25em) {
     .section-stories {
       padding: 5rem 0; } }
 
 .section-contact {
-  padding: 4rem 0 10rem 0;
-  background-color: #222222; }
+  padding-top: 4rem;
+  padding-bottom: 10rem;
+  background-color: #212121; }
 
 .contact-me {
   text-align: center;
@@ -902,12 +973,17 @@ body {
     width: 30rem;
     display: inline-block;
     transition: all 0.2s;
-    border-radius: 50rem; }
+    border-radius: 50rem;
+    border: 0.25rem solid transparent; }
     @media (max-width: 56.25em) {
       .contact-me__phone-section, .contact-me__email-section, .contact-me__word-section {
         margin: 1.5rem; } }
+    @media (max-width: 37.5em) {
+      .contact-me__phone-section, .contact-me__email-section, .contact-me__word-section {
+        width: 25rem; } }
     .contact-me__phone-section:hover, .contact-me__email-section:hover, .contact-me__word-section:hover {
-      transform: scale(1.1); }
+      transform: scale(1.1);
+      border: 0.25rem solid #464646; }
   .contact-me__label {
     text-transform: uppercase; }
   @media (max-width: 56.25em) {
@@ -916,3 +992,45 @@ body {
   .contact-me__email, .contact-me__phone-number {
     font-size: 1.5rem;
     color: #777; }
+
+#myBtn {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Fixed/sticky position */
+  top: 2rem;
+  /* Place the button at the bottom of the page */
+  right: 2rem;
+  /* Place the button 30px from the right */
+  z-index: 99;
+  /* Make sure it does not overlap */
+  border: none;
+  /* Remove borders */
+  outline: none;
+  /* Remove outline */
+  background-color: white;
+  /* Set a background color */
+  color: black;
+  /* Text color */
+  cursor: pointer;
+  /* Add a mouse pointer on hover */
+  height: 3.5rem;
+  width: 3.5rem;
+  font-size: 18px;
+  /* Increase font size */
+  font-weight: 800;
+  animation-name: fadeIn;
+  animation-duration: 0.4s;
+  animation-timing-function: ease; }
+
+section {
+  padding-left: 2rem;
+  padding-right: 2rem;
+  animation-name: fadeInSection;
+  animation-duration: 1s;
+  animation-timing-function: ease; }
+
+footer {
+  animation-name: fadeInSection;
+  animation-duration: 1s;
+  animation-timing-function: ease; }

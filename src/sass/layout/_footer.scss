@@ -1,7 +1,7 @@
 .footer {
   //   background-image: linear-gradient(to bottom right, #222222, #161616);
-  background-color: #222222;
-  padding: 0 0 10rem 0;
+  background-color: #212121;
+  padding: 0 2rem 10rem 2rem;
   font-size: 1.4rem;
 
   @include respond(tab-port) {
@@ -70,7 +70,7 @@
       color: $color-grey-light-1;
       background-color: transparent;
       text-decoration: none;
-      text-transform: uppercase;
+      text-transform: lowercase;
       display: inline-block;
       transition: all 0.2s;
     }
@@ -79,7 +79,7 @@
     &:active {
       // color: $color-primary;
       box-shadow: 0 0.5rem 1.4rem rgba($color-black, 0.4);
-      transform: scale(1.3);
+      transform: scale(1.15);
       border-radius: 5px;
     }
   }
