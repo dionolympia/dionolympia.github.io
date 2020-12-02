@@ -18,12 +18,23 @@ import videoWebm from "../img/video.webm";
 import storyImageOne from "../img/cvp.png";
 import storyImageTwo from "../img/hhs.svg";
 import storyImageThree from "../img/dhs.png";
+import $ from 'jquery';
 
 class Home extends Component {
   constructor(props) {
     super(props);
-    this.state = { responsive: false };
-    this.test = this.test.bind(this);
+    this.state = { responsive: false, modalOpen: false};
+    this.top = this.top.bind(this);
+
+
+    $("#sendMessage").on("click", function() {
+      $.ajax({
+          url: "//formspree.io/dionolympia@gmail.com", 
+          method: "POST",
+          data: {message: "hello!"},
+          dataType: "json"
+      });
+    });
   }
 
   toggleResponsive() {
@@ -31,8 +42,26 @@ class Home extends Component {
     this.setState({ responsive: !currentState });
   }
 
-  test(){
+  top(){
     window.scrollTo(0, 0);
+  }
+
+  emailModal() {
+    const currentState = this.state.modalOpen;
+    // console.log(this.state);
+    if(!currentState){
+      document.getElementById("emailModal").style.display = "block";
+      document.body.style.overflowY = "hidden";
+      console.log("email modal true");
+    }
+    else{
+      document.getElementById("emailModal").style.display = "none";
+      document.body.style.overflowY = "scroll";
+      console.log("email modal false");
+    }
+    this.setState({ modalOpen: !currentState });
+  
+    
   }
 
   render() {
@@ -644,17 +673,19 @@ class Home extends Component {
 
 
               <div className="col-1-of-2">
-                <a href="mailto:dionolympia@gmail.com">
-                    <div className="contact-me__email-section">
+                {/* <a href="mailto:dionolympia@gmail.com"> */}
+
+                  <div className="contact-me__email-section" onClick={this.emailModal.bind(this)}>
                     <i className="fa-3x fas fa-envelope contact-me__icon--email" />
                     <p className="contact-me__label">Email</p>
                     <p className="contact-me__email">dionolympia@gmail.com</p>
                   </div>
-                </a>
+      
+                    
+                {/* </a> */}
              
               </div>
             </div>
-                        
              
 
              
@@ -705,7 +736,54 @@ class Home extends Component {
             </div>
           </div>
         </footer>
-        <button onClick={this.test} id="myBtn" title="Go to top">&#8593;</button>
+        <button onClick={this.top} id="myBtn" title="Go to top">&#8593;</button>
+        <div id="emailModal">
+          <div id="emailForm"> 
+
+
+           <div onClick={this.emailModal.bind(this)} id="closeModalButton"></div>
+
+            <form
+              action="https://formspree.io/f/mqkgdnlk"
+              method="POST"
+            >
+              {/* <div className="formInput" > 
+                <label>
+                Your email:
+                <input required className="square" type="email" name="_replyto"/>
+              </label></div>
+             <div className="formInput" >
+             <label>
+                Your message:
+           
+              </label>
+              
+             </div>
+             <div>
+             <textarea required className="square" name="message"></textarea>
+             </div>
+           <div>
+           <button id="testSend" type="submit">Send</button>
+           </div> */}
+
+              <label class="label" for="input">Your Email:</label>
+                <input required class="input" type="email" name="_replyto" id="input"/>
+                
+                <label class="label" for="textarea">Your Message:</label>
+                <textarea required class="textarea" id="textarea" name="message"></textarea>
+        
+                <button id="sendEmail" type="submit">Send</button>
+
+            
+    
+            </form>
+
+
+          </div>
+
+        
+
+        </div>
 
       </div>
     );

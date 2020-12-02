@@ -1,0 +1,108 @@
+#emailModal {
+  position: fixed; /* Sit on top of the page content */
+  display: none; /* Hidden by default */
+  width: 100%; /* Full width (cover the whole page) */
+  height: 100%; /* Full height (cover the whole page) */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* Black background with opacity */
+  z-index: 10000; /* Specify a stack order in case you're using a different order for other elements */
+  // cursor: pointer; /* Add a pointer on hover */
+}
+
+#emailForm {
+  @include centerItems();
+  background-color: white;
+  padding: 2rem;
+  width: 50rem;
+
+  @include respond(phone) {
+    width: 30rem;
+  }
+}
+
+.formInput {
+  padding: 2rem;
+}
+
+.formInput.square {
+  border-radius: 0;
+}
+
+// Minimal Form Generic: Resets
+input,
+select,
+textarea {
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  outline: none;
+  border: none;
+  border-radius: 0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+// Minimal Form Objects: Styles
+
+// Label
+.label {
+  display: block;
+  margin-bottom: 0.25em;
+  font-size: 2rem;
+}
+
+// Input
+.input {
+  // padding: 10px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: lightgray;
+  background-color: white;
+  font-size: 2rem;
+
+  &:focus {
+    border-color: gray;
+  }
+
+  &::placeholder {
+    color: gray;
+  }
+}
+
+// Textarea
+.textarea {
+  @extend .input;
+
+  min-height: 100px;
+  resize: vertical;
+}
+
+#closeModalButton:after {
+  color: black;
+  content: "\00d7"; /* This will render the 'X' */
+  font-size: 3rem;
+  float: right;
+  cursor: pointer;
+}
+
+label {
+  clear: both;
+}
+
+#sendEmail {
+  background-color: #222222;
+  color: white;
+  padding: 1rem;
+  margin-top: 1rem;
+  text-align: center;
+  border: none;
+  outline: none;
+  text-transform: uppercase;
+  float: right;
+  cursor: pointer;
+  font-size: 1.5rem;
+}

@@ -372,13 +372,15 @@ body {
   .footer__navigation {
     border-top: 1px solid rgba(238, 238, 238, 0.5);
     padding-top: 2rem;
-    display: inline-block; }
+    display: inline-block;
+    width: 70%; }
     @media (max-width: 56.25em) {
       .footer__navigation {
         width: 100%;
         text-align: center; } }
   .footer__list {
-    list-style: none; }
+    list-style: none;
+    text-align: center; }
   .footer__item {
     display: inline-block; }
     .footer__item:not(:last-child) {
@@ -401,7 +403,7 @@ body {
     border-top: 1px solid rgba(238, 238, 238, 0.5);
     padding-top: 2rem;
     color: #fff;
-    width: 85%;
+    width: 70%;
     float: right;
     text-align: center;
     text-transform: uppercase;
@@ -965,6 +967,8 @@ body {
   font-size: 1.6rem; }
   .contact-me *:not(:last-child) {
     margin-bottom: 2.5rem; }
+  .contact-me__email-section {
+    cursor: pointer; }
   .contact-me__phone-section, .contact-me__email-section, .contact-me__word-section {
     color: white;
     background-color: #161616;
@@ -1034,3 +1038,96 @@ footer {
   animation-name: fadeInSection;
   animation-duration: 1s;
   animation-timing-function: ease; }
+
+#emailModal {
+  position: fixed;
+  /* Sit on top of the page content */
+  display: none;
+  /* Hidden by default */
+  width: 100%;
+  /* Full width (cover the whole page) */
+  height: 100%;
+  /* Full height (cover the whole page) */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  /* Black background with opacity */
+  z-index: 10000;
+  /* Specify a stack order in case you're using a different order for other elements */ }
+
+#emailForm {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 2rem;
+  width: 50rem; }
+  @media (max-width: 37.5em) {
+    #emailForm {
+      width: 30rem; } }
+
+.formInput {
+  padding: 2rem; }
+
+.formInput.square {
+  border-radius: 0; }
+
+input,
+select,
+textarea {
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  outline: none;
+  border: none;
+  border-radius: 0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none; }
+
+.label {
+  display: block;
+  margin-bottom: 0.25em;
+  font-size: 2rem; }
+
+.input, .textarea {
+  border-width: 1px;
+  border-style: solid;
+  border-color: lightgray;
+  background-color: white;
+  font-size: 2rem; }
+  .input:focus, .textarea:focus {
+    border-color: gray; }
+  .input::placeholder, .textarea::placeholder {
+    color: gray; }
+
+.textarea {
+  min-height: 100px;
+  resize: vertical; }
+
+#closeModalButton:after {
+  color: black;
+  content: "\00d7";
+  /* This will render the 'X' */
+  font-size: 3rem;
+  float: right;
+  cursor: pointer; }
+
+label {
+  clear: both; }
+
+#sendEmail {
+  background-color: #222222;
+  color: white;
+  padding: 1rem;
+  margin-top: 1rem;
+  text-align: center;
+  border: none;
+  outline: none;
+  text-transform: uppercase;
+  float: right;
+  cursor: pointer;
+  font-size: 1.5rem; }

@@ -41,6 +41,7 @@
     border-top: 1px solid rgba($color-grey-light-2, 0.5);
     padding-top: 2rem;
     display: inline-block;
+    width: 70%;
 
     @include respond(tab-port) {
       width: 100%;
@@ -50,6 +51,7 @@
 
   &__list {
     list-style: none;
+    text-align: center;
   }
 
   &__item {
@@ -88,7 +90,7 @@
     border-top: 1px solid rgba($color-grey-light-2, 0.5);
     padding-top: 2rem;
     color: $color-white;
-    width: 85%;
+    width: 70%;
     float: right;
     text-align: center;
     text-transform: uppercase;
