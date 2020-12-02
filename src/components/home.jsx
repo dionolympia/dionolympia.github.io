@@ -43,7 +43,7 @@ class Home extends Component {
   }
 
   top(){
-    window.scrollTo(0, 0);
+    $("html, body").animate({ scrollTop: "0px" });
   }
 
   emailModal() {
