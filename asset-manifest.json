@@ -1,24 +1,21 @@
 {
   "files": {
-    "main.css": "/static/css/main.7aa71b0a.chunk.css",
-    "main.js": "/static/js/main.a86761a7.chunk.js",
-    "main.js.map": "/static/js/main.a86761a7.chunk.js.map",
+    "main.css": "/static/css/main.d204c8c0.chunk.css",
+    "main.js": "/static/js/main.b78fb7a3.chunk.js",
+    "main.js.map": "/static/js/main.b78fb7a3.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.ceaf4b5f.js",
     "runtime-main.js.map": "/static/js/runtime-main.ceaf4b5f.js.map",
-    "static/js/2.c66bac0b.chunk.js": "/static/js/2.c66bac0b.chunk.js",
-    "static/js/2.c66bac0b.chunk.js.map": "/static/js/2.c66bac0b.chunk.js.map",
+    "static/js/2.0f49e7a5.chunk.js": "/static/js/2.0f49e7a5.chunk.js",
+    "static/js/2.0f49e7a5.chunk.js.map": "/static/js/2.0f49e7a5.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.63b979eddfc45ea729c12c5a2fecd862.js": "/precache-manifest.63b979eddfc45ea729c12c5a2fecd862.js",
+    "precache-manifest.b8054b8b0f185a85206fca1825571f76.js": "/precache-manifest.b8054b8b0f185a85206fca1825571f76.js",
     "service-worker.js": "/service-worker.js",
-    "static/css/main.7aa71b0a.chunk.css.map": "/static/css/main.7aa71b0a.chunk.css.map",
-    "static/js/2.c66bac0b.chunk.js.LICENSE.txt": "/static/js/2.c66bac0b.chunk.js.LICENSE.txt",
+    "static/css/main.d204c8c0.chunk.css.map": "/static/css/main.d204c8c0.chunk.css.map",
+    "static/js/2.0f49e7a5.chunk.js.LICENSE.txt": "/static/js/2.0f49e7a5.chunk.js.LICENSE.txt",
     "static/media/DO_logo.svg": "/static/media/DO_logo.4ed0bee0.svg",
     "static/media/avatar-tux.jpeg": "/static/media/avatar-tux.05d339b8.jpeg",
     "static/media/avatar.jpeg": "/static/media/avatar.05d339b8.jpeg",
-    "static/media/cvp.png": "/static/media/cvp.ccecaa39.png",
-    "static/media/dhs.png": "/static/media/dhs.ef937766.png",
     "static/media/game-of-life.png": "/static/media/game-of-life.f9afff17.png",
-    "static/media/hhs.svg": "/static/media/hhs.e3fffdad.svg",
     "static/media/style.css": "/static/media/intro-bg.ce8f174f.jpg",
     "static/media/icon-font.css": "/static/media/linea-basic-10.e6763f00.ttf",
     "static/media/logo.svg": "/static/media/logo.aa8498b5.svg",
@@ -35,8 +32,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.ceaf4b5f.js",
-    "static/js/2.c66bac0b.chunk.js",
-    "static/css/main.7aa71b0a.chunk.css",
-    "static/js/main.a86761a7.chunk.js"
+    "static/js/2.0f49e7a5.chunk.js",
+    "static/css/main.d204c8c0.chunk.css",
+    "static/js/main.b78fb7a3.chunk.js"
   ]
 }
