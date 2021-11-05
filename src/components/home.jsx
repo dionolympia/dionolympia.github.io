@@ -213,6 +213,136 @@ class Home extends Component {
               </div>
             </div>
           </section>
+
+          <section className="section-stories">
+            <div className="row">
+              <div className="u-left-text">
+                <h2 className="heading-secondary heading-secondary--white" id="experience">
+                  Experience
+                </h2>
+              </div>
+            </div>
+            <div className="row">
+            <div className="story">
+                <div className="story__shape">
+                  <img
+                    className="story__image"
+                    src={CvpImage}
+                    alt="CVP (Customer Value Partners)"
+                  />
+                </div>
+                <div className="story__text">
+                  <h3 className="heading-tertiary u-margin-bottom-small">
+                    Customer Value Partners Inc. (Associate Technologist)
+                    <span style={{float: "right", fontWeight: 800}}>February 2020 - Present</span>
+                  </h3>
+                  <p>
+                    As a Software Engineer, 2+ years of experience in providing IT consulting for projects across multiple government agencies.  Worked on many teams, while specializing in full-stack web development. Recruited in 2019 by CVP's College-Hire program.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className="row">
+              <div className="story">
+                <div className="story__shape">
+                  <img
+                    className="story__image"
+                    src={OigImage}
+                    alt="HHS-OIG (Health & Human Services - Office of Inspector General)"
+                  />
+                </div>
+                <div className="story__text">
+                  <h3 className="heading-tertiary u-margin-bottom-small">
+                    Department of Health and Human Services (Contractor)
+                    <span style={{float: "right", fontWeight: 800}}>April 2020 - July 2020</span>
+                  </h3>
+                  <p>
+                    As a Junior Software Developer, worked on front-end web
+                    design for the Office of Inspector General (OIG) data
+                    analytics / business intelligence tools team, and utilized
+                    web browser testing software & developed Python scripts to
+                    automate ETL processes.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className="row">
+              <div className="story">
+                <div className="story__shape">
+                  <img
+                    className="story__image"
+                    src={DhsImage}
+                    alt="DHS (Department of Homeland Security)"
+                  />
+                </div>
+                <div className="story__text">
+                  <h3 className="heading-tertiary u-margin-bottom-small">
+                    Department of Homeland Security (Contractor)
+                    <span style={{float: "right", fontWeight: 800}}>July 2020 - September 2020</span>
+                  </h3>
+                  <p>
+                    As a C#/.NET Developer, worked on front-end and back-end web
+                    development to maintain and provide updates to a web
+                    application for automating and organizing workflows for
+                    processing environmental reviews of DHS projects. Utilized
+                    the .NET MVC Framework, Oracle databases, and AWS RDS
+                    Console.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className="row">
+              <div className="story">
+                <div className="story__shape">
+                  <img
+                    className="story__image"
+                    src={FpsImage}
+                    alt="FPS (Federal Protective Service)"
+                  />
+                </div>
+                <div className="story__text">
+                  <h3 className="heading-tertiary u-margin-bottom-small">
+                    Federal Protective Service (Contractor)
+                    <span style={{float: "right", fontWeight: 800}}>October 2020 - September 2020</span>
+                  </h3>
+                  <p>
+                    As a C#/.NET Developer, 
+                    provided maintainance and enhancements to a web
+                    application for overseeing staffing of contract security officers. Utilized
+                    the .NET MVC Framework, Entity Framework, and MS SQL Server
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className="row">
+              <div className="story">
+                <div className="story__shape">
+                  <img
+                    className="story__image"
+                    src={EpaImage}
+                    alt="FPS (Federal Protective Service)"
+                  />
+                </div>
+                <div className="story__text">
+                  <h3 className="heading-tertiary u-margin-bottom-small">
+                    Environmental Protection Agency (Contractor)
+                    <span style={{float: "right", fontWeight: 800}}>October 2020 - Present</span>
+                  </h3>
+                  <p>
+                    As a Full-Stack Developer, 
+                    providing software development to modernize the Clean Air Markets Division (CAMD) application portfolio.
+                    Utilizing React.js and NestJS for front-end and back-end respectively.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className="u-center-text u-margin-top-huge">
+              <a href={Resume} target="_blank" className="btn-text">
+                View Full Resume &rarr;
+              </a>
+            </div>
+          </section>
+
           <section className="section-projects">
            
             <div className="row">
@@ -542,156 +672,8 @@ class Home extends Component {
                 </div>
               </div>
             </div>
-
-            {/* <div className="u-center-text u-margin-top-big">
-                            <a href="#" className="btn btn--orange">
-                                Discover all tours
-                            </a>
-                        </div> */}
           </section>
-          <section className="section-stories">
-            {/* <div className="bg-video">
-                            <video
-                                className="bg-video__content"
-                                autoPlay
-                                muted
-                                loop
-                            >
-                                <source src={videoMp4} type="video/mp4" />
-                                <source src={videoWebm} type="video/webm" />
-                                Your browser is not supported!
-                            </video>
-                        </div> */}
-       
-     
-            
-            <div className="row">
-              <div className="u-left-text">
-                <h2 className="heading-secondary heading-secondary--white" id="experience">
-                  Experience
-                </h2>
-              </div>
-            </div>
-            <div className="row">
-            <div className="story">
-                <div className="story__shape">
-                  <img
-                    className="story__image"
-                    src={CvpImage}
-                    alt="CVP (Customer Value Partners)"
-                  />
-                </div>
-                <div className="story__text">
-                  <h3 className="heading-tertiary u-margin-bottom-small">
-                    Customer Value Partners Inc. (Associate Technologist)
-                    <span style={{float: "right", fontWeight: 800}}>February 2020 - Present</span>
-                  </h3>
-                  <p>
-                    As a Software Engineer, 2+ years of experience in providing IT consulting for projects across multiple government agencies.  Worked on many teams, while specializing in full-stack web development. Recruited in 2019 by CVP's College-Hire program.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div className="row">
-              <div className="story">
-                <div className="story__shape">
-                  <img
-                    className="story__image"
-                    src={OigImage}
-                    alt="HHS-OIG (Health & Human Services - Office of Inspector General)"
-                  />
-                </div>
-                <div className="story__text">
-                  <h3 className="heading-tertiary u-margin-bottom-small">
-                    Department of Health and Human Services (Contractor)
-                    <span style={{float: "right", fontWeight: 800}}>April 2020 - July 2020</span>
-                  </h3>
-                  <p>
-                    As a Junior Software Developer, worked on front-end web
-                    design for the Office of Inspector General (OIG) data
-                    analytics / business intelligence tools team, and utilized
-                    web browser testing software & developed Python scripts to
-                    automate ETL processes.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div className="row">
-              <div className="story">
-                <div className="story__shape">
-                  <img
-                    className="story__image"
-                    src={DhsImage}
-                    alt="DHS (Department of Homeland Security)"
-                  />
-                </div>
-                <div className="story__text">
-                  <h3 className="heading-tertiary u-margin-bottom-small">
-                    Department of Homeland Security (Contractor)
-                    <span style={{float: "right", fontWeight: 800}}>July 2020 - September 2020</span>
-                  </h3>
-                  <p>
-                    As a C#/.NET Developer, worked on front-end and back-end web
-                    development to maintain and provide updates to a web
-                    application for automating and organizing workflows for
-                    processing environmental reviews of DHS projects. Utilized
-                    the .NET MVC Framework, Oracle databases, and AWS RDS
-                    Console.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div className="row">
-              <div className="story">
-                <div className="story__shape">
-                  <img
-                    className="story__image"
-                    src={FpsImage}
-                    alt="FPS (Federal Protective Service)"
-                  />
-                </div>
-                <div className="story__text">
-                  <h3 className="heading-tertiary u-margin-bottom-small">
-                    Federal Protective Service (Contractor)
-                    <span style={{float: "right", fontWeight: 800}}>October 2020 - September 2020</span>
-                  </h3>
-                  <p>
-                    As a C#/.NET Developer, 
-                    provided maintainance and enhancements to a web
-                    application for overseeing staffing of contract security officers. Utilized
-                    the .NET MVC Framework, Entity Framework, and MS SQL Server
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div className="row">
-              <div className="story">
-                <div className="story__shape">
-                  <img
-                    className="story__image"
-                    src={EpaImage}
-                    alt="FPS (Federal Protective Service)"
-                  />
-                </div>
-                <div className="story__text">
-                  <h3 className="heading-tertiary u-margin-bottom-small">
-                    Environmental Protection Agency (Contractor)
-                    <span style={{float: "right", fontWeight: 800}}>October 2020 - Present</span>
-                  </h3>
-                  <p>
-                    As a Full-Stack Developer, 
-                    providing software development to modernize the Clean Air Markets Division (CAMD) application portfolio.
-                    Utilizing React.js and NestJS for front-end and back-end respectively.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div className="u-center-text u-margin-top-huge">
-              <a href={Resume} target="_blank" className="btn-text">
-                View Full Resume &rarr;
-              </a>
-            </div>
-          </section>
+          
           <section className="section-contact">
             
 

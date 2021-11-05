@@ -926,7 +926,7 @@ body {
     border-bottom: 3px solid #464646; }
 
 .section-about {
-  height: 100vh;
+  height: 65vh;
   background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.86), rgba(0, 0, 0, 0.86)), url("../img/intro-bg-flipped.jpg");
   background-size: cover;
   background-repeat: no-repeat;
