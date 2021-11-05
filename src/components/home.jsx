@@ -92,6 +92,11 @@ class Home extends Component {
                   </a>
                 </li>
                 <li className="navigation__item">
+                  <a href="#experience" className="navigation__link">
+                    Experience
+                  </a>
+                </li>
+                <li className="navigation__item">
                   <a href="#projects" className="navigation__link">
                     Projects
                   </a>
@@ -99,11 +104,6 @@ class Home extends Component {
                 <li className="navigation__item">
                   <a href="#interests" className="navigation__link">
                     Interests
-                  </a>
-                </li>
-                <li className="navigation__item">
-                  <a href="#experience" className="navigation__link">
-                    Experience
                   </a>
                 </li>
                 <li className="navigation__item navigation__last-item">
