@@ -53,7 +53,7 @@ class Home extends Component {
     // console.log(this.state);
     if(!currentState){
       document.getElementById("emailModal").style.display = "block";
-      document.body.style.overflowY = "hidden";
+      document.body.style.overflowY = "none";
       console.log("email modal true");
     }
     else{
@@ -234,7 +234,7 @@ class Home extends Component {
                 <div className="story__text">
                   <h3 className="heading-tertiary u-margin-bottom-small">
                     Customer Value Partners Inc. (Associate Technologist)
-                    <span style={{float: "right", fontWeight: 800}}>February 2020 - Present</span>
+                    <span className="duration" style={{float: "right", fontWeight: 800}}>February 2020 - Present</span>
                   </h3>
                   <p>
                     As a Software Engineer, 2+ years of experience in providing IT consulting for projects across multiple government agencies.  Worked on many teams, while specializing in full-stack web development. Recruited in 2019 by CVP's College-Hire program.
@@ -254,7 +254,7 @@ class Home extends Component {
                 <div className="story__text">
                   <h3 className="heading-tertiary u-margin-bottom-small">
                     Department of Health and Human Services (Contractor)
-                    <span style={{float: "right", fontWeight: 800}}>April 2020 - July 2020</span>
+                    <span className="duration" style={{float: "right", fontWeight: 800}}>April 2020 - July 2020</span>
                   </h3>
                   <p>
                     As a Junior Software Developer, worked on front-end web
@@ -278,7 +278,7 @@ class Home extends Component {
                 <div className="story__text">
                   <h3 className="heading-tertiary u-margin-bottom-small">
                     Department of Homeland Security (Contractor)
-                    <span style={{float: "right", fontWeight: 800}}>July 2020 - September 2020</span>
+                    <span className="duration" style={{float: "right", fontWeight: 800}}>July 2020 - September 2020</span>
                   </h3>
                   <p>
                     As a C#/.NET Developer, worked on front-end and back-end web
@@ -303,7 +303,7 @@ class Home extends Component {
                 <div className="story__text">
                   <h3 className="heading-tertiary u-margin-bottom-small">
                     Federal Protective Service (Contractor)
-                    <span style={{float: "right", fontWeight: 800}}>October 2020 - September 2020</span>
+                    <span className="duration" style={{float: "right", fontWeight: 800}}>October 2020 - September 2020</span>
                   </h3>
                   <p>
                     As a C#/.NET Developer, 
@@ -326,7 +326,7 @@ class Home extends Component {
                 <div className="story__text">
                   <h3 className="heading-tertiary u-margin-bottom-small">
                     Environmental Protection Agency (Contractor)
-                    <span style={{float: "right", fontWeight: 800}}>October 2020 - Present</span>
+                    <span className="duration" style={{float: "right", fontWeight: 800}}>October 2020 - Present</span>
                   </h3>
                   <p>
                     As a Full-Stack Developer, 

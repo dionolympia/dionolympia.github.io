@@ -931,6 +931,12 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   position: relative; }
+  @media (max-width: 56.25em) {
+    .section-about {
+      height: 80vh; } }
+  @media (max-width: 37.5em) {
+    .section-about {
+      height: 100vh; } }
 
 .section-projects {
   background-color: #212121;
@@ -1037,6 +1043,14 @@ footer {
   animation-name: fadeInSection;
   animation-duration: 1s;
   animation-timing-function: ease; }
+
+@media (max-width: 56.25em) {
+  .duration {
+    display: none; } }
+
+@media (max-width: 37.5em) {
+  .duration {
+    display: none; } }
 
 #emailModal {
   position: fixed;
