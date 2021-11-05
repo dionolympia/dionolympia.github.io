@@ -15,9 +15,11 @@ import CompPhotoThree from "../img/profile-pic-wv.png";
 import HeaderLogo from "../img/DO_logo.svg";
 import videoMp4 from "../img/video.mp4";
 import videoWebm from "../img/video.webm";
-import storyImageOne from "../img/cvp.png";
-import storyImageTwo from "../img/hhs.svg";
-import storyImageThree from "../img/dhs.png";
+import CvpImage from "../img/cvp-custom.png";
+import OigImage from "../img/oig-custom.png";
+import DhsImage from "../img/dhs-custom.png";
+import EpaImage from "../img/epa-custom.png";
+import FpsImage from "../img/fps-custom.png";
 import $ from 'jquery';
 
 class Home extends Component {
@@ -136,7 +138,7 @@ class Home extends Component {
             <div className="header__text-box">
               <h1 className="heading-primary">
                 <span className="heading-primary--main">Dion Olympia</span>
-                <span className="heading-primary--sub">Software Developer</span>
+                <span className="heading-primary--sub">Software Engineer</span>
               </h1>
               
             </div>
@@ -183,7 +185,7 @@ class Home extends Component {
                   I recently graduated from the University of Maryland,
                   Baltimore County (UMBC) with a B.S. in Computer Science and I
                   currently work as an Associate Technologist (Junior Software
-                  Developer) at Customer Value Partners Inc.
+                  Engineer) at Customer Value Partners Inc.
                 </p>
 
                 {/* <a href="#" className="btn-text">
@@ -561,30 +563,31 @@ class Home extends Component {
                             </video>
                         </div> */}
        
+     
+            
             <div className="row">
-            <div className="u-left-text u-margin-bottom-big">
-              <h2 className="heading-secondary heading-secondary--white" id="experience">
-                Experience
-              </h2>
+              <div className="u-left-text">
+                <h2 className="heading-secondary heading-secondary--white" id="experience">
+                  Experience
+                </h2>
+              </div>
             </div>
-              <div className="story">
+            <div className="row">
+            <div className="story">
                 <div className="story__shape">
                   <img
                     className="story__image"
-                    src={storyImageOne}
-                    alt="Person on a tour"
+                    src={CvpImage}
+                    alt="CVP (Customer Value Partners)"
                   />
-                  <figcaption className="story__caption">CVP</figcaption>
                 </div>
                 <div className="story__text">
                   <h3 className="heading-tertiary u-margin-bottom-small">
                     Customer Value Partners Inc. (Associate Technologist)
+                    <span style={{float: "right", fontWeight: 800}}>February 2020 - Present</span>
                   </h3>
                   <p>
-                    Implemented REST API & SQLite database queries with Node JS,
-                    developed responsive, user-friendly web pages with HTML &
-                    CSS from mockup designs, and updated UI / styling for a
-                    single-page Angular application.
+                    As a Software Engineer, 2+ years of experience in providing IT consulting for projects across multiple government agencies.  Worked on many teams, while specializing in full-stack web development. Recruited in 2019 by CVP's College-Hire program.
                   </p>
                 </div>
               </div>
@@ -594,14 +597,14 @@ class Home extends Component {
                 <div className="story__shape">
                   <img
                     className="story__image"
-                    src={storyImageTwo}
-                    alt="Person on a tour"
+                    src={OigImage}
+                    alt="HHS-OIG (Health & Human Services - Office of Inspector General)"
                   />
-                  <figcaption className="story__caption">HHS-OIG</figcaption>
                 </div>
                 <div className="story__text">
                   <h3 className="heading-tertiary u-margin-bottom-small">
                     Department of Health and Human Services (Contractor)
+                    <span style={{float: "right", fontWeight: 800}}>April 2020 - July 2020</span>
                   </h3>
                   <p>
                     As a Junior Software Developer, worked on front-end web
@@ -618,14 +621,14 @@ class Home extends Component {
                 <div className="story__shape">
                   <img
                     className="story__image"
-                    src={storyImageThree}
-                    alt="Person on a tour"
+                    src={DhsImage}
+                    alt="DHS (Department of Homeland Security)"
                   />
-                  <figcaption className="story__caption">DHS</figcaption>
                 </div>
                 <div className="story__text">
                   <h3 className="heading-tertiary u-margin-bottom-small">
                     Department of Homeland Security (Contractor)
+                    <span style={{float: "right", fontWeight: 800}}>July 2020 - September 2020</span>
                   </h3>
                   <p>
                     As a C#/.NET Developer, worked on front-end and back-end web
@@ -634,6 +637,51 @@ class Home extends Component {
                     processing environmental reviews of DHS projects. Utilized
                     the .NET MVC Framework, Oracle databases, and AWS RDS
                     Console.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className="row">
+              <div className="story">
+                <div className="story__shape">
+                  <img
+                    className="story__image"
+                    src={FpsImage}
+                    alt="FPS (Federal Protective Service)"
+                  />
+                </div>
+                <div className="story__text">
+                  <h3 className="heading-tertiary u-margin-bottom-small">
+                    Federal Protective Service (Contractor)
+                    <span style={{float: "right", fontWeight: 800}}>October 2020 - September 2020</span>
+                  </h3>
+                  <p>
+                    As a C#/.NET Developer, 
+                    provided maintainance and enhancements to a web
+                    application for overseeing staffing of contract security officers. Utilized
+                    the .NET MVC Framework, Entity Framework, and MS SQL Server
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className="row">
+              <div className="story">
+                <div className="story__shape">
+                  <img
+                    className="story__image"
+                    src={EpaImage}
+                    alt="FPS (Federal Protective Service)"
+                  />
+                </div>
+                <div className="story__text">
+                  <h3 className="heading-tertiary u-margin-bottom-small">
+                    Environmental Protection Agency (Contractor)
+                    <span style={{float: "right", fontWeight: 800}}>October 2020 - Present</span>
+                  </h3>
+                  <p>
+                    As a Full-Stack Developer, 
+                    providing software development to modernize the Clean Air Markets Division (CAMD) application portfolio.
+                    Utilizing React.js and NestJS for front-end and back-end respectively.
                   </p>
                 </div>
               </div>

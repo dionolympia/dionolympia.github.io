@@ -891,8 +891,7 @@ body {
     opacity: 1;
     transform: translate(-50%, -50%); }
   .story:hover .story__image {
-    transform: scale(1);
-    filter: blur(3px) brightness(80%); }
+    transform: scale(1.7); }
 
 .bg-video {
   position: absolute;
