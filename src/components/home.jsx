@@ -737,6 +737,11 @@ class Home extends Component {
                     </a>
                   </li>
                   <li className="footer__item">
+                    <a href="#experience" className="footer__link">
+                      Experience
+                    </a>
+                  </li>
+                  <li className="footer__item">
                     <a href="#projects" className="footer__link">
                       Projects
                     </a>
@@ -744,11 +749,6 @@ class Home extends Component {
                   <li className="footer__item">
                     <a href="#interests" className="footer__link">
                       Interests
-                    </a>
-                  </li>
-                  <li className="footer__item">
-                    <a href="#experience" className="footer__link">
-                      Experience
                     </a>
                   </li>
                   <li className="footer__item">
@@ -761,7 +761,7 @@ class Home extends Component {
             </div>
             <div className="col-1-of-2">
               <p className="footer__copyright">
-                Copyright &copy; 2020 - Dion Olympia
+                Copyright &copy; {new Date().getFullYear()} - Dion Olympia
               </p>
             </div>
           </div>
