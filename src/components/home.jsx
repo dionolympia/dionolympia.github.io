@@ -365,7 +365,7 @@ class Home extends Component {
                     </h4>
                     <div className="card__details">
                       <ul>
-                        <li>React JS</li>
+                        <li>React.js</li>
                         <li>Sassy CSS (.scss)</li>
                         <li>Responsive Design</li>
                         <li>Advanced Animations</li>
@@ -378,7 +378,7 @@ class Home extends Component {
                     <div className="card__cta">
                       <div className="card__price-box">
                         <p className="card__price-only">
-                          Portfolio website created with React JS to showcase
+                          Portfolio website created with React.js to showcase
                           side projects and experience. I believe sharing
                           knowledge with one another is a key to success. Please
                           see Jonas Schmedtmann's "Advanced CSS and Sass..."
@@ -494,7 +494,7 @@ class Home extends Component {
                     </h4>
                     <div className="card__details">
                       <ul>
-                        <li>Node JS</li>
+                        <li>Node.js</li>
                         <li>MySQL Database</li>
                         <li>Rest API</li>
                         <li>Search by artist, lyrics, & more!</li>
@@ -627,7 +627,7 @@ class Home extends Component {
                   </h3>
                   <p className="feature-box__text">
                     Front-end web development using technologies and frameworks
-                    such as HTML, CSS, JavaScript, React, Angular, and Node JS
+                    such as HTML, CSS, JavaScript, React, Angular, and Node.js
                   </p>
                 </div>
               </div>
