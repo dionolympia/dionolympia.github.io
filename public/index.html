@@ -112,6 +112,16 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script>
         $(document).ready(function () {
+
+            // Trigger nav hamburger button click on 'Enter' key press
+            $(".navigation__button").on('keydown', function(event) {
+                console.log('test');
+                switch(event.keyCode){
+                    case enterKey():
+                        $("#navi-toggle").trigger("click");
+                }
+            });
+
             // Add smooth scrolling to all links
             $("a").on("click", function (event) {
                 // Make sure this.hash has a value before overriding default behavior
@@ -199,5 +209,8 @@
             }
         }
         includeHTML();
+        function enterKey (){
+            return 13;
+        }
     </script>
 </html>

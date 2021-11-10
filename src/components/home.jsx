@@ -75,7 +75,7 @@ class Home extends Component {
             className="navigation__checkbox"
             id="navi-toggle"
           />
-          <label htmlFor="navi-toggle" className="navigation__button">
+          <label htmlFor="navi-toggle" className="navigation__button" tabIndex="0">
             <span className="navigation__icon">&nbsp;</span>
           </label>
           <div className="navigation__background">
