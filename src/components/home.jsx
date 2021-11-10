@@ -175,7 +175,7 @@ class Home extends Component {
 
                 <p className="paragraph">
                   I was born in Washington, D.C. but have spent most of my life
-                  in the Wheaton, MD area. I went to John F. Kennedy High School
+                  in Montgomery County, Maryland. I went to John F. Kennedy High School
                   in Silver Spring, MD where I played on the varsity baseball &
                   basketball teams. I was also part of the orchestra, playing
                   violin & viola.
