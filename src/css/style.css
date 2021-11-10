@@ -868,11 +868,18 @@ body {
     clip-path: circle(50% at 50% 50%);
     -webkit-clip-path: circle(50% at 50% 50%);
     transform: translateX(-3rem); }
+    @media (max-width: 37.5em) {
+      .story__shape {
+        width: 10rem;
+        height: 10rem; } }
   .story__image {
     height: 100%;
     transform: scale(1.4);
     transition: all 0.5s;
     backface-visibility: hidden; }
+    @media (max-width: 37.5em) {
+      .story__image {
+        transform: scale(1.2); } }
   .story__caption {
     position: absolute;
     top: 50%;
@@ -892,6 +899,9 @@ body {
     transform: translate(-50%, -50%); }
   .story:hover .story__image {
     transform: scale(1.7); }
+    @media (max-width: 37.5em) {
+      .story:hover .story__image {
+        transform: scale(1.5); } }
 
 .bg-video {
   position: absolute;
