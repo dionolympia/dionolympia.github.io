@@ -30,7 +30,7 @@
         "build": "react-scripts build",
         "test": "react-scripts test",
         "predeploy": "npm run build",
-        "deploy": "gh-pages -d build -b master -m \"shrinking experience icons at phone screen sizes\"",
+        "deploy": "gh-pages -d build -b master -m \"process.argv[1]\"",
         "eject": "react-scripts eject",
         "compile:sass": "node-sass src/sass/main.scss src/css/style.css -w"
     },
