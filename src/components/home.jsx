@@ -1,40 +1,29 @@
-import React, { Component, useState } from "react";
-import Avatar from "../img/avatar-tux.jpeg";
-import Particles from "react-particles-js";
-import PixelArt from "./project-images/pixel.png";
+import React, { Component } from "react";
 import Resume from "./resume.pdf";
-import Tetris from "./project-images/tetris.png";
-import SongSearch from "./project-images/song-search.png";
-import Wanderer from "./project-images/wanderer.png";
-import GameOfLife from "./project-images/game-of-life.png";
-import Sudoku from "./project-images/sudoku.png";
 import Logo from "../img/logo.svg";
 import CompPhotoTwo from "../img/avatar.jpeg";
 import CompPhotoOne from "../img/vineyard.jpg";
 import CompPhotoThree from "../img/profile-pic-wv.png";
 import HeaderLogo from "../img/DO_logo.svg";
-import videoMp4 from "../img/video.mp4";
-import videoWebm from "../img/video.webm";
 import CvpImage from "../img/cvp-custom.png";
 import OigImage from "../img/oig-custom.png";
 import DhsImage from "../img/dhs-custom.png";
 import EpaImage from "../img/epa-custom.png";
 import FpsImage from "../img/fps-custom.png";
-import $ from 'jquery';
+import $ from "jquery";
 
 class Home extends Component {
   constructor(props) {
     super(props);
-    this.state = { responsive: false, modalOpen: false};
+    this.state = { responsive: false, modalOpen: false };
     this.top = this.top.bind(this);
 
-
-    $("#sendMessage").on("click", function() {
+    $("#sendMessage").on("click", function () {
       $.ajax({
-          url: "//formspree.io/dionolympia@gmail.com", 
-          method: "POST",
-          data: {message: "hello!"},
-          dataType: "json"
+        url: "//formspree.io/dionolympia@gmail.com",
+        method: "POST",
+        data: { message: "hello!" },
+        dataType: "json",
       });
     });
   }
@@ -44,26 +33,23 @@ class Home extends Component {
     this.setState({ responsive: !currentState });
   }
 
-  top(){
+  top() {
     $("html, body").animate({ scrollTop: "0px" });
   }
 
   emailModal() {
     const currentState = this.state.modalOpen;
     // console.log(this.state);
-    if(!currentState){
+    if (!currentState) {
       document.getElementById("emailModal").style.display = "block";
       document.body.style.overflowY = "none";
       console.log("email modal true");
-    }
-    else{
+    } else {
       document.getElementById("emailModal").style.display = "none";
       document.body.style.overflowY = "scroll";
       console.log("email modal false");
     }
     this.setState({ modalOpen: !currentState });
-  
-    
   }
 
   render() {
@@ -75,63 +61,74 @@ class Home extends Component {
             className="navigation__checkbox"
             id="navi-toggle"
           />
-          <label htmlFor="navi-toggle" className="navigation__button" tabIndex="0">
+          <label
+            htmlFor="navi-toggle"
+            className="navigation__button"
+            tabIndex="0"
+          >
             <span className="navigation__icon">&nbsp;</span>
           </label>
-          <div className="navigation__background">
-
-          
-
-          </div>
+          <div className="navigation__background"></div>
 
           <nav className="navigation__nav">
-              <ul className="navigation__list">
-                <li className="navigation__item">
-                  <a href="#about-me" className="navigation__link">
-                    About Me
-                  </a>
-                </li>
-                <li className="navigation__item">
-                  <a href="#experience" className="navigation__link">
-                    Experience
-                  </a>
-                </li>
-                <li className="navigation__item">
-                  <a href="#projects" className="navigation__link">
-                    Projects
-                  </a>
-                </li>
-                <li className="navigation__item">
-                  <a href="#interests" className="navigation__link">
-                    Interests
-                  </a>
-                </li>
-                <li className="navigation__item navigation__last-item">
-                  <a href="#contact-me" className="navigation__link">
-                    Contact Me
-                  </a>
-                </li>
-                <div className="header__social-links">
-              <a href="https://www.github.com/dionolympia" target="_blank">
-                <i className="fab fa-github"></i>
-              </a>
-              <a href="https://www.hackerrank.com/dionolympia" target="_blank">
-                <i className="fab fa-hackerrank"></i>
-              </a>
-              <a href="https://www.facebook.com/DionOlympia" target="_blank">
-                <i className="fab fa-facebook-square"></i>
-              </a>
-              <a
-                href="https://www.linkedin.com/in/dion-olympia-6b83b1148/"
-                target="_blank"
-              >
-                <i className="fab fa-linkedin"></i>
-              </a>
-            </div>
-              </ul>
-
-            </nav>
-
+            <ul className="navigation__list">
+              <li className="navigation__item">
+                <a href="#about-me" className="navigation__link">
+                  About Me
+                </a>
+              </li>
+              <li className="navigation__item">
+                <a href="#experience" className="navigation__link">
+                  Experience
+                </a>
+              </li>
+              <li className="navigation__item">
+                <a href="#projects" className="navigation__link">
+                  Projects
+                </a>
+              </li>
+              <li className="navigation__item">
+                <a href="#interests" className="navigation__link">
+                  Interests
+                </a>
+              </li>
+              <li className="navigation__item navigation__last-item">
+                <a href="#contact-me" className="navigation__link">
+                  Contact Me
+                </a>
+              </li>
+              <div className="header__social-links">
+                <a
+                  href="https://www.github.com/dionolympia"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <i className="fab fa-github"></i>
+                </a>
+                <a
+                  href="https://www.hackerrank.com/dionolympia"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <i className="fab fa-hackerrank"></i>
+                </a>
+                <a
+                  href="https://www.facebook.com/DionOlympia"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <i className="fab fa-facebook-square"></i>
+                </a>
+                <a
+                  href="https://www.linkedin.com/in/dion-olympia-6b83b1148/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <i className="fab fa-linkedin"></i>
+                </a>
+              </div>
+            </ul>
+          </nav>
         </div>
         <header className="header">
           <div className="test">
@@ -140,31 +137,29 @@ class Home extends Component {
                 <span className="heading-primary--main">Dion Olympia</span>
                 <span className="heading-primary--sub">Software Engineer</span>
               </h1>
-              
             </div>
           </div>
-    
+
           <div className="header__logo-box">
-          <img
-                    src={HeaderLogo}
-                    alt="Dion Olympia Logo"
-                    className="header__logo"
-                  />
+            <img
+              src={HeaderLogo}
+              alt="Dion Olympia Logo"
+              className="header__logo"
+            />
           </div>
-      
-          
         </header>
 
         <main>
           <section className="section-about">
-          
-
             <div className="row">
-            <div className="u-left-text u-margin-bottom-big">
-              <h2 className="heading-secondary heading-secondary--white" id="about-me">
-                About Me
-              </h2>
-            </div>
+              <div className="u-left-text u-margin-bottom-big">
+                <h2
+                  className="heading-secondary heading-secondary--white"
+                  id="about-me"
+                >
+                  About Me
+                </h2>
+              </div>
               <div className="col-1-of-2">
                 <p className="paragraph">
                   I am a passionate programmer from Rockville, Maryland who
@@ -175,10 +170,10 @@ class Home extends Component {
 
                 <p className="paragraph">
                   I was born in Washington, D.C. but have spent most of my life
-                  in Montgomery County, Maryland. I went to John F. Kennedy High School
-                  in Silver Spring, MD where I played on the varsity baseball &
-                  basketball teams. I was also part of the orchestra, playing
-                  violin & viola.
+                  in Montgomery County, Maryland. I went to John F. Kennedy High
+                  School in Silver Spring, MD where I played on the varsity
+                  baseball & basketball teams. I was also part of the orchestra,
+                  playing violin & viola.
                 </p>
 
                 <p className="paragraph">
@@ -206,7 +201,7 @@ class Home extends Component {
                   />
                   <img
                     src={CompPhotoThree}
-                    alt="photo of me in a tuxedo"
+                    alt="dion olympia in a tuxedo"
                     className="composition__photo composition__photo--p3"
                   />
                 </div>
@@ -217,13 +212,16 @@ class Home extends Component {
           <section className="section-stories">
             <div className="row">
               <div className="u-left-text">
-                <h2 className="heading-secondary heading-secondary--white" id="experience">
+                <h2
+                  className="heading-secondary heading-secondary--white"
+                  id="experience"
+                >
                   Experience
                 </h2>
               </div>
             </div>
             <div className="row">
-            <div className="story">
+              <div className="story">
                 <div className="story__shape">
                   <img
                     className="story__image"
@@ -234,10 +232,19 @@ class Home extends Component {
                 <div className="story__text">
                   <h3 className="heading-tertiary u-margin-bottom-small">
                     Customer Value Partners Inc. (Associate Technologist)
-                    <span className="duration" style={{float: "right", fontWeight: 800}}>February 2020 - Present</span>
+                    <span
+                      className="duration"
+                      style={{ float: "right", fontWeight: 800 }}
+                    >
+                      February 2020 - Present
+                    </span>
                   </h3>
                   <p>
-                    As a Software Engineer, 2+ years of experience in providing IT consulting for projects across multiple government agencies.  Worked on many teams, while specializing in full-stack web development. Recruited in 2019 by CVP's College-Hire program.
+                    As a Software Engineer, 2+ years of experience in providing
+                    IT consulting for projects across multiple government
+                    agencies. Worked on many teams, while specializing in
+                    full-stack web development. Recruited in 2019 by CVP's
+                    College-Hire program.
                   </p>
                 </div>
               </div>
@@ -254,7 +261,12 @@ class Home extends Component {
                 <div className="story__text">
                   <h3 className="heading-tertiary u-margin-bottom-small">
                     Department of Health and Human Services (Contractor)
-                    <span className="duration" style={{float: "right", fontWeight: 800}}>April 2020 - July 2020</span>
+                    <span
+                      className="duration"
+                      style={{ float: "right", fontWeight: 800 }}
+                    >
+                      April 2020 - July 2020
+                    </span>
                   </h3>
                   <p>
                     As a Junior Software Developer, worked on front-end web
@@ -278,7 +290,12 @@ class Home extends Component {
                 <div className="story__text">
                   <h3 className="heading-tertiary u-margin-bottom-small">
                     Department of Homeland Security (Contractor)
-                    <span className="duration" style={{float: "right", fontWeight: 800}}>July 2020 - September 2020</span>
+                    <span
+                      className="duration"
+                      style={{ float: "right", fontWeight: 800 }}
+                    >
+                      July 2020 - September 2020
+                    </span>
                   </h3>
                   <p>
                     As a C#/.NET Developer, worked on front-end and back-end web
@@ -303,13 +320,18 @@ class Home extends Component {
                 <div className="story__text">
                   <h3 className="heading-tertiary u-margin-bottom-small">
                     Federal Protective Service (Contractor)
-                    <span className="duration" style={{float: "right", fontWeight: 800}}>October 2020 - September 2020</span>
+                    <span
+                      className="duration"
+                      style={{ float: "right", fontWeight: 800 }}
+                    >
+                      October 2020 - September 2020
+                    </span>
                   </h3>
                   <p>
-                    As a C#/.NET Developer, 
-                    provided maintainance and enhancements to a web
-                    application for overseeing staffing of contract security officers. Utilized
-                    the .NET MVC Framework, Entity Framework, and MS SQL Server
+                    As a C#/.NET Developer, provided maintainance and
+                    enhancements to a web application for overseeing staffing of
+                    contract security officers. Utilized the .NET MVC Framework,
+                    Entity Framework, and MS SQL Server
                   </p>
                 </div>
               </div>
@@ -326,34 +348,44 @@ class Home extends Component {
                 <div className="story__text">
                   <h3 className="heading-tertiary u-margin-bottom-small">
                     Environmental Protection Agency (Contractor)
-                    <span className="duration" style={{float: "right", fontWeight: 800}}>October 2020 - Present</span>
+                    <span
+                      className="duration"
+                      style={{ float: "right", fontWeight: 800 }}
+                    >
+                      October 2020 - Present
+                    </span>
                   </h3>
                   <p>
-                    As a Full-Stack Developer, 
-                    providing software development to modernize the Clean Air Markets Division (CAMD) application portfolio.
-                    Utilizing React.js and NestJS for front-end and back-end respectively.
+                    As a Full-Stack Developer, providing software development to
+                    modernize the Clean Air Markets Division (CAMD) application
+                    portfolio. Utilizing React.js and NestJS for front-end and
+                    back-end respectively.
                   </p>
                 </div>
               </div>
             </div>
             <div className="u-center-text u-margin-top-huge">
-              <a href={Resume} target="_blank" className="btn-text">
+              <a
+                href={Resume}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn-text"
+              >
                 View Full Resume &rarr;
               </a>
             </div>
           </section>
 
           <section className="section-projects">
-           
             <div className="row">
-            <div className="u-left-text u-margin-bottom-big">
-              <h2
-                className="heading-secondary heading-secondary--white"
-                id="projects"
-              >
-                Projects
-              </h2>
-            </div>
+              <div className="u-left-text u-margin-bottom-big">
+                <h2
+                  className="heading-secondary heading-secondary--white"
+                  id="projects"
+                >
+                  Projects
+                </h2>
+              </div>
               <div className="col-1-of-3">
                 <div className="card">
                   <div className="card__side card__side--front card__side--front-1">
@@ -389,6 +421,7 @@ class Home extends Component {
                       </div>
                       <a
                         target="_blank"
+                        rel="noopener noreferrer"
                         href="https://github.com/dionolympia/dionolympia.github.io"
                         className="btn btn--white"
                       >
@@ -430,6 +463,7 @@ class Home extends Component {
                       </div>
                       <a
                         target="_blank"
+                        rel="noopener noreferrer"
                         href="https://github.com/dionolympia/mountainside-wanderer"
                         className="btn btn--white"
                       >
@@ -472,6 +506,7 @@ class Home extends Component {
                       </div>
                       <a
                         target="_blank"
+                        rel="noopener noreferrer"
                         href="https://github.com/dionolympia/ZGTetris"
                         className="btn btn--white"
                       >
@@ -517,6 +552,7 @@ class Home extends Component {
                       </div>
                       <a
                         target="_blank"
+                        rel="noopener noreferrer"
                         href="https://github.com/dionolympia/461-project"
                         className="btn btn--white"
                       >
@@ -559,6 +595,7 @@ class Home extends Component {
                       </div>
                       <a
                         target="_blank"
+                        rel="noopener noreferrer"
                         href="https://github.com/dionolympia/game-of-life"
                         className="btn btn--white"
                       >
@@ -600,6 +637,7 @@ class Home extends Component {
                       </div>
                       <a
                         target="_blank"
+                        rel="noopener noreferrer"
                         href="https://github.com/dionolympia/sudoku-solver"
                         className="btn btn--white"
                       >
@@ -612,13 +650,15 @@ class Home extends Component {
             </div>
           </section>
           <section className="section-tours">
-            
             <div className="row">
-            <div className="u-left-text u-margin-bottom-big">
-              <h2 className="heading-secondary heading-secondary--white" id="interests">
-                Interests
-              </h2>
-            </div>
+              <div className="u-left-text u-margin-bottom-big">
+                <h2
+                  className="heading-secondary heading-secondary--white"
+                  id="interests"
+                >
+                  Interests
+                </h2>
+              </div>
               <div className="col-1-of-4">
                 <div className="feature-box">
                   <i className="feature-box__icon icon-basic-webpage-img-txt"></i>
@@ -673,52 +713,44 @@ class Home extends Component {
               </div>
             </div>
           </section>
-          
+
           <section className="section-contact">
-            
+            <div className="row u-left-text u-margin-bottom-medium">
+              <h2
+                className="heading-secondary heading-secondary--white"
+                id="contact-me"
+              >
+                Contact Me
+              </h2>
+            </div>
 
-              <div className="row u-left-text u-margin-bottom-medium">
-                <h2 className="heading-secondary heading-secondary--white" id="contact-me">
-                  Contact Me
-                </h2>
-              </div>
-
-            
             <div className="contact-me container">
-
-            <div className="row">
-             
-              <div className="col-1-of-2">
-                <a  href="tel:+12022139965">
-                  <div className="contact-me__phone-section">
-                  <i className="fa-3x fas fa-phone contact-me__icon--phone" />
-                  <p className="contact-me__label">Phone</p>
-                  <p className="contact-me__phone-number">(202)-213-9965</p>
+              <div className="row">
+                <div className="col-1-of-2">
+                  <a href="tel:+12022139965">
+                    <div className="contact-me__phone-section">
+                      <i className="fa-3x fas fa-phone contact-me__icon--phone" />
+                      <p className="contact-me__label">Phone</p>
+                      <p className="contact-me__phone-number">(202)-213-9965</p>
+                    </div>
+                  </a>
                 </div>
-                </a>
-              
 
-          
-              </div>
+                <div className="col-1-of-2">
+                  {/* <a href="mailto:dionolympia@gmail.com"> */}
 
-
-              <div className="col-1-of-2">
-                {/* <a href="mailto:dionolympia@gmail.com"> */}
-
-                  <div className="contact-me__email-section" onClick={this.emailModal.bind(this)}>
+                  <div
+                    className="contact-me__email-section"
+                    onClick={this.emailModal.bind(this)}
+                  >
                     <i className="fa-3x fas fa-envelope contact-me__icon--email" />
                     <p className="contact-me__label">Email</p>
                     <p className="contact-me__email">dionolympia@gmail.com</p>
                   </div>
-      
-                    
-                {/* </a> */}
-             
-              </div>
-            </div>
-             
 
-             
+                  {/* </a> */}
+                </div>
+              </div>
             </div>
           </section>
         </main>
@@ -766,17 +798,17 @@ class Home extends Component {
             </div>
           </div>
         </footer>
-        <button onClick={this.top} id="myBtn" title="Go to top">&#8593;</button>
+        <button onClick={this.top} id="myBtn" title="Go to top">
+          &#8593;
+        </button>
         <div id="emailModal">
-          <div id="emailForm"> 
+          <div id="emailForm">
+            <div
+              onClick={this.emailModal.bind(this)}
+              id="closeModalButton"
+            ></div>
 
-
-           <div onClick={this.emailModal.bind(this)} id="closeModalButton"></div>
-
-            <form
-              action="https://formspree.io/f/mqkgdnlk"
-              method="POST"
-            >
+            <form action="https://formspree.io/f/mqkgdnlk" method="POST">
               {/* <div className="formInput" > 
                 <label>
                 Your email:
@@ -796,25 +828,33 @@ class Home extends Component {
            <button id="testSend" type="submit">Send</button>
            </div> */}
 
-              <label class="label" for="input">Your Email:</label>
-                <input required class="input" type="email" name="_replyto" id="input"/>
-                
-                <label class="label" for="textarea">Your Message:</label>
-                <textarea required class="textarea" id="textarea" name="message"></textarea>
-        
-                <button id="sendEmail" type="submit">Send</button>
+              <label class="label" for="input">
+                Your Email:
+              </label>
+              <input
+                required
+                class="input"
+                type="email"
+                name="_replyto"
+                id="input"
+              />
 
-            
-    
+              <label class="label" for="textarea">
+                Your Message:
+              </label>
+              <textarea
+                required
+                class="textarea"
+                id="textarea"
+                name="message"
+              ></textarea>
+
+              <button id="sendEmail" type="submit">
+                Send
+              </button>
             </form>
-
-
           </div>
-
-        
-
         </div>
-
       </div>
     );
   }
