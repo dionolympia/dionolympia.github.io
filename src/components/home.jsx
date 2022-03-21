@@ -179,8 +179,8 @@ class Home extends Component {
                 <p className="paragraph">
                   I recently graduated from the University of Maryland,
                   Baltimore County (UMBC) with a B.S. in Computer Science and I
-                  currently work as an Associate Technologist (Junior Software
-                  Engineer) at Customer Value Partners Inc.
+                  currently work as a Full Stack Software Engineer at Booz Allen
+                  Hamilton.
                 </p>
 
                 {/* <a href="#" className="btn-text">
