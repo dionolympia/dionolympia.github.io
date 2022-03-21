@@ -236,7 +236,7 @@ class Home extends Component {
                       className="duration"
                       style={{ float: "right", fontWeight: 800 }}
                     >
-                      February 2020 - Present
+                      February 2020 - March 2020
                     </span>
                   </h3>
                   <p>
@@ -352,7 +352,7 @@ class Home extends Component {
                       className="duration"
                       style={{ float: "right", fontWeight: 800 }}
                     >
-                      October 2020 - Present
+                      October 2020 - March 2020
                     </span>
                   </h3>
                   <p>
