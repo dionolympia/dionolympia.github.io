@@ -30,7 +30,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build -b master -m ",
+    "deploy": "gh-pages -d build -b master -m \"cleaning up console warnings\"",
     "eject": "react-scripts eject",
     "compile:sass": "node-sass src/sass/main.scss src/css/style.css -w"
   },
