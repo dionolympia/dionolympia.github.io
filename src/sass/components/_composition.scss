@@ -16,29 +16,11 @@
       margin: 1%;
     }
 
-    &--p1 {
-      left: 0;
-      top: -2rem;
-      @include respond(tab-port) {
-        top: 0;
-      }
-    }
-
-    &--p2 {
-      right: 0;
-      top: 17rem;
-      @include respond(tab-port) {
-        top: 0;
-      }
-    }
-
     &--p3 {
-      left: 23%;
-      top: 7.8rem;
-
+      left: 20%;
       @include respond(tab-port) {
-        top: 0;
-        left: 0;
+        left: 10%;
+        width: 75%;
       }
     }
 

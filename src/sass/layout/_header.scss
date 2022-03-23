@@ -1,32 +1,33 @@
 .header {
   height: 100vh;
+
+  .mobile-only {
+    display: none;
+    @include respond(phone) {
+      display: block;
+      position: absolute;
+      font-size: 2rem;
+      text-align: center;
+      top: 70%;
+    }
+  }
+
   background-image: linear-gradient(
       to right bottom,
       rgba(0, 0, 0, 0.86),
       rgba(0, 0, 0, 0.86)
     ),
     url("../img/intro-bg.jpg");
-  // background: #0b0c0d;
-  // background-image: url("../img/DO.png");
-  // background-size: contain;
   background-size: cover;
   background-repeat: no-repeat;
-  // background-position: 0px -200px;
-  //   -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
-  //   clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+
   position: relative;
   filter: grayscale(50%);
-
-  // @include respond(phone) {
-  //   // -webkit-clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
-  //   // clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
-  // }
 
   &__logo-box {
     position: absolute;
     padding-right: 2rem;
     z-index: 25;
-    // padding-bottom: 12rem;
     @include centerItems;
 
     @include respond(tab-port) {
@@ -35,7 +36,7 @@
 
     @include respond(phone) {
       padding-right: 0;
-      padding-bottom: 20rem;
+      top: 50%;
     }
   }
 
@@ -44,12 +45,11 @@
 
     height: 50rem;
     opacity: 0.6;
-    // transition: all 0.2s ease;
     @include respond(tab-port) {
       height: 40rem;
     }
     @include respond(phone) {
-      height: 18rem;
+      height: 25rem;
     }
 
     animation-name: fadeInAndGrow;
@@ -58,15 +58,6 @@
   }
 
   &__text-box {
-    // position: absolute;
-    // left: 50%;
-    // top: 10%;
-    // top: 3.5rem;
-    // left: 12rem;
-    // transform: translate(-50%, -50%);
-    // text-align: center;
-    // width: 90%;
-    // padding-top: 35vh;
     position: absolute;
     top: 50%;
     -ms-transform: translateY(-50%);
@@ -78,21 +69,18 @@
       top: 50%;
     }
     @include respond(phone) {
-      top: 40%;
+      top: 30%;
     }
   }
 
   &__social-links {
     position: relative;
     text-align: center;
-    /* opacity: 0.8; */
 
     color: white !important;
 
     a {
       text-decoration: none;
-      // color: #656d78;
-      // color: #2c3136;
       color: $color-grey-dark;
       font-size: 40px;
       transition: all 0.2s ease;
@@ -122,7 +110,7 @@
   }
 }
 
-.test {
+.header-content {
   position: absolute;
   top: 50%;
   -ms-transform: translateY(-50%);
@@ -136,6 +124,6 @@
     top: 50%;
   }
   @include respond(phone) {
-    top: 40%;
+    top: 20%;
   }
 }

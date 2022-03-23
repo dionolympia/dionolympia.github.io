@@ -12,26 +12,27 @@
   }
 
   &:hover {
-    transform: translateY(-3px);
+    // transform: translateY(-3px);
+    transform: scale(1.2);
     box-shadow: 0 1rem 2rem rgba($color-black, 0.2);
 
-    &::after {
-      transform: scaleX(1.4) scaleY(1.6);
-      opacity: 0;
-    }
+    // &::after {
+    //   transform: scaleX(1.4) scaleY(1.6);
+    //   opacity: 0;
+    // }
   }
 
-  &:active {
-    transform: translateY(-1px);
-    box-shadow: 0 0.5rem 1rem rgba($color-black, 0.2);
-  }
+  // &:active {
+  //   transform: translateY(-1px);
+  //   box-shadow: 0 0.5rem 1rem rgba($color-black, 0.2);
+  // }
 
   &--white {
     background-color: $color-white;
-    color: $color-grey-dark;
-    &::after {
-      background-color: $color-white;
-    }
+    color: $color-black;
+    // &::after {
+    //   background-color: $color-white;
+    // }
   }
 
   &--orange {
@@ -77,7 +78,7 @@
     background-color: $color-primary;
     color: $color-white;
     box-shadow: 0 1rem 2rem rgba($color-black, 0.15);
-    transform: translateX(-2px);
+    transform: translateY(-2px);
   }
 
   &:active {

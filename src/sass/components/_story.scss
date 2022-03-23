@@ -1,4 +1,5 @@
 .story {
+  transition: 0.2s ease-out;
   width: 75%;
   margin: 0 auto;
   background-color: #161616;
@@ -46,9 +47,6 @@
     }
   }
 
-  &__text {
-  }
-
   &__caption {
     position: absolute;
     top: 50%;
@@ -63,7 +61,10 @@
     backface-visibility: hidden;
   }
   &:hover {
+    // padding: 7rem;
+    // padding-left: 10rem;
     border: 0.25rem solid #464646;
+    background-color: #1d1d1d;
   }
 
   &:hover &__caption {
@@ -75,6 +76,18 @@
     transform: scale(1.7);
     @include respond(phone) {
       transform: scale(1.5);
+    }
+  }
+
+  .data-initials {
+    &:before {
+      transition: font-size 0.2s ease-out;
+    }
+  }
+
+  &:hover .data-initials {
+    &:before {
+      font-size: 4.5rem;
     }
   }
 }

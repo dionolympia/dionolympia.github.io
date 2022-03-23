@@ -42,6 +42,15 @@
   &:hover {
     // transform: translateY(-1.5rem) scale(1.03);
     border: 0.25rem solid #464646;
+    background-color: #1d1d1d;
+
+    .heading-tertiary {
+      font-size: 1.6rem;
+    }
+  }
+
+  .heading-tertiary {
+    transition: font-size 0.2s ease-out;
   }
 
   &__text {

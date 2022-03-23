@@ -15,7 +15,7 @@
 
   &__side {
     height: 50rem;
-    transition: transform 0.8s ease;
+    transition: transform 0.25s ease;
 
     @include respond(tab-port) {
       transition: none;
@@ -35,7 +35,12 @@
     }
 
     &--back {
-      transform: rotateY(180deg);
+      transform: translateY(50rem);
+
+      @include respond(tab-port) {
+        transform: translateY(0rem);
+      }
+
       &-1 {
         background-image: linear-gradient(to right bottom, #303030, #303030);
       }
@@ -57,12 +62,8 @@
     }
   }
 
-  &:hover &__side--front {
-    transform: rotateY(-180deg);
-  }
-
   &:hover &__side--back {
-    transform: rotateY(0);
+    transform: translateY(0rem);
   }
 
   // Front size styling
@@ -239,13 +240,13 @@
       box-shadow: none;
 
       &--back {
-        transform: rotateY(0);
+        // transform: rotateY(0);
         clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 100%);
       }
     }
 
     &:hover &__side--front {
-      transform: none;
+      // transform: none;
     }
 
     &__cta {

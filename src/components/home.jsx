@@ -1,15 +1,8 @@
 import React, { Component } from "react";
 import Resume from "./resume.pdf";
 import Logo from "../img/logo.svg";
-import CompPhotoTwo from "../img/avatar.jpeg";
-import CompPhotoOne from "../img/vineyard.jpg";
 import CompPhotoThree from "../img/profile-pic-wv.png";
 import HeaderLogo from "../img/DO_logo.svg";
-import CvpImage from "../img/cvp-custom.png";
-import OigImage from "../img/oig-custom.png";
-import DhsImage from "../img/dhs-custom.png";
-import EpaImage from "../img/epa-custom.png";
-import FpsImage from "../img/fps-custom.png";
 import $ from "jquery";
 
 class Home extends Component {
@@ -131,7 +124,7 @@ class Home extends Component {
           </nav>
         </div>
         <header className="header">
-          <div className="test">
+          <div className="header-content">
             <div className="header__text-box">
               <h1 className="heading-primary">
                 <span className="heading-primary--main">Dion Olympia</span>
@@ -139,7 +132,6 @@ class Home extends Component {
               </h1>
             </div>
           </div>
-
           <div className="header__logo-box">
             <img
               src={HeaderLogo}
@@ -147,8 +139,20 @@ class Home extends Component {
               className="header__logo"
             />
           </div>
-        </header>
 
+          <section>
+            <div className="mobile-only">
+              <div className="row">
+                <div>Welcome to my portfolio website!</div>
+                <br />
+                <div>
+                  Please feel free to scroll down and view my experience,
+                  side-projects, interests, and contact information.
+                </div>
+              </div>
+            </div>
+          </section>
+        </header>
         <main>
           <section className="section-about">
             <div className="row">
@@ -162,43 +166,28 @@ class Home extends Component {
               </div>
               <div className="col-1-of-2">
                 <p className="paragraph">
-                  I am a passionate programmer from Rockville, Maryland who
-                  loves creating & designing web & mobile applications. My other
-                  hobbies include basketball, baseball, songwriting, & playing
-                  guitar.
+                  A passionate problem-solver and creative thinker with
+                  experience in utilizing full-stack web development and
+                  teamwork to produce robust, user-friendly web applications.
                 </p>
 
                 <p className="paragraph">
                   I was born in Washington, D.C. but have spent most of my life
                   in Montgomery County, Maryland. I went to John F. Kennedy High
-                  School in Silver Spring, MD where I played on the varsity
-                  baseball & basketball teams. I was also part of the orchestra,
-                  playing violin & viola.
+                  School (Silver Spring, MD) where I played varsity baseball &
+                  basketball. I was also part of the orchestra, playing violin &
+                  viola. My other hobbies include basketball, baseball,
+                  songwriting, & playing guitar.
                 </p>
 
                 <p className="paragraph">
-                  I recently graduated from the University of Maryland,
-                  Baltimore County (UMBC) with a B.S. in Computer Science and I
-                  currently work as a Full Stack Software Engineer at Booz Allen
-                  Hamilton.
+                  I graduated from the University of Maryland, Baltimore County
+                  (UMBC) in 2019 with a B.S. in Computer Science and I currently
+                  work as a Full Stack Software Engineer at Booz Allen Hamilton.
                 </p>
-
-                {/* <a href="#" className="btn-text">
-                                    Learn more &rarr;
-                                </a> */}
               </div>
               <div className="col-1-of-2">
                 <div className="composition">
-                  <img
-                    src={CompPhotoOne}
-                    alt="kayaking in the Philippines"
-                    className="composition__photo composition__photo--p1"
-                  />
-                  <img
-                    src={CompPhotoTwo}
-                    alt="on the beach in the Outer Banks"
-                    className="composition__photo composition__photo--p2"
-                  />
                   <img
                     src={CompPhotoThree}
                     alt="dion olympia in a tuxedo"
@@ -223,11 +212,39 @@ class Home extends Component {
             <div className="row">
               <div className="story">
                 <div className="story__shape">
-                  <img
-                    className="story__image"
-                    src={CvpImage}
-                    alt="CVP (Customer Value Partners)"
-                  />
+                  <div
+                    class="data-initials data-initials--bah"
+                    data-initials="BAH"
+                  ></div>
+                </div>
+                <div className="story__text">
+                  <h3 className="heading-tertiary u-margin-bottom-small">
+                    Booz Allen Hamilton (Full Stack Software Engineer)
+                    <span
+                      className="duration"
+                      style={{ float: "right", fontWeight: 800 }}
+                    >
+                      March 2022 - Present
+                    </span>
+                  </h3>
+                  <p>
+                    As a Full Stack Software Engineer, performing
+                    implementation, regular problem solving, maintenance and
+                    support for agile software development. Using C#, Angular,
+                    ASP.NET MVC, and SQL Server to build applications to
+                    modernize how the DoD manages its data.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div className="row">
+              <div className="story">
+                <div className="story__shape">
+                  <div
+                    class="data-initials data-initials--cvp"
+                    data-initials="CVP"
+                  ></div>
                 </div>
                 <div className="story__text">
                   <h3 className="heading-tertiary u-margin-bottom-small">
@@ -236,20 +253,22 @@ class Home extends Component {
                       className="duration"
                       style={{ float: "right", fontWeight: 800 }}
                     >
-                      February 2020 - March 2020
+                      February 2020 - March 2022
                     </span>
                   </h3>
                   <p>
-                    As a Software Engineer, 2+ years of experience in providing
-                    IT consulting for projects across multiple government
-                    agencies. Worked on many teams, while specializing in
-                    full-stack web development. Recruited in 2019 by CVP's
-                    College-Hire program.
+                    As a Software Engineer, provided IT consulting for projects
+                    across multiple government agencies. Worked on many teams,
+                    while specializing in full-stack web development. Worked
+                    with C#, .NET MVC, Python, React, AngularJS, Oracle, SQL
+                    Server, PostgreSQL, and Node to create user-friendly, robust
+                    web applications for federal clients. Recruited in 2019 by
+                    CVP's College-Hire program.
                   </p>
                 </div>
               </div>
             </div>
-            <div className="row">
+            {/* <div className="row">
               <div className="story">
                 <div className="story__shape">
                   <img
@@ -363,7 +382,7 @@ class Home extends Component {
                   </p>
                 </div>
               </div>
-            </div>
+            </div> */}
             <div className="u-center-text u-margin-top-huge">
               <a
                 href={Resume}
