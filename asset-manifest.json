@@ -1,30 +1,28 @@
 {
   "files": {
-    "main.css": "/static/css/main.f288b4de.chunk.css",
-    "main.js": "/static/js/main.c188d6e4.chunk.js",
-    "main.js.map": "/static/js/main.c188d6e4.chunk.js.map",
+    "main.css": "/static/css/main.bf8348f8.chunk.css",
+    "main.js": "/static/js/main.b43ea858.chunk.js",
+    "main.js.map": "/static/js/main.b43ea858.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.ceaf4b5f.js",
     "runtime-main.js.map": "/static/js/runtime-main.ceaf4b5f.js.map",
-    "static/js/2.e6d51c7d.chunk.js": "/static/js/2.e6d51c7d.chunk.js",
-    "static/js/2.e6d51c7d.chunk.js.map": "/static/js/2.e6d51c7d.chunk.js.map",
+    "static/js/2.8f06b025.chunk.js": "/static/js/2.8f06b025.chunk.js",
+    "static/js/2.8f06b025.chunk.js.map": "/static/js/2.8f06b025.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.0434d89c5bedd52e37d870955ec9ace0.js": "/precache-manifest.0434d89c5bedd52e37d870955ec9ace0.js",
+    "precache-manifest.1aa5df73989e6ea0d352ce23c9bd66bc.js": "/precache-manifest.1aa5df73989e6ea0d352ce23c9bd66bc.js",
     "service-worker.js": "/service-worker.js",
-    "static/css/main.f288b4de.chunk.css.map": "/static/css/main.f288b4de.chunk.css.map",
-    "static/js/2.e6d51c7d.chunk.js.LICENSE.txt": "/static/js/2.e6d51c7d.chunk.js.LICENSE.txt",
+    "static/css/main.bf8348f8.chunk.css.map": "/static/css/main.bf8348f8.chunk.css.map",
+    "static/js/2.8f06b025.chunk.js.LICENSE.txt": "/static/js/2.8f06b025.chunk.js.LICENSE.txt",
     "static/media/DO_logo.svg": "/static/media/DO_logo.6cdaaaef.svg",
-    "static/media/avatar.jpeg": "/static/media/avatar.05d339b8.jpeg",
     "static/media/style.css": "/static/media/wanderer.887dd360.png",
     "static/media/icon-font.css": "/static/media/linea-basic-10.e6763f00.ttf",
     "static/media/logo.svg": "/static/media/logo.aa8498b5.svg",
     "static/media/profile-pic-wv.png": "/static/media/profile-pic-wv.f8d96ba5.png",
-    "static/media/resume.pdf": "/static/media/resume.552493b5.pdf",
-    "static/media/vineyard.jpg": "/static/media/vineyard.c7208a0f.jpg"
+    "static/media/resume.pdf": "/static/media/resume.552493b5.pdf"
   },
   "entrypoints": [
     "static/js/runtime-main.ceaf4b5f.js",
-    "static/js/2.e6d51c7d.chunk.js",
-    "static/css/main.f288b4de.chunk.css",
-    "static/js/main.c188d6e4.chunk.js"
+    "static/js/2.8f06b025.chunk.js",
+    "static/css/main.bf8348f8.chunk.css",
+    "static/js/main.b43ea858.chunk.js"
   ]
 }
