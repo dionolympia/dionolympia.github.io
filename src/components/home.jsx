@@ -213,7 +213,7 @@ class Home extends Component {
               <div className="story">
                 <div className="story__shape">
                   <div
-                    class="data-initials data-initials--bah"
+                    className="data-initials data-initials--bah"
                     data-initials="BAH"
                   ></div>
                 </div>
@@ -242,7 +242,7 @@ class Home extends Component {
               <div className="story">
                 <div className="story__shape">
                   <div
-                    class="data-initials data-initials--cvp"
+                    className="data-initials data-initials--cvp"
                     data-initials="CVP"
                   ></div>
                 </div>
@@ -847,23 +847,23 @@ class Home extends Component {
            <button id="testSend" type="submit">Send</button>
            </div> */}
 
-              <label class="label" for="input">
+              <label className="label" htmlFor="input">
                 Your Email:
               </label>
               <input
                 required
-                class="input"
+                className="input"
                 type="email"
                 name="_replyto"
                 id="input"
               />
 
-              <label class="label" for="textarea">
+              <label className="label" htmlFor="textarea">
                 Your Message:
               </label>
               <textarea
                 required
-                class="textarea"
+                className="textarea"
                 id="textarea"
                 name="message"
               ></textarea>
