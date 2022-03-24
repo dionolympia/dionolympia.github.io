@@ -31,7 +31,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build -b master -m \"changed header mobile, edited experience, updated animations, and modified about me content\"",
+    "deploy": "gh-pages -d build -b master -m \"updated packages and modified header text for mobile\"",
     "eject": "react-scripts eject",
     "compile:sass": "node-sass src/sass/main.scss src/css/style.css -w"
   },
