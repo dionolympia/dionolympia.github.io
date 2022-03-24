@@ -314,6 +314,9 @@ body {
     .header-content {
       top: 20%; } }
 
+.header-text-contents {
+  padding: 0 2rem; }
+
 .row {
   max-width: 114rem;
   margin: 0 auto; }

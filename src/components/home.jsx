@@ -142,12 +142,14 @@ class Home extends Component {
 
           <div>
             <div className="mobile-only">
-              <div className="row">
-                <div>Welcome to my portfolio website!</div>
-                <br />
-                <div>
-                  Please feel free to scroll down and view my experience,
-                  side-projects, interests, and contact information.
+              <div className="container header-text-container">
+                <div className="header-text-contents">
+                  <div>Welcome to my portfolio website!</div>
+                  <br />
+                  <div>
+                    Please feel free to scroll down and view my experience,
+                    side-projects, interests, and contact information.
+                  </div>
                 </div>
               </div>
             </div>

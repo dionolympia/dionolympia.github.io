@@ -31,7 +31,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build -b master -m \"updated packages and modified header text for mobile\"",
+    "deploy": "gh-pages -d build -b master -m \"uploaded new resume and centered header text for mobile\"",
     "eject": "react-scripts eject",
     "compile:sass": "node-sass src/sass/main.scss src/css/style.css -w"
   },
