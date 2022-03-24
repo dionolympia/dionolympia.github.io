@@ -1,14 +1,18 @@
 .header {
   height: 100vh;
+  min-height: 600px;
 
   .mobile-only {
     display: none;
+    top: 70%;
+    position: absolute;
+    text-align: center;
+    font-size: 2rem;
     @include respond(phone) {
       display: block;
-      position: absolute;
-      font-size: 2rem;
-      text-align: center;
-      top: 70%;
+      animation-name: moveInBottom;
+      animation-duration: 1s;
+      animation-timing-function: ease;
     }
   }
 

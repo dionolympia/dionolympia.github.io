@@ -209,20 +209,24 @@ body {
 
 .header {
   height: 100vh;
+  min-height: 600px;
   background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.86), rgba(0, 0, 0, 0.86)), url("../img/intro-bg.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
   filter: grayscale(50%); }
   .header .mobile-only {
-    display: none; }
+    display: none;
+    top: 70%;
+    position: absolute;
+    text-align: center;
+    font-size: 2rem; }
     @media (max-width: 37.5em) {
       .header .mobile-only {
         display: block;
-        position: absolute;
-        font-size: 2rem;
-        text-align: center;
-        top: 70%; } }
+        animation-name: moveInBottom;
+        animation-duration: 1s;
+        animation-timing-function: ease; } }
   .header__logo-box {
     position: absolute;
     padding-right: 2rem;
@@ -647,7 +651,7 @@ body {
   padding: 4rem 2rem 8rem 2rem;
   text-align: center;
   border-radius: 3px;
-  transition: transform 0.3s;
+  transition: font-size 0.3s;
   min-height: 30rem;
   border: 0.25rem solid transparent; }
   @media (max-width: 75em) {
@@ -667,13 +671,16 @@ body {
     background-image: linear-gradient(to right, #6d6d6d, #333333);
     -webkit-background-clip: text;
     color: transparent; }
+  .feature-box .heading-tertiary {
+    transition: font-size 0.2s; }
   .feature-box:hover {
     border: 0.25rem solid #464646;
     background-color: #1d1d1d; }
     .feature-box:hover .heading-tertiary {
-      font-size: 1.6rem; }
-  .feature-box .heading-tertiary {
-    transition: font-size 0.2s ease-out; }
+      font-size: 1.5rem; }
+      @media (max-width: 37.5em) {
+        .feature-box:hover .heading-tertiary {
+          font-size: 2.5rem; } }
   .feature-box__text {
     color: #777; }
 
@@ -932,17 +939,11 @@ body {
     border-bottom: 3px solid #464646; }
 
 .section-about {
-  height: 65vh;
+  min-height: 700px;
   background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.86), rgba(0, 0, 0, 0.86)), url("../img/intro-bg-flipped.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   position: relative; }
-  @media (max-width: 56.25em) {
-    .section-about {
-      height: 80vh; } }
-  @media (max-width: 37.5em) {
-    .section-about {
-      height: 100vh; } }
 
 .section-projects {
   background-color: #212121;
