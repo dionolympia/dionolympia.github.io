@@ -140,7 +140,7 @@ class Home extends Component {
             />
           </div>
 
-          <section>
+          <div>
             <div className="mobile-only">
               <div className="row">
                 <div>Welcome to my portfolio website!</div>
@@ -151,7 +151,7 @@ class Home extends Component {
                 </div>
               </div>
             </div>
-          </section>
+          </div>
         </header>
         <main>
           <section className="section-about">
@@ -248,7 +248,7 @@ class Home extends Component {
                 </div>
                 <div className="story__text">
                   <h3 className="heading-tertiary u-margin-bottom-small">
-                    Customer Value Partners Inc. (Associate Technologist)
+                    Customer Value Partners, LLC (Associate Technologist)
                     <span
                       className="duration"
                       style={{ float: "right", fontWeight: 800 }}

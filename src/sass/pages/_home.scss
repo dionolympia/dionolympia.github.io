@@ -1,5 +1,5 @@
 .section-about {
-  height: 65vh;
+  min-height: 700px;
   background-image: linear-gradient(
       to right bottom,
       rgba(0, 0, 0, 0.86),
@@ -10,14 +10,6 @@
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
-
-  @include respond(tab-port) {
-    height: 80vh;
-  }
-
-  @include respond(phone) {
-    height: 100vh;
-  }
 }
 
 .section-projects {
