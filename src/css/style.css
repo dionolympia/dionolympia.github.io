@@ -1008,10 +1008,9 @@ body {
     background-color: #161616;
     box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.4);
     padding: 4rem 2rem;
-    width: 30rem;
+    width: 80%;
     display: inline-block;
     transition: all 0.2s;
-    border-radius: 50rem;
     border: 0.25rem solid transparent; }
     @media (max-width: 56.25em) {
       .contact-me__phone-section, .contact-me__email-section, .contact-me__word-section {
