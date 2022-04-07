@@ -8,7 +8,7 @@ import $ from "jquery";
 class Home extends Component {
   constructor(props) {
     super(props);
-    this.state = { responsive: false, modalOpen: false };
+    this.state = { responsive: false, modalOpen: false, projsExpanded: false };
     this.top = this.top.bind(this);
 
     $("#sendMessage").on("click", function () {
@@ -19,6 +19,10 @@ class Home extends Component {
         dataType: "json",
       });
     });
+  }
+
+  toggleExpandProjects() {
+    this.setState({ projsExpanded: !this.state.projsExpanded });
   }
 
   toggleResponsive() {
@@ -538,137 +542,164 @@ class Home extends Component {
                 </div>
               </div>
             </div>
-            <div className="row">
-              <div className="col-1-of-3">
-                <div className="card">
-                  <div className="card__side card__side--front card__side--front-4">
-                    <div className="card__picture card__picture--4">&nbsp;</div>
-                    <h4 className="card__heading">
-                      <span className="card__heading-span card__heading-span--4">
-                        Song Searcher
-                      </span>
-                    </h4>
-                    <div className="card__details">
-                      <ul>
-                        <li>Node.js</li>
-                        <li>MySQL Database</li>
-                        <li>Rest API</li>
-                        <li>Search by artist, lyrics, & more!</li>
-                        <li>Web-scraped music data</li>
-                      </ul>
+            {!this.state.projsExpanded ? (
+              <div className="u-center-text u-margin-top-huge">
+                <button
+                  onClick={this.toggleExpandProjects.bind(this)}
+                  className="btn-text__button"
+                >
+                  View All Projects &darr;
+                </button>
+              </div>
+            ) : (
+              <div>
+                <div className="row">
+                  <div className="col-1-of-3">
+                    <div className="card">
+                      <div className="card__side card__side--front card__side--front-4">
+                        <div className="card__picture card__picture--4">
+                          &nbsp;
+                        </div>
+                        <h4 className="card__heading">
+                          <span className="card__heading-span card__heading-span--4">
+                            Song Searcher
+                          </span>
+                        </h4>
+                        <div className="card__details">
+                          <ul>
+                            <li>Node.js</li>
+                            <li>MySQL Database</li>
+                            <li>Rest API</li>
+                            <li>Search by artist, lyrics, & more!</li>
+                            <li>Web-scraped music data</li>
+                          </ul>
+                        </div>
+                      </div>
+
+                      <div className="card__side card__side--back card__side--back-4">
+                        <div className="card__cta">
+                          <div className="card__price-box">
+                            <p className="card__price-only">
+                              A group project for my Database Management Systems
+                              course at UMBC. Learned how to handle HTTP
+                              requests by implementing REST API endpoints. Also
+                              developed efficient database queries & schema
+                              design, while preventing security vulnerabilities
+                              such as SQL injection.
+                            </p>
+                          </div>
+                          <a
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            href="https://github.com/dionolympia/461-project"
+                            className="btn btn--white"
+                          >
+                            Github
+                          </a>
+                        </div>
+                      </div>
                     </div>
                   </div>
-
-                  <div className="card__side card__side--back card__side--back-4">
-                    <div className="card__cta">
-                      <div className="card__price-box">
-                        <p className="card__price-only">
-                          A group project for my Database Management Systems
-                          course at UMBC. Learned how to handle HTTP requests by
-                          implementing REST API endpoints. Also developed
-                          efficient database queries & schema design, while
-                          preventing security vulnerabilities such as SQL
-                          injection.
-                        </p>
+                  <div className="col-1-of-3">
+                    <div className="card">
+                      <div className="card__side card__side--front card__side--front-5">
+                        <div className="card__picture card__picture--5">
+                          &nbsp;
+                        </div>
+                        <h4 className="card__heading">
+                          <span className="card__heading-span card__heading-span--5">
+                            Conway's Game of Life
+                          </span>
+                        </h4>
+                        <div className="card__details">
+                          <ul>
+                            <li>PHP, HTML/CSS, & JS</li>
+                            <li>Heroku</li>
+                            <li>Borderless simulation</li>
+                            <li>Intuitive UI</li>
+                            <li>Gameplay customization</li>
+                          </ul>
+                        </div>
                       </div>
-                      <a
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        href="https://github.com/dionolympia/461-project"
-                        className="btn btn--white"
-                      >
-                        Github
-                      </a>
+
+                      <div className="card__side card__side--back card__side--back-5">
+                        <div className="card__cta">
+                          <div className="card__price-box">
+                            <p className="card__price-only">
+                              A group project for my Software Engineering course
+                              at UMBC. The group was assigned a client and we
+                              gained experienced communicating, documenting, and
+                              delivering software requirements, while utilizing
+                              Agile developement methodologies.
+                            </p>
+                          </div>
+                          <a
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            href="https://github.com/dionolympia/game-of-life"
+                            className="btn btn--white"
+                          >
+                            Github
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="col-1-of-3">
+                    <div className="card">
+                      <div className="card__side card__side--front card__side--front-6">
+                        <div className="card__picture card__picture--6">
+                          &nbsp;
+                        </div>
+                        <h4 className="card__heading">
+                          <span className="card__heading-span card__heading-span--6">
+                            Sudoku Solver
+                          </span>
+                        </h4>
+                        <div className="card__details">
+                          <ul>
+                            <li>HTML/CSS & JS</li>
+                            <li>Simple/Elegant Design</li>
+                            <li>Helpful colors & animations</li>
+                            <li>Generates thousands of boards</li>
+                            <li>Solves games & detects errors</li>
+                          </ul>
+                        </div>
+                      </div>
+
+                      <div className="card__side card__side--back card__side--back-6">
+                        <div className="card__cta">
+                          <div className="card__price-box">
+                            <p className="card__price-only">
+                              Love solving Sudoku puzzles? Try out this web app
+                              to play thousands of different boards with helpful
+                              features like error detector and auto-solver.
+                              Compatible with computers or mobile devices.
+                            </p>
+                          </div>
+                          <a
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            href="https://github.com/dionolympia/sudoku-solver"
+                            className="btn btn--white"
+                          >
+                            Github
+                          </a>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
-              <div className="col-1-of-3">
-                <div className="card">
-                  <div className="card__side card__side--front card__side--front-5">
-                    <div className="card__picture card__picture--5">&nbsp;</div>
-                    <h4 className="card__heading">
-                      <span className="card__heading-span card__heading-span--5">
-                        Conway's Game of Life
-                      </span>
-                    </h4>
-                    <div className="card__details">
-                      <ul>
-                        <li>PHP, HTML/CSS, & JS</li>
-                        <li>Heroku</li>
-                        <li>Borderless simulation</li>
-                        <li>Intuitive UI</li>
-                        <li>Gameplay customization</li>
-                      </ul>
-                    </div>
-                  </div>
-
-                  <div className="card__side card__side--back card__side--back-5">
-                    <div className="card__cta">
-                      <div className="card__price-box">
-                        <p className="card__price-only">
-                          A group project for my Software Engineering course at
-                          UMBC. The group was assigned a client and we gained
-                          experienced communicating, documenting, and delivering
-                          software requirements, while utilizing Agile
-                          developement methodologies.
-                        </p>
-                      </div>
-                      <a
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        href="https://github.com/dionolympia/game-of-life"
-                        className="btn btn--white"
-                      >
-                        Github
-                      </a>
-                    </div>
-                  </div>
+                <div className="u-center-text u-margin-top-huge">
+                  <button
+                    onClick={this.toggleExpandProjects.bind(this)}
+                    className="btn-text__button"
+                  >
+                    Collapse Projects &uarr;
+                  </button>
                 </div>
               </div>
-              <div className="col-1-of-3">
-                <div className="card">
-                  <div className="card__side card__side--front card__side--front-6">
-                    <div className="card__picture card__picture--6">&nbsp;</div>
-                    <h4 className="card__heading">
-                      <span className="card__heading-span card__heading-span--6">
-                        Sudoku Solver
-                      </span>
-                    </h4>
-                    <div className="card__details">
-                      <ul>
-                        <li>HTML/CSS & JS</li>
-                        <li>Simple/Elegant Design</li>
-                        <li>Helpful colors & animations</li>
-                        <li>Generates thousands of boards</li>
-                        <li>Solves games & detects errors</li>
-                      </ul>
-                    </div>
-                  </div>
-
-                  <div className="card__side card__side--back card__side--back-6">
-                    <div className="card__cta">
-                      <div className="card__price-box">
-                        <p className="card__price-only">
-                          Love solving Sudoku puzzles? Try out this web app to
-                          play thousands of different boards with helpful
-                          features like error detector and auto-solver.
-                          Compatible with computers or mobile devices.
-                        </p>
-                      </div>
-                      <a
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        href="https://github.com/dionolympia/sudoku-solver"
-                        className="btn btn--white"
-                      >
-                        Github
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+            )}
           </section>
           <section className="section-tours">
             <div className="row">

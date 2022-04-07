@@ -95,7 +95,8 @@
       animation-duration: 2s;
       animation-timing-function: ease;
 
-      &:hover {
+      &:hover,
+      &:focus {
         color: white !important;
         opacity: 1 !important;
         transform: translateY(-3px) scale(1.05);

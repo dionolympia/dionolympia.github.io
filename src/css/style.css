@@ -284,7 +284,7 @@ body {
       animation-name: fadeIn;
       animation-duration: 2s;
       animation-timing-function: ease; }
-      .header__social-links a:hover {
+      .header__social-links a:hover, .header__social-links a:focus {
         color: white !important;
         opacity: 1 !important;
         transform: translateY(-3px) scale(1.05);
@@ -496,11 +496,11 @@ body {
     .navigation__link:link, .navigation__link:visited {
       font-size: 2rem; } }
 
-.navigation__link:hover, .navigation__link:active {
+.navigation__link:hover, .navigation__link:active, .navigation__link:focus {
   background-position: 100%;
   color: #464646;
   transform: translateX(1rem); }
-  .navigation__link:hover ~ .navigation__link:hover__link:not(:hover), .navigation__link:active ~ .navigation__link:hover__link:not(:hover), .navigation__link:hover ~ .navigation__link:active__link:not(:hover), .navigation__link:active ~ .navigation__link:active__link:not(:hover) {
+  .navigation__link:hover ~ .navigation__link:hover__link:not(:hover), .navigation__link:active ~ .navigation__link:hover__link:not(:hover), .navigation__link:focus ~ .navigation__link:hover__link:not(:hover), .navigation__link:hover ~ .navigation__link:active__link:not(:hover), .navigation__link:active ~ .navigation__link:active__link:not(:hover), .navigation__link:focus ~ .navigation__link:active__link:not(:hover), .navigation__link:hover ~ .navigation__link:focus__link:not(:hover), .navigation__link:active ~ .navigation__link:focus__link:not(:hover), .navigation__link:focus ~ .navigation__link:focus__link:not(:hover) {
     transform: translateX(-1rem); }
 
 .navigation__last-item {
@@ -600,7 +600,21 @@ body {
   animation: moveInBottom 0.5s ease-out 0.75s;
   animation-fill-mode: backwards; }
 
-.btn-text:link, .btn-text:visited {
+.btn-text__button {
+  color: white;
+  display: inline-block;
+  text-decoration: none;
+  border: none;
+  border-bottom: 1px solid #464646;
+  padding: 10px;
+  font-size: 1.6rem;
+  transition: all 0.2s;
+  background-color: transparent;
+  cursor: pointer; }
+
+.btn-text:link, .btn-text:visited,
+.btn-text__button:link,
+.btn-text__button:visited {
   color: white;
   display: inline-block;
   text-decoration: none;
@@ -609,13 +623,15 @@ body {
   font-size: 1.6rem;
   transition: all 0.2s; }
 
-.btn-text:hover {
+.btn-text:hover,
+.btn-text__button:hover {
   background-color: #464646;
   color: #fff;
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
   transform: translateY(-2px); }
 
-.btn-text:active {
+.btn-text:active,
+.btn-text__button:active {
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
   transform: translateX(0); }
 
