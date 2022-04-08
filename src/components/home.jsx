@@ -8,17 +8,27 @@ import $ from "jquery";
 class Home extends Component {
   constructor(props) {
     super(props);
-    this.state = { responsive: false, modalOpen: false, projsExpanded: false };
+    this.state = {
+      responsive: false,
+      modalOpen: false,
+      projsExpanded: false,
+      cvpExpanded: false,
+    };
     this.top = this.top.bind(this);
 
     $("#sendMessage").on("click", function () {
-      $.ajax({
-        url: "//formspree.io/dionolympia@gmail.com",
-        method: "POST",
-        data: { message: "hello!" },
-        dataType: "json",
-      });
+      // $.ajax({
+      //   url: "//formspree.io/dionolympia@gmail.com",
+      //   method: "POST",
+      //   data: { message: "hello!" },
+      //   dataType: "json",
+      // });
+      this.emailModal();
     });
+  }
+
+  toggleExpandCVP() {
+    this.setState({ cvpExpanded: !this.state.cvpExpanded });
   }
 
   toggleExpandProjects() {
@@ -40,11 +50,10 @@ class Home extends Component {
     if (!currentState) {
       document.getElementById("emailModal").style.display = "block";
       document.body.style.overflowY = "none";
-      console.log("email modal true");
+      $("#email-message,#return-email").val("");
     } else {
       document.getElementById("emailModal").style.display = "none";
       document.body.style.overflowY = "scroll";
-      console.log("email modal false");
     }
     this.setState({ modalOpen: !currentState });
   }
@@ -271,6 +280,65 @@ class Home extends Component {
                     web applications for federal clients. Recruited in 2019 by
                     CVP's College-Hire program.
                   </p>
+                  {this.state.cvpExpanded ? (
+                    <div>
+                      <br></br>
+                      <hr className="exp-horizontal-rule"></hr>
+                      <br></br>
+                      <p>Worked on multiple projects:</p>
+                      <br></br>
+                      <p>
+                        As a Junior Software Developer, worked on front-end web
+                        design for the Office of Inspector General (OIG) data
+                        analytics / business intelligence tools team, and
+                        utilized web browser testing software & developed Python
+                        scripts to automate ETL processes (April 2020 - July
+                        2020).
+                      </p>
+                      <br></br>
+                      <p>
+                        As a C#/.NET Developer, worked on front-end and back-end
+                        web development to maintain and provide updates to a web
+                        application for automating and organizing workflows for
+                        processing environmental reviews of DHS projects.
+                        Utilized the .NET MVC Framework, Oracle databases, and
+                        AWS RDS Console (July 2020 - September 2020).
+                      </p>
+                      <br></br>
+                      <p>
+                        As a C#/.NET Developer, provided maintainance and
+                        enhancements to a web application for overseeing
+                        staffing of contract security officers. Utilized the
+                        .NET MVC Framework, Entity Framework, and MS SQL Server
+                        (October 2020 - September 2020).
+                      </p>
+                      <br></br>
+                      <p>
+                        As a Full-Stack Developer, providing software
+                        development to modernize the Clean Air Markets Division
+                        (CAMD) application portfolio. Utilizing React.js and
+                        NestJS for front-end and back-end respectively (October
+                        2020 - March 2020).
+                      </p>
+                      <div className="coll-exp-container">
+                        <button
+                          onClick={this.toggleExpandCVP.bind(this)}
+                          className="btn-text__button float-right"
+                        >
+                          Collapse &uarr;
+                        </button>
+                      </div>
+                    </div>
+                  ) : (
+                    <div className="coll-exp-container">
+                      <button
+                        onClick={this.toggleExpandCVP.bind(this)}
+                        className="btn-text__button float-right"
+                      >
+                        Expand &darr;
+                      </button>
+                    </div>
+                  )}
                 </div>
               </div>
             </div>
@@ -396,7 +464,7 @@ class Home extends Component {
                 rel="noopener noreferrer"
                 className="btn-text"
               >
-                View Full Resume &rarr;
+                View Full Resume &#8599;
               </a>
             </div>
           </section>
@@ -738,11 +806,6 @@ class Home extends Component {
               <div className="col-1-of-4">
                 <div className="feature-box">
                   <i className="feature-box__icon icon-basic-joypad"></i>
-                  {/* <img
-                    className="feature-box__icon"
-                    src="https://img.icons8.com/carbon-copy/100/000000/controller.png"
-                    id="game-controller"
-                  /> */}
                   <h3 className="heading-tertiary u-margin-bottom-small">
                     Game Development
                   </h3>
@@ -859,27 +922,7 @@ class Home extends Component {
               onClick={this.emailModal.bind(this)}
               id="closeModalButton"
             ></div>
-
             <form action="https://formspree.io/f/mqkgdnlk" method="POST">
-              {/* <div className="formInput" > 
-                <label>
-                Your email:
-                <input required className="square" type="email" name="_replyto"/>
-              </label></div>
-             <div className="formInput" >
-             <label>
-                Your message:
-           
-              </label>
-              
-             </div>
-             <div>
-             <textarea required className="square" name="message"></textarea>
-             </div>
-           <div>
-           <button id="testSend" type="submit">Send</button>
-           </div> */}
-
               <label className="label" htmlFor="input">
                 Your Email:
               </label>
@@ -888,19 +931,17 @@ class Home extends Component {
                 className="input"
                 type="email"
                 name="_replyto"
-                id="input"
+                id="return-email"
               />
-
               <label className="label" htmlFor="textarea">
                 Your Message:
               </label>
               <textarea
                 required
                 className="textarea"
-                id="textarea"
+                id="email-message"
                 name="message"
               ></textarea>
-
               <button id="sendEmail" type="submit">
                 Send
               </button>
