@@ -302,7 +302,7 @@ class Home extends Component {
                         application for automating and organizing workflows for
                         processing environmental reviews of DHS projects.
                         Utilized the .NET MVC Framework, Oracle databases, and
-                        AWS RDS Console (July 2020 - September 2020).
+                        AWS RDS Console (July 2020 - September 2021).
                       </p>
                       <br></br>
                       <p>
@@ -310,7 +310,7 @@ class Home extends Component {
                         enhancements to a web application for overseeing
                         staffing of contract security officers. Utilized the
                         .NET MVC Framework, Entity Framework, and MS SQL Server
-                        (October 2020 - September 2020).
+                        (October 2020 - September 2021).
                       </p>
                       <br></br>
                       <p>
@@ -318,7 +318,7 @@ class Home extends Component {
                         development to modernize the Clean Air Markets Division
                         (CAMD) application portfolio. Utilizing React.js and
                         NestJS for front-end and back-end respectively (October
-                        2020 - March 2020).
+                        2021 - March 2022).
                       </p>
                       <div className="coll-exp-container">
                         <button
