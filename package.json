@@ -9,6 +9,7 @@
     "@fortawesome/react-fontawesome": "^0.1.4",
     "@react-pdf/renderer": "^1.6.2",
     "bootstrap": "^4.4.1",
+    "focus-trap-react": "^9.0.2",
     "gh-pages": "^2.0.1",
     "jquery": "^3.5.1",
     "node-sass": "^7.0.0",

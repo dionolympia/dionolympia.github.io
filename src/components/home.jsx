@@ -4,6 +4,7 @@ import Logo from "../img/logo.svg";
 import CompPhotoThree from "../img/profile-pic-wv.png";
 import HeaderLogo from "../img/DO_logo.svg";
 import $ from "jquery";
+import FocusTrap from "focus-trap-react";
 
 class Home extends Component {
   constructor(props) {
@@ -61,81 +62,83 @@ class Home extends Component {
   render() {
     return (
       <div className="return">
-        <div className="navigation">
-          <input
-            type="checkbox"
-            className="navigation__checkbox"
-            id="navi-toggle"
-          />
-          <label
-            htmlFor="navi-toggle"
-            className="navigation__button"
-            tabIndex="0"
-          >
-            <span className="navigation__icon">&nbsp;</span>
-          </label>
-          <div className="navigation__background"></div>
+        <FocusTrap>
+          <div className="navigation">
+            <input
+              type="checkbox"
+              className="navigation__checkbox"
+              id="navi-toggle"
+            />
+            <label
+              htmlFor="navi-toggle"
+              className="navigation__button"
+              tabIndex="0"
+            >
+              <span className="navigation__icon">&nbsp;</span>
+            </label>
+            <div className="navigation__background"></div>
 
-          <nav className="navigation__nav">
-            <ul className="navigation__list">
-              <li className="navigation__item">
-                <a href="#about-me" className="navigation__link">
-                  About Me
-                </a>
-              </li>
-              <li className="navigation__item">
-                <a href="#experience" className="navigation__link">
-                  Experience
-                </a>
-              </li>
-              <li className="navigation__item">
-                <a href="#projects" className="navigation__link">
-                  Projects
-                </a>
-              </li>
-              <li className="navigation__item">
-                <a href="#interests" className="navigation__link">
-                  Interests
-                </a>
-              </li>
-              <li className="navigation__item navigation__last-item">
-                <a href="#contact-me" className="navigation__link">
-                  Contact Me
-                </a>
-              </li>
-              <div className="header__social-links">
-                <a
-                  href="https://www.github.com/dionolympia"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <i className="fab fa-github"></i>
-                </a>
-                <a
-                  href="https://www.hackerrank.com/dionolympia"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <i className="fab fa-hackerrank"></i>
-                </a>
-                <a
-                  href="https://www.facebook.com/DionOlympia"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <i className="fab fa-facebook-square"></i>
-                </a>
-                <a
-                  href="https://www.linkedin.com/in/dion-olympia-6b83b1148/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <i className="fab fa-linkedin"></i>
-                </a>
-              </div>
-            </ul>
-          </nav>
-        </div>
+            <nav className="navigation__nav">
+              <ul className="navigation__list">
+                <li className="navigation__item">
+                  <a href="#about-me" className="navigation__link">
+                    About Me
+                  </a>
+                </li>
+                <li className="navigation__item">
+                  <a href="#experience" className="navigation__link">
+                    Experience
+                  </a>
+                </li>
+                <li className="navigation__item">
+                  <a href="#projects" className="navigation__link">
+                    Projects
+                  </a>
+                </li>
+                <li className="navigation__item">
+                  <a href="#interests" className="navigation__link">
+                    Interests
+                  </a>
+                </li>
+                <li className="navigation__item navigation__last-item">
+                  <a href="#contact-me" className="navigation__link">
+                    Contact Me
+                  </a>
+                </li>
+                <div className="header__social-links">
+                  <a
+                    href="https://www.github.com/dionolympia"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <i className="fab fa-github"></i>
+                  </a>
+                  <a
+                    href="https://www.hackerrank.com/dionolympia"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <i className="fab fa-hackerrank"></i>
+                  </a>
+                  <a
+                    href="https://www.facebook.com/DionOlympia"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <i className="fab fa-facebook-square"></i>
+                  </a>
+                  <a
+                    href="https://www.linkedin.com/in/dion-olympia-6b83b1148/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <i className="fab fa-linkedin"></i>
+                  </a>
+                </div>
+              </ul>
+            </nav>
+          </div>
+        </FocusTrap>
         <header className="header">
           <div className="header-content">
             <div className="header__text-box">
