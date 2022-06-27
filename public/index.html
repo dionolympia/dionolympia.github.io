@@ -115,10 +115,24 @@
     $(document).ready(function () {
       // Trigger nav hamburger button click on 'Enter' key press
       $(".navigation__button").on("keydown", function (event) {
-        console.log("test");
         switch (event.keyCode) {
           case enterKey():
             $("#navi-toggle").trigger("click");
+        }
+      });
+
+      $("#last-nav-link").on("keydown", function (event) {
+        switch (event.keyCode) {
+          case tabKey():
+            event.preventDefault();
+            $("#first-nav-link").focus();
+            console.log("test");
+        }
+      });
+
+      $("#navi-toggle").on("keypress", function (event) {
+        if (event.which === tabKey() && event.shiftKey) {
+          alert("you pressed SHIFT+A");
         }
       });
 
@@ -213,6 +227,12 @@
     includeHTML();
     function enterKey() {
       return 13;
+    }
+    function tabKey() {
+      return 9;
+    }
+    function shiftKey() {
+      return 16;
     }
   </script>
 </html>
