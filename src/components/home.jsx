@@ -12,22 +12,22 @@ class Home extends Component {
       modalOpen: false,
       projsExpanded: false,
       cvpExpanded: false,
+      bahExpanded: false,
     };
     this.top = this.top.bind(this);
+    this.navigationToggle = React.createRef();
 
     $("#sendMessage").on("click", function () {
-      // $.ajax({
-      //   url: "//formspree.io/dionolympia@gmail.com",
-      //   method: "POST",
-      //   data: { message: "hello!" },
-      //   dataType: "json",
-      // });
       this.emailModal();
     });
   }
 
-  toggleExpandCVP() {
+  toggleCvpDetails() {
     this.setState({ cvpExpanded: !this.state.cvpExpanded });
+  }
+
+  toggleBahDetails() {
+    this.setState({ bahExpanded: !this.state.bahExpanded });
   }
 
   toggleExpandProjects() {
@@ -45,7 +45,6 @@ class Home extends Component {
 
   emailModal() {
     const currentState = this.state.modalOpen;
-    // console.log(this.state);
     if (!currentState) {
       document.getElementById("emailModal").style.display = "block";
       document.body.style.overflowY = "none";
@@ -57,6 +56,11 @@ class Home extends Component {
     this.setState({ modalOpen: !currentState });
   }
 
+  clickNavigationLink() {
+    // close navigation menu when link is clicked (so user doesn't need to close it manually)
+    this.navigationToggle.click();
+  }
+
   render() {
     return (
       <div className="return">
@@ -65,6 +69,7 @@ class Home extends Component {
             type="checkbox"
             className="navigation__checkbox"
             id="navi-toggle"
+            ref={this.navigationToggle}
           />
           <label
             htmlFor="navi-toggle"
@@ -82,6 +87,7 @@ class Home extends Component {
                   href="#about-me"
                   className="navigation__link"
                   id="first-nav-link"
+                  onClick={this.clickNavigationLink}
                 >
                   About Me
                 </a>
@@ -253,6 +259,49 @@ class Home extends Component {
                     ASP.NET MVC, and SQL Server to build applications to
                     modernize how the DoD manages its data.
                   </p>
+                  {this.state.bahExpanded ? (
+                    <div>
+                      <br></br>
+                      <hr className="exp-horizontal-rule"></hr>
+                      <br></br>
+                      <p>
+                        Built data importers to convert information stored in
+                        excel spreadsheets to SQL server database tables to be
+                        consumed by a web application for further analysis,
+                        reporting, and management on a web application.
+                      </p>
+                      <br />
+                      <p>
+                        Digitized a workflow process that was originally managed
+                        via email communication and developed a user-friendly,
+                        intuitive management dashboard with built in workflow
+                        diagrams, email notifications, and role assignment.
+                      </p>
+                      <br />
+                      <p>
+                        Assisted in maintaining and progressing an internal web
+                        component library (Angular) to provide bug fixes and new
+                        functionality across the project team.
+                      </p>
+                      <div className="coll-exp-container">
+                        <button
+                          onClick={this.toggleBahDetails.bind(this)}
+                          className="btn-text__button float-right"
+                        >
+                          Collapse &uarr;
+                        </button>
+                      </div>
+                    </div>
+                  ) : (
+                    <div className="coll-exp-container">
+                      <button
+                        onClick={this.toggleBahDetails.bind(this)}
+                        className="btn-text__button float-right"
+                      >
+                        Expand &darr;
+                      </button>
+                    </div>
+                  )}
                 </div>
               </div>
             </div>
@@ -326,7 +375,7 @@ class Home extends Component {
                       </p>
                       <div className="coll-exp-container">
                         <button
-                          onClick={this.toggleExpandCVP.bind(this)}
+                          onClick={this.toggleCvpDetails.bind(this)}
                           className="btn-text__button float-right"
                         >
                           Collapse &uarr;
@@ -336,7 +385,7 @@ class Home extends Component {
                   ) : (
                     <div className="coll-exp-container">
                       <button
-                        onClick={this.toggleExpandCVP.bind(this)}
+                        onClick={this.toggleCvpDetails.bind(this)}
                         className="btn-text__button float-right"
                       >
                         Expand &darr;
@@ -346,121 +395,6 @@ class Home extends Component {
                 </div>
               </div>
             </div>
-            {/* <div className="row">
-              <div className="story">
-                <div className="story__shape">
-                  <img
-                    className="story__image"
-                    src={OigImage}
-                    alt="HHS-OIG (Health & Human Services - Office of Inspector General)"
-                  />
-                </div>
-                <div className="story__text">
-                  <h3 className="heading-tertiary u-margin-bottom-small">
-                    Department of Health and Human Services (Contractor)
-                    <span
-                      className="duration"
-                      style={{ float: "right", fontWeight: 800 }}
-                    >
-                      April 2020 - July 2020
-                    </span>
-                  </h3>
-                  <p>
-                    As a Junior Software Developer, worked on front-end web
-                    design for the Office of Inspector General (OIG) data
-                    analytics / business intelligence tools team, and utilized
-                    web browser testing software & developed Python scripts to
-                    automate ETL processes.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div className="row">
-              <div className="story">
-                <div className="story__shape">
-                  <img
-                    className="story__image"
-                    src={DhsImage}
-                    alt="DHS (Department of Homeland Security)"
-                  />
-                </div>
-                <div className="story__text">
-                  <h3 className="heading-tertiary u-margin-bottom-small">
-                    Department of Homeland Security (Contractor)
-                    <span
-                      className="duration"
-                      style={{ float: "right", fontWeight: 800 }}
-                    >
-                      July 2020 - September 2020
-                    </span>
-                  </h3>
-                  <p>
-                    As a C#/.NET Developer, worked on front-end and back-end web
-                    development to maintain and provide updates to a web
-                    application for automating and organizing workflows for
-                    processing environmental reviews of DHS projects. Utilized
-                    the .NET MVC Framework, Oracle databases, and AWS RDS
-                    Console.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div className="row">
-              <div className="story">
-                <div className="story__shape">
-                  <img
-                    className="story__image"
-                    src={FpsImage}
-                    alt="FPS (Federal Protective Service)"
-                  />
-                </div>
-                <div className="story__text">
-                  <h3 className="heading-tertiary u-margin-bottom-small">
-                    Federal Protective Service (Contractor)
-                    <span
-                      className="duration"
-                      style={{ float: "right", fontWeight: 800 }}
-                    >
-                      October 2020 - September 2020
-                    </span>
-                  </h3>
-                  <p>
-                    As a C#/.NET Developer, provided maintainance and
-                    enhancements to a web application for overseeing staffing of
-                    contract security officers. Utilized the .NET MVC Framework,
-                    Entity Framework, and MS SQL Server
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div className="row">
-              <div className="story">
-                <div className="story__shape">
-                  <img
-                    className="story__image"
-                    src={EpaImage}
-                    alt="FPS (Federal Protective Service)"
-                  />
-                </div>
-                <div className="story__text">
-                  <h3 className="heading-tertiary u-margin-bottom-small">
-                    Environmental Protection Agency (Contractor)
-                    <span
-                      className="duration"
-                      style={{ float: "right", fontWeight: 800 }}
-                    >
-                      October 2020 - March 2020
-                    </span>
-                  </h3>
-                  <p>
-                    As a Full-Stack Developer, providing software development to
-                    modernize the Clean Air Markets Division (CAMD) application
-                    portfolio. Utilizing React.js and NestJS for front-end and
-                    back-end respectively.
-                  </p>
-                </div>
-              </div>
-            </div> */}
             <div className="u-center-text u-margin-top-huge">
               <a
                 href={Resume}
@@ -856,8 +790,6 @@ class Home extends Component {
                 </div>
 
                 <div className="col-1-of-2">
-                  {/* <a href="mailto:dionolympia@gmail.com"> */}
-
                   <div
                     className="contact-me__email-section"
                     onClick={this.emailModal.bind(this)}
@@ -866,8 +798,6 @@ class Home extends Component {
                     <p className="contact-me__label">Email</p>
                     <p className="contact-me__email">dionolympia@gmail.com</p>
                   </div>
-
-                  {/* </a> */}
                 </div>
               </div>
             </div>
