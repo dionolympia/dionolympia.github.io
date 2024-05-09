@@ -1382,9 +1382,7 @@ body {
 .contact-me *:not(:last-child) {
   margin-bottom: 2.5rem;
 }
-.contact-me__email-section {
-  cursor: pointer;
-}
+
 .contact-me__phone-section,
 .contact-me__email-section,
 .contact-me__word-section {

@@ -4,6 +4,7 @@ import Logo from "../img/logo.svg";
 import CompPhotoThree from "../img/profile-pic-wv.png";
 import HeaderLogo from "../img/DO_logo.svg";
 import $ from "jquery";
+
 class Home extends Component {
   constructor(props) {
     super(props);
@@ -16,10 +17,6 @@ class Home extends Component {
     };
     this.top = this.top.bind(this);
     this.navigationToggle = React.createRef();
-
-    $("#sendMessage").on("click", function () {
-      this.emailModal();
-    });
   }
 
   toggleCvpDetails() {
@@ -41,19 +38,6 @@ class Home extends Component {
 
   top() {
     $("html, body").animate({ scrollTop: "0px" });
-  }
-
-  emailModal() {
-    const currentState = this.state.modalOpen;
-    if (!currentState) {
-      document.getElementById("emailModal").style.display = "block";
-      document.body.style.overflowY = "none";
-      $("#email-message,#return-email").val("");
-    } else {
-      document.getElementById("emailModal").style.display = "none";
-      document.body.style.overflowY = "scroll";
-    }
-    this.setState({ modalOpen: !currentState });
   }
 
   clickNavigationLink() {
@@ -790,10 +774,7 @@ class Home extends Component {
                 </div>
 
                 <div className="col-1-of-2">
-                  <div
-                    className="contact-me__email-section"
-                    onClick={this.emailModal.bind(this)}
-                  >
+                  <div className="contact-me__email-section">
                     <i className="fa-3x fas fa-envelope contact-me__icon--email" />
                     <p className="contact-me__label">Email</p>
                     <p className="contact-me__email">dionolympia@gmail.com</p>
@@ -850,38 +831,6 @@ class Home extends Component {
         <button onClick={this.top} id="myBtn" title="Go to top">
           &#8593;
         </button>
-        <div id="emailModal">
-          <div id="emailForm">
-            <div
-              onClick={this.emailModal.bind(this)}
-              id="closeModalButton"
-            ></div>
-            <form action="https://formspree.io/f/mqkgdnlk" method="POST">
-              <label className="label" htmlFor="input">
-                Your Email:
-              </label>
-              <input
-                required
-                className="input"
-                type="email"
-                name="_replyto"
-                id="return-email"
-              />
-              <label className="label" htmlFor="textarea">
-                Your Message:
-              </label>
-              <textarea
-                required
-                className="textarea"
-                id="email-message"
-                name="message"
-              ></textarea>
-              <button id="sendEmail" type="submit">
-                Send
-              </button>
-            </form>
-          </div>
-        </div>
       </div>
     );
   }
