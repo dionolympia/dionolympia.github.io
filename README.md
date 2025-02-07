@@ -4,9 +4,9 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 In the project directory, you can run:
 
-### `npm run pushToMaster -- "your commit message here`
+### `npm run deploy -- "your commit message here`
 
-This will apply the changes pushed to the development branch into the master branch of this project. The master branch will receives the updates in a commit with your custom message.
+This will apply the changes already pushed to the development branch into the master branch of this project. The master branch will receives the updates in a commit with your custom message.
 
 ### `npm start`
 

@@ -32,7 +32,6 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build -b master -m",
     "bd": "npm run build",
-    "pushToMaster": "f() { gh-pages -d build -b master -m \"$1\"; }; f",
     "eject": "react-scripts eject",
     "compile:sass": "node-sass src/sass/main.scss src/css/style.css -w"
   },
